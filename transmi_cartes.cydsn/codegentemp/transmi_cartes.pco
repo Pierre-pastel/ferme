@@ -1,0 +1,66 @@
+# transmi_cartes
+# 2019-01-31 18:47:38Z
+
+# IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 0
+# IO_1@[IOP=(1)][IoId=(1)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 1
+set_location "ClockBlock" clockblockcell -1 -1 0
+set_io "Rx_SIG(0)" iocell 2 5
+set_io "Tx_SIG(0)" iocell 2 6
+set_io "niveau(0)" iocell 12 0
+set_io "niveau(1)" iocell 12 1
+set_io "niveau(2)" iocell 12 2
+set_io "niveau(3)" iocell 12 3
+set_io "niveau(4)" iocell 12 4
+set_io "niveau(5)" iocell 12 5
+set_io "niveau(6)" iocell 12 6
+set_io "niveau(7)" iocell 12 7
+set_io "VBAT1(0)" iocell 15 3
+set_io "VBAT2(0)" iocell 15 2
+set_io "VCHAR(0)" iocell 15 1
+set_io "VPAN(0)" iocell 15 0
+set_io "Relais(0)" iocell 2 1
+set_location "\PWM_LED:PWMUDB:status_2\" 0 4 1 3
+set_location "Net_341" 0 4 1 0
+set_location "\UART_SIG:BUART:counter_load_not\" 1 4 0 2
+set_location "\UART_SIG:BUART:tx_status_0\" 1 3 1 3
+set_location "\UART_SIG:BUART:tx_status_2\" 1 5 1 0
+set_location "\UART_SIG:BUART:rx_counter_load\" 0 3 0 1
+set_location "\UART_SIG:BUART:rx_postpoll\" 0 4 0 3
+set_location "\UART_SIG:BUART:rx_status_4\" 0 4 1 2
+set_location "\UART_SIG:BUART:rx_status_5\" 0 5 1 3
+set_location "\PWM_LED:PWMUDB:genblk1:ctrlreg\" 1 5 6
+set_location "\PWM_LED:PWMUDB:genblk8:stsreg\" 1 5 4
+set_location "\PWM_LED:PWMUDB:sP8:pwmdp:u0\" 1 4 2
+set_location "\UART_SIG:RXInternalInterrupt\" interrupt -1 -1 0
+set_location "\UART_SIG:BUART:sTX:TxShifter:u0\" 1 3 2
+set_location "\UART_SIG:BUART:sTX:sCLOCK:TxBitClkGen\" 1 5 2
+set_location "\UART_SIG:BUART:sTX:TxSts\" 1 4 4
+set_location "\UART_SIG:BUART:sRX:RxShifter:u0\" 0 5 2
+set_location "\UART_SIG:BUART:sRX:RxBitCounter\" 0 3 7
+set_location "\UART_SIG:BUART:sRX:RxSts\" 0 4 4
+set_location "isr_vbat" interrupt -1 -1 4
+set_location "isr_rbat" interrupt -1 -1 2
+set_location "isr_vpan" interrupt -1 -1 5
+set_location "isr_rch" interrupt -1 -1 3
+set_location "isr_1" interrupt -1 -1 1
+set_location "\PWM_LED:PWMUDB:runmode_enable\" 1 4 0 3
+set_location "\PWM_LED:PWMUDB:prevCompare1\" 1 3 0 2
+set_location "\PWM_LED:PWMUDB:status_0\" 1 4 0 0
+set_location "\UART_SIG:BUART:txn\" 1 5 0 0
+set_location "\UART_SIG:BUART:tx_state_1\" 0 5 0 3
+set_location "\UART_SIG:BUART:tx_state_0\" 1 4 1 0
+set_location "\UART_SIG:BUART:tx_state_2\" 0 5 0 0
+set_location "\UART_SIG:BUART:tx_bitclk\" 1 4 1 2
+set_location "\UART_SIG:BUART:tx_ctrl_mark_last\" 0 3 0 3
+set_location "\UART_SIG:BUART:rx_state_0\" 0 3 0 0
+set_location "\UART_SIG:BUART:rx_load_fifo\" 0 3 1 1
+set_location "\UART_SIG:BUART:rx_state_3\" 0 3 0 2
+set_location "\UART_SIG:BUART:rx_state_2\" 0 3 1 0
+set_location "\UART_SIG:BUART:rx_bitclk_enable\" 0 4 0 0
+set_location "\UART_SIG:BUART:rx_state_stop1_reg\" 0 5 0 2
+set_location "\UART_SIG:BUART:pollcount_1\" 0 4 0 2
+set_location "\UART_SIG:BUART:pollcount_0\" 0 4 0 1
+set_location "\UART_SIG:BUART:rx_status_3\" 0 5 1 1
+set_location "\UART_SIG:BUART:rx_last\" 0 3 1 2
