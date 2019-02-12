@@ -18,7 +18,12 @@ char strbat[2],strdis[2],strpan[2];
 
 //char strbatv[5],strbatr[5];
 
-char niv_reserv[3]; // [RESERV]
+char niv_reserv[3]; // Niveau d'eau du réservoir 
+char message[35];   // Pour la réception de la réponse SIGFOX
+char begin[15],resp[35];
+uint8 cptcar;       // Compteur caractère reçu de réponse SIGFOX
+uint8 phase,j;        // Phase réception Sigfox
+
   
 /********************************************START lecture niveau d'eau********************************************/
 void lecture_reserv(){
@@ -100,7 +105,7 @@ void sigfox_init()
     {
      //initialisation du module sigfox
     UART_SIG_Start();
-    CyDelay(1000);
+    CyDelay(100);
     UART_SIG_PutString("ATE1\r");
     UART_SIG_PutString("ATQ0\r");
     CyDelay(1000);
@@ -116,11 +121,12 @@ void sigfox_send()
         UART_SIG_PutString("AT$SF=");
         UART_SIG_PutChar('0');              
         UART_SIG_PutString(strdis);
-        UART_SIG_PutChar('0');
+        //UART_SIG_PutChar('0');
         UART_SIG_PutString(strpan);
-        UART_SIG_PutChar('0');
+        //UART_SIG_PutChar('0');
         UART_SIG_PutString(strbat);
-        UART_SIG_PutString(niv_reserv);
+        UART_SIG_PutString("00");           //Niveau eau puits
+        UART_SIG_PutString(niv_reserv);     //Niveau eau réservoir
         UART_SIG_PutChar('\r');
     }
     //Cas de fonctionement anormal : disjoncteur déclenché
@@ -128,33 +134,28 @@ void sigfox_send()
         UART_SIG_PutString("AT$SF=");
         UART_SIG_PutChar('0');              
         UART_SIG_PutString(strdis);
-        UART_SIG_PutChar('0');
+        //UART_SIG_PutChar('0');
         UART_SIG_PutString(strpan);
-        UART_SIG_PutChar('0');
+        //UART_SIG_PutChar('0');
         UART_SIG_PutString(strbat);
-        UART_SIG_PutString(niv_reserv);
-        UART_SIG_PutString(",1,1\r");
+        UART_SIG_PutString("00");           //Niveau eau puits
+        UART_SIG_PutString(niv_reserv);     //Niveau eau réservoir
+       
+        UART_SIG_PutString(",1,1");
         UART_SIG_PutChar('\r');
-    }
         
-    
         //début traitement réception
-        /*cptcar=0;
-        isr_1_Start();
-        
-        nb=0;
-        do{
-            sigfox[nb]=UART_SIG_GetChar();
-            nb++;
-            
-        }while(sigfox[nb-1]!=0x2b);
-       Relais_Write(1);
-       CyDelay(3000);
-       Relais_Write(0);*/
+        CyDelay(5000);
+        cptcar=0;
+        phase=0;
+        UART_SIG_ClearRxBuffer();    //Efface le buffer de Rx
+        isr_serial_Start();
+        while(phase<2);              //Attente réponse message
+        isr_serial_Stop();
     //reception message du serveur sigfox
-    //}
+    }
   }
-/********************************************END Envoi Sigfox********************************************/
+        /********************************************END Envoi Sigfox********************************************/
 /********************************************START Reception Sigfox********************************************/
 /********************************************END Envoi Sigfox********************************************/
 
@@ -169,21 +170,28 @@ int main(void)
     lecture_reserv();
     lecture_leds();
     sigfox_send();
-     
-    /*UART_SIG_PutString("AT$SF=");
-    sprintf(strbatv, "%u", batverte);
-    sprintf(strbatr, "%u", batrouge);
-    sprintf(strdis, "%u", disjon);
-    sprintf(strpan, "%u", panneau);
-    UART_SIG_PutString(strbatv);
-    UART_SIG_PutString(",");
-    UART_SIG_PutString(strbatr);
-    UART_SIG_PutString(",");
-    UART_SIG_PutString(strdis);
-    UART_SIG_PutString(",");
-    UART_SIG_PutString(strpan);
-    UART_SIG_PutString("\r");*/
-    CyDelay(10000);    
+    
+    //Traitement message reçu
+    /*UART_SIG_PutString("OK1\r");
+    for(j=0;j<=10;j++)  UART_SIG_PutChar(begin[j]);
+    UART_SIG_PutChar('\r');
+    for(j=0;j<=35;j++) UART_SIG_PutChar(resp[j]);
+    UART_SIG_PutChar('\r');
+    UART_SIG_PutString("OK2\r");*/
+    
+    if ((resp[4]=='1')||(resp[5]=='1')) {
+        Relais_Write(1);   //Disjoncteur à enclencher
+        CyDelay(1000);
+        Relais_Write(0);
+        }
+    
+    //Tempo entre 2 transmissions
+    if(disjon > 40) {  //Non disjoncté
+        CyDelay(660000); //Toutes les ?? minutes
+    }
+    else {  //Disjoncté
+        CyDelay(660000); //Toutes les 11 minutes
+    };                        
     }
 }
 

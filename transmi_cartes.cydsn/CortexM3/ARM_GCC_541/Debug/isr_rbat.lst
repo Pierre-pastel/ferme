@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
   28:Generated_Source\PSoC5/isr_rbat.c **** ********************************************************************************/
   29:Generated_Source\PSoC5/isr_rbat.c **** /* `#START isr_rbat_intc` */
   30:Generated_Source\PSoC5/isr_rbat.c **** #include <project.h>
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 2
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 2
 
 
   31:Generated_Source\PSoC5/isr_rbat.c **** extern uint16 batrouge;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
   85:Generated_Source\PSoC5/isr_rbat.c **** *  from the value in the Design Wide Resources Interrupt Editor, then enables 
   86:Generated_Source\PSoC5/isr_rbat.c **** *  the interrupt to the interrupt controller.
   87:Generated_Source\PSoC5/isr_rbat.c **** *  
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 3
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 3
 
 
   88:Generated_Source\PSoC5/isr_rbat.c **** *  When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  142:Generated_Source\PSoC5/isr_rbat.c **** }
  143:Generated_Source\PSoC5/isr_rbat.c **** 
  144:Generated_Source\PSoC5/isr_rbat.c **** 
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 4
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 4
 
 
  145:Generated_Source\PSoC5/isr_rbat.c **** /*******************************************************************************
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  173:Generated_Source\PSoC5/isr_rbat.c **** 
  174:Generated_Source\PSoC5/isr_rbat.c **** /*******************************************************************************
  175:Generated_Source\PSoC5/isr_rbat.c **** * Function Name: isr_rbat_SetVector
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 5
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 5
 
 
  176:Generated_Source\PSoC5/isr_rbat.c **** ********************************************************************************
@@ -284,7 +284,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  206:Generated_Source\PSoC5/isr_rbat.c **** 
  207:Generated_Source\PSoC5/isr_rbat.c ****     ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_rbat__INTC_NUMBER] = address;
   64              		.loc 1 207 0
-  65 0004 9864     		str	r0, [r3, #72]
+  65 0004 1864     		str	r0, [r3, #64]
   66 0006 7047     		bx	lr
   67              	.L6:
   68              		.align	2
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
   76              		.global	isr_rbat_GetVector
   77              		.thumb
   78              		.thumb_func
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 6
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 6
 
 
   79              		.type	isr_rbat_GetVector, %function
@@ -339,7 +339,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  231:Generated_Source\PSoC5/isr_rbat.c ****     return ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_rbat__INTC_NUMBER];
  232:Generated_Source\PSoC5/isr_rbat.c **** }
   91              		.loc 1 232 0
-  92 0004 986C     		ldr	r0, [r3, #72]
+  92 0004 186C     		ldr	r0, [r3, #64]
   93 0006 7047     		bx	lr
   94              	.L9:
   95              		.align	2
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  108              	.LFB69:
  233:Generated_Source\PSoC5/isr_rbat.c **** 
  234:Generated_Source\PSoC5/isr_rbat.c **** 
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 7
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 7
 
 
  235:Generated_Source\PSoC5/isr_rbat.c **** /*******************************************************************************
@@ -404,7 +404,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  122              	.L12:
  123 000a 00BF     		.align	2
  124              	.L11:
- 125 000c 02E400E0 		.word	-536812542
+ 125 000c 00E400E0 		.word	-536812544
  126              		.cfi_endproc
  127              	.LFE69:
  128              		.size	isr_rbat_SetPriority, .-isr_rbat_SetPriority
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  136              	.LFB70:
  262:Generated_Source\PSoC5/isr_rbat.c **** }
  263:Generated_Source\PSoC5/isr_rbat.c **** 
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 8
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 8
 
 
  264:Generated_Source\PSoC5/isr_rbat.c **** 
@@ -463,7 +463,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  150              	.L15:
  151              		.align	2
  152              	.L14:
- 153 0008 02E400E0 		.word	-536812542
+ 153 0008 00E400E0 		.word	-536812544
  154              		.cfi_endproc
  155              	.LFE70:
  156              		.size	isr_rbat_GetPriority, .-isr_rbat_GetPriority
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  290:Generated_Source\PSoC5/isr_rbat.c **** 
  291:Generated_Source\PSoC5/isr_rbat.c **** 
  292:Generated_Source\PSoC5/isr_rbat.c **** /*******************************************************************************
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 9
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 9
 
 
  293:Generated_Source\PSoC5/isr_rbat.c **** * Function Name: isr_rbat_Enable
@@ -506,7 +506,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  310:Generated_Source\PSoC5/isr_rbat.c ****     /* Enable the general interrupt. */
  311:Generated_Source\PSoC5/isr_rbat.c ****     *isr_rbat_INTC_SET_EN = isr_rbat__INTC_MASK;
  170              		.loc 1 311 0
- 171 0000 0422     		movs	r2, #4
+ 171 0000 0122     		movs	r2, #1
  172 0002 014B     		ldr	r3, .L17
  173 0004 1A60     		str	r2, [r3]
  174 0006 7047     		bx	lr
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  322:Generated_Source\PSoC5/isr_rbat.c **** * Parameters:
  323:Generated_Source\PSoC5/isr_rbat.c **** *   None
  324:Generated_Source\PSoC5/isr_rbat.c **** *
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 10
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 10
 
 
  325:Generated_Source\PSoC5/isr_rbat.c **** * Return:
@@ -555,32 +555,27 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  331:Generated_Source\PSoC5/isr_rbat.c ****     /* Get the state of the general interrupt. */
  332:Generated_Source\PSoC5/isr_rbat.c ****     return ((*isr_rbat_INTC_SET_EN & (uint32)isr_rbat__INTC_MASK) != 0u) ? 1u:0u;
  195              		.loc 1 332 0
- 196 0000 044B     		ldr	r3, .L22
- 197 0002 1B68     		ldr	r3, [r3]
- 198 0004 13F0040F 		tst	r3, #4
- 199 0008 01D0     		beq	.L21
- 200 000a 0120     		movs	r0, #1
- 201 000c 7047     		bx	lr
- 202              	.L21:
- 203 000e 0020     		movs	r0, #0
+ 196 0000 024B     		ldr	r3, .L20
+ 197 0002 1868     		ldr	r0, [r3]
  333:Generated_Source\PSoC5/isr_rbat.c **** }
- 204              		.loc 1 333 0
- 205 0010 7047     		bx	lr
- 206              	.L23:
- 207 0012 00BF     		.align	2
- 208              	.L22:
- 209 0014 00E100E0 		.word	-536813312
- 210              		.cfi_endproc
- 211              	.LFE72:
- 212              		.size	isr_rbat_GetState, .-isr_rbat_GetState
- 213              		.section	.text.isr_rbat_Disable,"ax",%progbits
- 214              		.align	2
- 215              		.global	isr_rbat_Disable
- 216              		.thumb
- 217              		.thumb_func
- 218              		.type	isr_rbat_Disable, %function
- 219              	isr_rbat_Disable:
- 220              	.LFB73:
+ 198              		.loc 1 333 0
+ 199 0004 00F00100 		and	r0, r0, #1
+ 200 0008 7047     		bx	lr
+ 201              	.L21:
+ 202 000a 00BF     		.align	2
+ 203              	.L20:
+ 204 000c 00E100E0 		.word	-536813312
+ 205              		.cfi_endproc
+ 206              	.LFE72:
+ 207              		.size	isr_rbat_GetState, .-isr_rbat_GetState
+ 208              		.section	.text.isr_rbat_Disable,"ax",%progbits
+ 209              		.align	2
+ 210              		.global	isr_rbat_Disable
+ 211              		.thumb
+ 212              		.thumb_func
+ 213              		.type	isr_rbat_Disable, %function
+ 214              	isr_rbat_Disable:
+ 215              	.LFB73:
  334:Generated_Source\PSoC5/isr_rbat.c **** 
  335:Generated_Source\PSoC5/isr_rbat.c **** 
  336:Generated_Source\PSoC5/isr_rbat.c **** /*******************************************************************************
@@ -598,161 +593,161 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  348:Generated_Source\PSoC5/isr_rbat.c **** *
  349:Generated_Source\PSoC5/isr_rbat.c **** *******************************************************************************/
  350:Generated_Source\PSoC5/isr_rbat.c **** void isr_rbat_Disable(void)
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 11
-
-
  351:Generated_Source\PSoC5/isr_rbat.c **** {
- 221              		.loc 1 351 0
- 222              		.cfi_startproc
- 223              		@ args = 0, pretend = 0, frame = 0
- 224              		@ frame_needed = 0, uses_anonymous_args = 0
- 225              		@ link register save eliminated.
+ 216              		.loc 1 351 0
+ 217              		.cfi_startproc
+ 218              		@ args = 0, pretend = 0, frame = 0
+ 219              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 11
+
+
+ 220              		@ link register save eliminated.
  352:Generated_Source\PSoC5/isr_rbat.c ****     /* Disable the general interrupt. */
  353:Generated_Source\PSoC5/isr_rbat.c ****     *isr_rbat_INTC_CLR_EN = isr_rbat__INTC_MASK;
- 226              		.loc 1 353 0
- 227 0000 0422     		movs	r2, #4
- 228 0002 014B     		ldr	r3, .L25
- 229 0004 1A60     		str	r2, [r3]
- 230 0006 7047     		bx	lr
- 231              	.L26:
- 232              		.align	2
- 233              	.L25:
- 234 0008 80E100E0 		.word	-536813184
- 235              		.cfi_endproc
- 236              	.LFE73:
- 237              		.size	isr_rbat_Disable, .-isr_rbat_Disable
- 238              		.section	.text.isr_rbat_Start,"ax",%progbits
- 239              		.align	2
- 240              		.global	isr_rbat_Start
- 241              		.thumb
- 242              		.thumb_func
- 243              		.type	isr_rbat_Start, %function
- 244              	isr_rbat_Start:
- 245              	.LFB63:
+ 221              		.loc 1 353 0
+ 222 0000 0122     		movs	r2, #1
+ 223 0002 014B     		ldr	r3, .L23
+ 224 0004 1A60     		str	r2, [r3]
+ 225 0006 7047     		bx	lr
+ 226              	.L24:
+ 227              		.align	2
+ 228              	.L23:
+ 229 0008 80E100E0 		.word	-536813184
+ 230              		.cfi_endproc
+ 231              	.LFE73:
+ 232              		.size	isr_rbat_Disable, .-isr_rbat_Disable
+ 233              		.section	.text.isr_rbat_Start,"ax",%progbits
+ 234              		.align	2
+ 235              		.global	isr_rbat_Start
+ 236              		.thumb
+ 237              		.thumb_func
+ 238              		.type	isr_rbat_Start, %function
+ 239              	isr_rbat_Start:
+ 240              	.LFB63:
   63:Generated_Source\PSoC5/isr_rbat.c ****     /* For all we know the interrupt is active. */
- 246              		.loc 1 63 0
- 247              		.cfi_startproc
- 248              		@ args = 0, pretend = 0, frame = 0
- 249              		@ frame_needed = 0, uses_anonymous_args = 0
- 250 0000 08B5     		push	{r3, lr}
- 251              		.cfi_def_cfa_offset 8
- 252              		.cfi_offset 3, -8
- 253              		.cfi_offset 14, -4
+ 241              		.loc 1 63 0
+ 242              		.cfi_startproc
+ 243              		@ args = 0, pretend = 0, frame = 0
+ 244              		@ frame_needed = 0, uses_anonymous_args = 0
+ 245 0000 08B5     		push	{r3, lr}
+ 246              		.cfi_def_cfa_offset 8
+ 247              		.cfi_offset 3, -8
+ 248              		.cfi_offset 14, -4
   65:Generated_Source\PSoC5/isr_rbat.c **** 
- 254              		.loc 1 65 0
- 255 0002 FFF7FEFF 		bl	isr_rbat_Disable
- 256              	.LVL7:
+ 249              		.loc 1 65 0
+ 250 0002 FFF7FEFF 		bl	isr_rbat_Disable
+ 251              	.LVL7:
   68:Generated_Source\PSoC5/isr_rbat.c **** 
- 257              		.loc 1 68 0
- 258 0006 0448     		ldr	r0, .L29
- 259 0008 FFF7FEFF 		bl	isr_rbat_SetVector
- 260              	.LVL8:
+ 252              		.loc 1 68 0
+ 253 0006 0448     		ldr	r0, .L27
+ 254 0008 FFF7FEFF 		bl	isr_rbat_SetVector
+ 255              	.LVL8:
   71:Generated_Source\PSoC5/isr_rbat.c **** 
- 261              		.loc 1 71 0
- 262 000c 0720     		movs	r0, #7
- 263 000e FFF7FEFF 		bl	isr_rbat_SetPriority
- 264              	.LVL9:
+ 256              		.loc 1 71 0
+ 257 000c 0720     		movs	r0, #7
+ 258 000e FFF7FEFF 		bl	isr_rbat_SetPriority
+ 259              	.LVL9:
   74:Generated_Source\PSoC5/isr_rbat.c **** }
- 265              		.loc 1 74 0
- 266 0012 FFF7FEFF 		bl	isr_rbat_Enable
- 267              	.LVL10:
- 268 0016 08BD     		pop	{r3, pc}
- 269              	.L30:
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 12
+ 260              		.loc 1 74 0
+ 261 0012 FFF7FEFF 		bl	isr_rbat_Enable
+ 262              	.LVL10:
+ 263 0016 08BD     		pop	{r3, pc}
+ 264              	.L28:
+ 265              		.align	2
+ 266              	.L27:
+ 267 0018 00000000 		.word	isr_rbat_Interrupt
+ 268              		.cfi_endproc
+ 269              	.LFE63:
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 12
 
 
- 270              		.align	2
- 271              	.L29:
- 272 0018 00000000 		.word	isr_rbat_Interrupt
- 273              		.cfi_endproc
- 274              	.LFE63:
- 275              		.size	isr_rbat_Start, .-isr_rbat_Start
- 276              		.section	.text.isr_rbat_StartEx,"ax",%progbits
- 277              		.align	2
- 278              		.global	isr_rbat_StartEx
- 279              		.thumb
- 280              		.thumb_func
- 281              		.type	isr_rbat_StartEx, %function
- 282              	isr_rbat_StartEx:
- 283              	.LFB64:
+ 270              		.size	isr_rbat_Start, .-isr_rbat_Start
+ 271              		.section	.text.isr_rbat_StartEx,"ax",%progbits
+ 272              		.align	2
+ 273              		.global	isr_rbat_StartEx
+ 274              		.thumb
+ 275              		.thumb_func
+ 276              		.type	isr_rbat_StartEx, %function
+ 277              	isr_rbat_StartEx:
+ 278              	.LFB64:
  106:Generated_Source\PSoC5/isr_rbat.c ****     /* For all we know the interrupt is active. */
- 284              		.loc 1 106 0
- 285              		.cfi_startproc
- 286              		@ args = 0, pretend = 0, frame = 0
- 287              		@ frame_needed = 0, uses_anonymous_args = 0
- 288              	.LVL11:
- 289 0000 10B5     		push	{r4, lr}
- 290              		.cfi_def_cfa_offset 8
- 291              		.cfi_offset 4, -8
- 292              		.cfi_offset 14, -4
- 293 0002 0446     		mov	r4, r0
+ 279              		.loc 1 106 0
+ 280              		.cfi_startproc
+ 281              		@ args = 0, pretend = 0, frame = 0
+ 282              		@ frame_needed = 0, uses_anonymous_args = 0
+ 283              	.LVL11:
+ 284 0000 10B5     		push	{r4, lr}
+ 285              		.cfi_def_cfa_offset 8
+ 286              		.cfi_offset 4, -8
+ 287              		.cfi_offset 14, -4
+ 288 0002 0446     		mov	r4, r0
  108:Generated_Source\PSoC5/isr_rbat.c **** 
- 294              		.loc 1 108 0
- 295 0004 FFF7FEFF 		bl	isr_rbat_Disable
- 296              	.LVL12:
+ 289              		.loc 1 108 0
+ 290 0004 FFF7FEFF 		bl	isr_rbat_Disable
+ 291              	.LVL12:
  111:Generated_Source\PSoC5/isr_rbat.c **** 
- 297              		.loc 1 111 0
- 298 0008 2046     		mov	r0, r4
- 299 000a FFF7FEFF 		bl	isr_rbat_SetVector
- 300              	.LVL13:
+ 292              		.loc 1 111 0
+ 293 0008 2046     		mov	r0, r4
+ 294 000a FFF7FEFF 		bl	isr_rbat_SetVector
+ 295              	.LVL13:
  114:Generated_Source\PSoC5/isr_rbat.c **** 
- 301              		.loc 1 114 0
- 302 000e 0720     		movs	r0, #7
- 303 0010 FFF7FEFF 		bl	isr_rbat_SetPriority
- 304              	.LVL14:
+ 296              		.loc 1 114 0
+ 297 000e 0720     		movs	r0, #7
+ 298 0010 FFF7FEFF 		bl	isr_rbat_SetPriority
+ 299              	.LVL14:
  117:Generated_Source\PSoC5/isr_rbat.c **** }
- 305              		.loc 1 117 0
- 306 0014 FFF7FEFF 		bl	isr_rbat_Enable
- 307              	.LVL15:
- 308 0018 10BD     		pop	{r4, pc}
- 309              		.cfi_endproc
- 310              	.LFE64:
- 311              		.size	isr_rbat_StartEx, .-isr_rbat_StartEx
- 312 001a 00BF     		.section	.text.isr_rbat_Stop,"ax",%progbits
- 313              		.align	2
- 314              		.global	isr_rbat_Stop
- 315              		.thumb
- 316              		.thumb_func
- 317              		.type	isr_rbat_Stop, %function
- 318              	isr_rbat_Stop:
- 319              	.LFB65:
+ 300              		.loc 1 117 0
+ 301 0014 FFF7FEFF 		bl	isr_rbat_Enable
+ 302              	.LVL15:
+ 303 0018 10BD     		pop	{r4, pc}
+ 304              		.cfi_endproc
+ 305              	.LFE64:
+ 306              		.size	isr_rbat_StartEx, .-isr_rbat_StartEx
+ 307 001a 00BF     		.section	.text.isr_rbat_Stop,"ax",%progbits
+ 308              		.align	2
+ 309              		.global	isr_rbat_Stop
+ 310              		.thumb
+ 311              		.thumb_func
+ 312              		.type	isr_rbat_Stop, %function
+ 313              	isr_rbat_Stop:
+ 314              	.LFB65:
  136:Generated_Source\PSoC5/isr_rbat.c ****     /* Disable this interrupt. */
- 320              		.loc 1 136 0
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 13
+ 315              		.loc 1 136 0
+ 316              		.cfi_startproc
+ 317              		@ args = 0, pretend = 0, frame = 0
+ 318              		@ frame_needed = 0, uses_anonymous_args = 0
+ 319 0000 08B5     		push	{r3, lr}
+ 320              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 13
 
 
- 321              		.cfi_startproc
- 322              		@ args = 0, pretend = 0, frame = 0
- 323              		@ frame_needed = 0, uses_anonymous_args = 0
- 324 0000 08B5     		push	{r3, lr}
- 325              		.cfi_def_cfa_offset 8
- 326              		.cfi_offset 3, -8
- 327              		.cfi_offset 14, -4
+ 321              		.cfi_offset 3, -8
+ 322              		.cfi_offset 14, -4
  138:Generated_Source\PSoC5/isr_rbat.c **** 
- 328              		.loc 1 138 0
- 329 0002 FFF7FEFF 		bl	isr_rbat_Disable
- 330              	.LVL16:
+ 323              		.loc 1 138 0
+ 324 0002 FFF7FEFF 		bl	isr_rbat_Disable
+ 325              	.LVL16:
  141:Generated_Source\PSoC5/isr_rbat.c **** }
- 331              		.loc 1 141 0
- 332 0006 0248     		ldr	r0, .L35
- 333 0008 FFF7FEFF 		bl	isr_rbat_SetVector
- 334              	.LVL17:
- 335 000c 08BD     		pop	{r3, pc}
- 336              	.L36:
- 337 000e 00BF     		.align	2
- 338              	.L35:
- 339 0010 00000000 		.word	IntDefaultHandler
- 340              		.cfi_endproc
- 341              	.LFE65:
- 342              		.size	isr_rbat_Stop, .-isr_rbat_Stop
- 343              		.section	.text.isr_rbat_SetPending,"ax",%progbits
- 344              		.align	2
- 345              		.global	isr_rbat_SetPending
- 346              		.thumb
- 347              		.thumb_func
- 348              		.type	isr_rbat_SetPending, %function
- 349              	isr_rbat_SetPending:
- 350              	.LFB74:
+ 326              		.loc 1 141 0
+ 327 0006 0248     		ldr	r0, .L33
+ 328 0008 FFF7FEFF 		bl	isr_rbat_SetVector
+ 329              	.LVL17:
+ 330 000c 08BD     		pop	{r3, pc}
+ 331              	.L34:
+ 332 000e 00BF     		.align	2
+ 333              	.L33:
+ 334 0010 00000000 		.word	IntDefaultHandler
+ 335              		.cfi_endproc
+ 336              	.LFE65:
+ 337              		.size	isr_rbat_Stop, .-isr_rbat_Stop
+ 338              		.section	.text.isr_rbat_SetPending,"ax",%progbits
+ 339              		.align	2
+ 340              		.global	isr_rbat_SetPending
+ 341              		.thumb
+ 342              		.thumb_func
+ 343              		.type	isr_rbat_SetPending, %function
+ 344              	isr_rbat_SetPending:
+ 345              	.LFB74:
  354:Generated_Source\PSoC5/isr_rbat.c **** }
  355:Generated_Source\PSoC5/isr_rbat.c **** 
  356:Generated_Source\PSoC5/isr_rbat.c **** 
@@ -778,35 +773,35 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  376:Generated_Source\PSoC5/isr_rbat.c **** *******************************************************************************/
  377:Generated_Source\PSoC5/isr_rbat.c **** void isr_rbat_SetPending(void)
  378:Generated_Source\PSoC5/isr_rbat.c **** {
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 14
+ 346              		.loc 1 378 0
+ 347              		.cfi_startproc
+ 348              		@ args = 0, pretend = 0, frame = 0
+ 349              		@ frame_needed = 0, uses_anonymous_args = 0
+ 350              		@ link register save eliminated.
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 14
 
 
- 351              		.loc 1 378 0
- 352              		.cfi_startproc
- 353              		@ args = 0, pretend = 0, frame = 0
- 354              		@ frame_needed = 0, uses_anonymous_args = 0
- 355              		@ link register save eliminated.
  379:Generated_Source\PSoC5/isr_rbat.c ****     *isr_rbat_INTC_SET_PD = isr_rbat__INTC_MASK;
- 356              		.loc 1 379 0
- 357 0000 0422     		movs	r2, #4
- 358 0002 014B     		ldr	r3, .L38
- 359 0004 1A60     		str	r2, [r3]
- 360 0006 7047     		bx	lr
- 361              	.L39:
- 362              		.align	2
- 363              	.L38:
- 364 0008 00E200E0 		.word	-536813056
- 365              		.cfi_endproc
- 366              	.LFE74:
- 367              		.size	isr_rbat_SetPending, .-isr_rbat_SetPending
- 368              		.section	.text.isr_rbat_ClearPending,"ax",%progbits
- 369              		.align	2
- 370              		.global	isr_rbat_ClearPending
- 371              		.thumb
- 372              		.thumb_func
- 373              		.type	isr_rbat_ClearPending, %function
- 374              	isr_rbat_ClearPending:
- 375              	.LFB75:
+ 351              		.loc 1 379 0
+ 352 0000 0122     		movs	r2, #1
+ 353 0002 014B     		ldr	r3, .L36
+ 354 0004 1A60     		str	r2, [r3]
+ 355 0006 7047     		bx	lr
+ 356              	.L37:
+ 357              		.align	2
+ 358              	.L36:
+ 359 0008 00E200E0 		.word	-536813056
+ 360              		.cfi_endproc
+ 361              	.LFE74:
+ 362              		.size	isr_rbat_SetPending, .-isr_rbat_SetPending
+ 363              		.section	.text.isr_rbat_ClearPending,"ax",%progbits
+ 364              		.align	2
+ 365              		.global	isr_rbat_ClearPending
+ 366              		.thumb
+ 367              		.thumb_func
+ 368              		.type	isr_rbat_ClearPending, %function
+ 369              	isr_rbat_ClearPending:
+ 370              	.LFB75:
  380:Generated_Source\PSoC5/isr_rbat.c **** }
  381:Generated_Source\PSoC5/isr_rbat.c **** 
  382:Generated_Source\PSoC5/isr_rbat.c **** 
@@ -831,1179 +826,1179 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 1
  401:Generated_Source\PSoC5/isr_rbat.c **** *******************************************************************************/
  402:Generated_Source\PSoC5/isr_rbat.c **** void isr_rbat_ClearPending(void)
  403:Generated_Source\PSoC5/isr_rbat.c **** {
- 376              		.loc 1 403 0
- 377              		.cfi_startproc
- 378              		@ args = 0, pretend = 0, frame = 0
- 379              		@ frame_needed = 0, uses_anonymous_args = 0
- 380              		@ link register save eliminated.
+ 371              		.loc 1 403 0
+ 372              		.cfi_startproc
+ 373              		@ args = 0, pretend = 0, frame = 0
+ 374              		@ frame_needed = 0, uses_anonymous_args = 0
+ 375              		@ link register save eliminated.
  404:Generated_Source\PSoC5/isr_rbat.c ****     *isr_rbat_INTC_CLR_PD = isr_rbat__INTC_MASK;
- 381              		.loc 1 404 0
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 15
+ 376              		.loc 1 404 0
+ 377 0000 0122     		movs	r2, #1
+ 378 0002 014B     		ldr	r3, .L39
+ 379 0004 1A60     		str	r2, [r3]
+ 380 0006 7047     		bx	lr
+ 381              	.L40:
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 15
 
 
- 382 0000 0422     		movs	r2, #4
- 383 0002 014B     		ldr	r3, .L41
- 384 0004 1A60     		str	r2, [r3]
- 385 0006 7047     		bx	lr
- 386              	.L42:
- 387              		.align	2
- 388              	.L41:
- 389 0008 80E200E0 		.word	-536812928
- 390              		.cfi_endproc
- 391              	.LFE75:
- 392              		.size	isr_rbat_ClearPending, .-isr_rbat_ClearPending
- 393              		.text
- 394              	.Letext0:
- 395              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
- 396              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
- 397              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
- 398              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
- 399              		.section	.debug_info,"",%progbits
- 400              	.Ldebug_info0:
- 401 0000 0C030000 		.4byte	0x30c
- 402 0004 0400     		.2byte	0x4
- 403 0006 00000000 		.4byte	.Ldebug_abbrev0
- 404 000a 04       		.byte	0x4
- 405 000b 01       		.uleb128 0x1
- 406 000c B0000000 		.4byte	.LASF39
- 407 0010 0C       		.byte	0xc
- 408 0011 D7010000 		.4byte	.LASF40
- 409 0015 BD020000 		.4byte	.LASF41
- 410 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 411 001d 00000000 		.4byte	0
- 412 0021 00000000 		.4byte	.Ldebug_line0
- 413 0025 02       		.uleb128 0x2
- 414 0026 04       		.byte	0x4
- 415 0027 05       		.byte	0x5
- 416 0028 696E7400 		.ascii	"int\000"
- 417 002c 03       		.uleb128 0x3
- 418 002d 04       		.byte	0x4
- 419 002e 07       		.byte	0x7
- 420 002f F9010000 		.4byte	.LASF0
- 421 0033 03       		.uleb128 0x3
- 422 0034 08       		.byte	0x8
- 423 0035 05       		.byte	0x5
- 424 0036 51020000 		.4byte	.LASF1
- 425 003a 03       		.uleb128 0x3
- 426 003b 08       		.byte	0x8
- 427 003c 04       		.byte	0x4
- 428 003d A0020000 		.4byte	.LASF2
- 429 0041 03       		.uleb128 0x3
- 430 0042 01       		.byte	0x1
- 431 0043 06       		.byte	0x6
- 432 0044 96000000 		.4byte	.LASF3
- 433 0048 03       		.uleb128 0x3
- 434 0049 01       		.byte	0x1
- 435 004a 08       		.byte	0x8
- 436 004b A2000000 		.4byte	.LASF4
- 437 004f 03       		.uleb128 0x3
- 438 0050 02       		.byte	0x2
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 16
+ 382              		.align	2
+ 383              	.L39:
+ 384 0008 80E200E0 		.word	-536812928
+ 385              		.cfi_endproc
+ 386              	.LFE75:
+ 387              		.size	isr_rbat_ClearPending, .-isr_rbat_ClearPending
+ 388              		.text
+ 389              	.Letext0:
+ 390              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 391              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 392              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 393              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 394              		.section	.debug_info,"",%progbits
+ 395              	.Ldebug_info0:
+ 396 0000 0C030000 		.4byte	0x30c
+ 397 0004 0400     		.2byte	0x4
+ 398 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 399 000a 04       		.byte	0x4
+ 400 000b 01       		.uleb128 0x1
+ 401 000c B0000000 		.4byte	.LASF39
+ 402 0010 0C       		.byte	0xc
+ 403 0011 D7010000 		.4byte	.LASF40
+ 404 0015 BD020000 		.4byte	.LASF41
+ 405 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 406 001d 00000000 		.4byte	0
+ 407 0021 00000000 		.4byte	.Ldebug_line0
+ 408 0025 02       		.uleb128 0x2
+ 409 0026 04       		.byte	0x4
+ 410 0027 05       		.byte	0x5
+ 411 0028 696E7400 		.ascii	"int\000"
+ 412 002c 03       		.uleb128 0x3
+ 413 002d 04       		.byte	0x4
+ 414 002e 07       		.byte	0x7
+ 415 002f F9010000 		.4byte	.LASF0
+ 416 0033 03       		.uleb128 0x3
+ 417 0034 08       		.byte	0x8
+ 418 0035 05       		.byte	0x5
+ 419 0036 51020000 		.4byte	.LASF1
+ 420 003a 03       		.uleb128 0x3
+ 421 003b 08       		.byte	0x8
+ 422 003c 04       		.byte	0x4
+ 423 003d A0020000 		.4byte	.LASF2
+ 424 0041 03       		.uleb128 0x3
+ 425 0042 01       		.byte	0x1
+ 426 0043 06       		.byte	0x6
+ 427 0044 96000000 		.4byte	.LASF3
+ 428 0048 03       		.uleb128 0x3
+ 429 0049 01       		.byte	0x1
+ 430 004a 08       		.byte	0x8
+ 431 004b A2000000 		.4byte	.LASF4
+ 432 004f 03       		.uleb128 0x3
+ 433 0050 02       		.byte	0x2
+ 434 0051 05       		.byte	0x5
+ 435 0052 73020000 		.4byte	.LASF5
+ 436 0056 03       		.uleb128 0x3
+ 437 0057 02       		.byte	0x2
+ 438 0058 07       		.byte	0x7
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 16
 
 
- 439 0051 05       		.byte	0x5
- 440 0052 73020000 		.4byte	.LASF5
- 441 0056 03       		.uleb128 0x3
- 442 0057 02       		.byte	0x2
- 443 0058 07       		.byte	0x7
- 444 0059 65010000 		.4byte	.LASF6
- 445 005d 04       		.uleb128 0x4
- 446 005e 40000000 		.4byte	.LASF12
- 447 0062 02       		.byte	0x2
- 448 0063 3F       		.byte	0x3f
- 449 0064 68000000 		.4byte	0x68
- 450 0068 03       		.uleb128 0x3
- 451 0069 04       		.byte	0x4
- 452 006a 05       		.byte	0x5
- 453 006b 83020000 		.4byte	.LASF7
- 454 006f 03       		.uleb128 0x3
- 455 0070 04       		.byte	0x4
- 456 0071 07       		.byte	0x7
- 457 0072 43010000 		.4byte	.LASF8
- 458 0076 03       		.uleb128 0x3
- 459 0077 08       		.byte	0x8
- 460 0078 07       		.byte	0x7
- 461 0079 0E020000 		.4byte	.LASF9
- 462 007d 03       		.uleb128 0x3
- 463 007e 04       		.byte	0x4
- 464 007f 07       		.byte	0x7
- 465 0080 3A020000 		.4byte	.LASF10
- 466 0084 03       		.uleb128 0x3
- 467 0085 01       		.byte	0x1
- 468 0086 08       		.byte	0x8
- 469 0087 5F020000 		.4byte	.LASF11
- 470 008b 05       		.uleb128 0x5
- 471 008c 04       		.byte	0x4
- 472 008d 91000000 		.4byte	0x91
- 473 0091 06       		.uleb128 0x6
- 474 0092 04       		.uleb128 0x4
- 475 0093 32020000 		.4byte	.LASF13
- 476 0097 03       		.byte	0x3
- 477 0098 2C       		.byte	0x2c
- 478 0099 5D000000 		.4byte	0x5d
- 479 009d 07       		.uleb128 0x7
- 480 009e 7D020000 		.4byte	.LASF14
- 481 00a2 04       		.byte	0x4
- 482 00a3 9201     		.2byte	0x192
- 483 00a5 48000000 		.4byte	0x48
- 484 00a9 07       		.uleb128 0x7
- 485 00aa B4010000 		.4byte	.LASF15
- 486 00ae 04       		.byte	0x4
- 487 00af 9301     		.2byte	0x193
- 488 00b1 56000000 		.4byte	0x56
- 489 00b5 07       		.uleb128 0x7
- 490 00b6 D0010000 		.4byte	.LASF16
- 491 00ba 04       		.byte	0x4
- 492 00bb 9401     		.2byte	0x194
- 493 00bd 6F000000 		.4byte	0x6f
- 494 00c1 03       		.uleb128 0x3
- 495 00c2 04       		.byte	0x4
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 17
+ 439 0059 65010000 		.4byte	.LASF6
+ 440 005d 04       		.uleb128 0x4
+ 441 005e 40000000 		.4byte	.LASF12
+ 442 0062 02       		.byte	0x2
+ 443 0063 3F       		.byte	0x3f
+ 444 0064 68000000 		.4byte	0x68
+ 445 0068 03       		.uleb128 0x3
+ 446 0069 04       		.byte	0x4
+ 447 006a 05       		.byte	0x5
+ 448 006b 83020000 		.4byte	.LASF7
+ 449 006f 03       		.uleb128 0x3
+ 450 0070 04       		.byte	0x4
+ 451 0071 07       		.byte	0x7
+ 452 0072 43010000 		.4byte	.LASF8
+ 453 0076 03       		.uleb128 0x3
+ 454 0077 08       		.byte	0x8
+ 455 0078 07       		.byte	0x7
+ 456 0079 0E020000 		.4byte	.LASF9
+ 457 007d 03       		.uleb128 0x3
+ 458 007e 04       		.byte	0x4
+ 459 007f 07       		.byte	0x7
+ 460 0080 3A020000 		.4byte	.LASF10
+ 461 0084 03       		.uleb128 0x3
+ 462 0085 01       		.byte	0x1
+ 463 0086 08       		.byte	0x8
+ 464 0087 5F020000 		.4byte	.LASF11
+ 465 008b 05       		.uleb128 0x5
+ 466 008c 04       		.byte	0x4
+ 467 008d 91000000 		.4byte	0x91
+ 468 0091 06       		.uleb128 0x6
+ 469 0092 04       		.uleb128 0x4
+ 470 0093 32020000 		.4byte	.LASF13
+ 471 0097 03       		.byte	0x3
+ 472 0098 2C       		.byte	0x2c
+ 473 0099 5D000000 		.4byte	0x5d
+ 474 009d 07       		.uleb128 0x7
+ 475 009e 7D020000 		.4byte	.LASF14
+ 476 00a2 04       		.byte	0x4
+ 477 00a3 9201     		.2byte	0x192
+ 478 00a5 48000000 		.4byte	0x48
+ 479 00a9 07       		.uleb128 0x7
+ 480 00aa B4010000 		.4byte	.LASF15
+ 481 00ae 04       		.byte	0x4
+ 482 00af 9301     		.2byte	0x193
+ 483 00b1 56000000 		.4byte	0x56
+ 484 00b5 07       		.uleb128 0x7
+ 485 00b6 D0010000 		.4byte	.LASF16
+ 486 00ba 04       		.byte	0x4
+ 487 00bb 9401     		.2byte	0x194
+ 488 00bd 6F000000 		.4byte	0x6f
+ 489 00c1 03       		.uleb128 0x3
+ 490 00c2 04       		.byte	0x4
+ 491 00c3 04       		.byte	0x4
+ 492 00c4 90000000 		.4byte	.LASF17
+ 493 00c8 03       		.uleb128 0x3
+ 494 00c9 08       		.byte	0x8
+ 495 00ca 04       		.byte	0x4
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 17
 
 
- 496 00c3 04       		.byte	0x4
- 497 00c4 90000000 		.4byte	.LASF17
- 498 00c8 03       		.uleb128 0x3
- 499 00c9 08       		.byte	0x8
- 500 00ca 04       		.byte	0x4
- 501 00cb 59000000 		.4byte	.LASF18
- 502 00cf 07       		.uleb128 0x7
- 503 00d0 3E010000 		.4byte	.LASF19
- 504 00d4 04       		.byte	0x4
- 505 00d5 3C02     		.2byte	0x23c
- 506 00d7 DB000000 		.4byte	0xdb
- 507 00db 08       		.uleb128 0x8
- 508 00dc 9D000000 		.4byte	0x9d
- 509 00e0 07       		.uleb128 0x7
- 510 00e1 00000000 		.4byte	.LASF20
- 511 00e5 04       		.byte	0x4
- 512 00e6 3E02     		.2byte	0x23e
- 513 00e8 EC000000 		.4byte	0xec
- 514 00ec 08       		.uleb128 0x8
- 515 00ed B5000000 		.4byte	0xb5
- 516 00f1 07       		.uleb128 0x7
- 517 00f2 25020000 		.4byte	.LASF21
- 518 00f6 04       		.byte	0x4
- 519 00f7 4E02     		.2byte	0x24e
- 520 00f9 8B000000 		.4byte	0x8b
- 521 00fd 09       		.uleb128 0x9
- 522 00fe 98010000 		.4byte	.LASF29
- 523 0102 01       		.byte	0x1
- 524 0103 A1       		.byte	0xa1
- 525 0104 00000000 		.4byte	.LFB66
- 526 0108 10000000 		.4byte	.LFE66-.LFB66
- 527 010c 01       		.uleb128 0x1
- 528 010d 9C       		.byte	0x9c
- 529 010e 0A       		.uleb128 0xa
- 530 010f 06000000 		.4byte	.LASF23
- 531 0113 01       		.byte	0x1
- 532 0114 C9       		.byte	0xc9
- 533 0115 00000000 		.4byte	.LFB67
- 534 0119 0C000000 		.4byte	.LFE67-.LFB67
- 535 011d 01       		.uleb128 0x1
- 536 011e 9C       		.byte	0x9c
- 537 011f 3E010000 		.4byte	0x13e
- 538 0123 0B       		.uleb128 0xb
- 539 0124 06020000 		.4byte	.LASF25
- 540 0128 01       		.byte	0x1
- 541 0129 C9       		.byte	0xc9
- 542 012a F1000000 		.4byte	0xf1
- 543 012e 01       		.uleb128 0x1
- 544 012f 50       		.byte	0x50
- 545 0130 0C       		.uleb128 0xc
- 546 0131 64020000 		.4byte	.LASF22
- 547 0135 01       		.byte	0x1
- 548 0136 CB       		.byte	0xcb
- 549 0137 3E010000 		.4byte	0x13e
- 550 013b 01       		.uleb128 0x1
- 551 013c 53       		.byte	0x53
- 552 013d 00       		.byte	0
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 18
+ 496 00cb 59000000 		.4byte	.LASF18
+ 497 00cf 07       		.uleb128 0x7
+ 498 00d0 3E010000 		.4byte	.LASF19
+ 499 00d4 04       		.byte	0x4
+ 500 00d5 3C02     		.2byte	0x23c
+ 501 00d7 DB000000 		.4byte	0xdb
+ 502 00db 08       		.uleb128 0x8
+ 503 00dc 9D000000 		.4byte	0x9d
+ 504 00e0 07       		.uleb128 0x7
+ 505 00e1 00000000 		.4byte	.LASF20
+ 506 00e5 04       		.byte	0x4
+ 507 00e6 3E02     		.2byte	0x23e
+ 508 00e8 EC000000 		.4byte	0xec
+ 509 00ec 08       		.uleb128 0x8
+ 510 00ed B5000000 		.4byte	0xb5
+ 511 00f1 07       		.uleb128 0x7
+ 512 00f2 25020000 		.4byte	.LASF21
+ 513 00f6 04       		.byte	0x4
+ 514 00f7 4E02     		.2byte	0x24e
+ 515 00f9 8B000000 		.4byte	0x8b
+ 516 00fd 09       		.uleb128 0x9
+ 517 00fe 98010000 		.4byte	.LASF29
+ 518 0102 01       		.byte	0x1
+ 519 0103 A1       		.byte	0xa1
+ 520 0104 00000000 		.4byte	.LFB66
+ 521 0108 10000000 		.4byte	.LFE66-.LFB66
+ 522 010c 01       		.uleb128 0x1
+ 523 010d 9C       		.byte	0x9c
+ 524 010e 0A       		.uleb128 0xa
+ 525 010f 06000000 		.4byte	.LASF23
+ 526 0113 01       		.byte	0x1
+ 527 0114 C9       		.byte	0xc9
+ 528 0115 00000000 		.4byte	.LFB67
+ 529 0119 0C000000 		.4byte	.LFE67-.LFB67
+ 530 011d 01       		.uleb128 0x1
+ 531 011e 9C       		.byte	0x9c
+ 532 011f 3E010000 		.4byte	0x13e
+ 533 0123 0B       		.uleb128 0xb
+ 534 0124 06020000 		.4byte	.LASF25
+ 535 0128 01       		.byte	0x1
+ 536 0129 C9       		.byte	0xc9
+ 537 012a F1000000 		.4byte	0xf1
+ 538 012e 01       		.uleb128 0x1
+ 539 012f 50       		.byte	0x50
+ 540 0130 0C       		.uleb128 0xc
+ 541 0131 64020000 		.4byte	.LASF22
+ 542 0135 01       		.byte	0x1
+ 543 0136 CB       		.byte	0xcb
+ 544 0137 3E010000 		.4byte	0x13e
+ 545 013b 01       		.uleb128 0x1
+ 546 013c 53       		.byte	0x53
+ 547 013d 00       		.byte	0
+ 548 013e 05       		.uleb128 0x5
+ 549 013f 04       		.byte	0x4
+ 550 0140 F1000000 		.4byte	0xf1
+ 551 0144 0D       		.uleb128 0xd
+ 552 0145 85010000 		.4byte	.LASF27
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 18
 
 
- 553 013e 05       		.uleb128 0x5
- 554 013f 04       		.byte	0x4
- 555 0140 F1000000 		.4byte	0xf1
- 556 0144 0D       		.uleb128 0xd
- 557 0145 85010000 		.4byte	.LASF27
- 558 0149 01       		.byte	0x1
- 559 014a E1       		.byte	0xe1
- 560 014b F1000000 		.4byte	0xf1
- 561 014f 00000000 		.4byte	.LFB68
- 562 0153 0C000000 		.4byte	.LFE68-.LFB68
- 563 0157 01       		.uleb128 0x1
- 564 0158 9C       		.byte	0x9c
- 565 0159 6B010000 		.4byte	0x16b
- 566 015d 0C       		.uleb128 0xc
- 567 015e 64020000 		.4byte	.LASF22
- 568 0162 01       		.byte	0x1
- 569 0163 E3       		.byte	0xe3
- 570 0164 3E010000 		.4byte	0x13e
- 571 0168 01       		.uleb128 0x1
- 572 0169 53       		.byte	0x53
- 573 016a 00       		.byte	0
- 574 016b 0E       		.uleb128 0xe
- 575 016c BB010000 		.4byte	.LASF24
- 576 0170 01       		.byte	0x1
- 577 0171 0301     		.2byte	0x103
- 578 0173 00000000 		.4byte	.LFB69
- 579 0177 10000000 		.4byte	.LFE69-.LFB69
- 580 017b 01       		.uleb128 0x1
- 581 017c 9C       		.byte	0x9c
- 582 017d 92010000 		.4byte	0x192
- 583 0181 0F       		.uleb128 0xf
- 584 0182 AB010000 		.4byte	.LASF26
- 585 0186 01       		.byte	0x1
- 586 0187 0301     		.2byte	0x103
- 587 0189 9D000000 		.4byte	0x9d
- 588 018d 00000000 		.4byte	.LLST0
- 589 0191 00       		.byte	0
- 590 0192 10       		.uleb128 0x10
- 591 0193 7B000000 		.4byte	.LASF28
- 592 0197 01       		.byte	0x1
- 593 0198 1901     		.2byte	0x119
- 594 019a 9D000000 		.4byte	0x9d
- 595 019e 00000000 		.4byte	.LFB70
- 596 01a2 0C000000 		.4byte	.LFE70-.LFB70
- 597 01a6 01       		.uleb128 0x1
- 598 01a7 9C       		.byte	0x9c
- 599 01a8 BD010000 		.4byte	0x1bd
- 600 01ac 11       		.uleb128 0x11
- 601 01ad AB010000 		.4byte	.LASF26
- 602 01b1 01       		.byte	0x1
- 603 01b2 1B01     		.2byte	0x11b
- 604 01b4 9D000000 		.4byte	0x9d
- 605 01b8 21000000 		.4byte	.LLST1
- 606 01bc 00       		.byte	0
- 607 01bd 12       		.uleb128 0x12
- 608 01be 55010000 		.4byte	.LASF30
- 609 01c2 01       		.byte	0x1
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 19
+ 553 0149 01       		.byte	0x1
+ 554 014a E1       		.byte	0xe1
+ 555 014b F1000000 		.4byte	0xf1
+ 556 014f 00000000 		.4byte	.LFB68
+ 557 0153 0C000000 		.4byte	.LFE68-.LFB68
+ 558 0157 01       		.uleb128 0x1
+ 559 0158 9C       		.byte	0x9c
+ 560 0159 6B010000 		.4byte	0x16b
+ 561 015d 0C       		.uleb128 0xc
+ 562 015e 64020000 		.4byte	.LASF22
+ 563 0162 01       		.byte	0x1
+ 564 0163 E3       		.byte	0xe3
+ 565 0164 3E010000 		.4byte	0x13e
+ 566 0168 01       		.uleb128 0x1
+ 567 0169 53       		.byte	0x53
+ 568 016a 00       		.byte	0
+ 569 016b 0E       		.uleb128 0xe
+ 570 016c BB010000 		.4byte	.LASF24
+ 571 0170 01       		.byte	0x1
+ 572 0171 0301     		.2byte	0x103
+ 573 0173 00000000 		.4byte	.LFB69
+ 574 0177 10000000 		.4byte	.LFE69-.LFB69
+ 575 017b 01       		.uleb128 0x1
+ 576 017c 9C       		.byte	0x9c
+ 577 017d 92010000 		.4byte	0x192
+ 578 0181 0F       		.uleb128 0xf
+ 579 0182 AB010000 		.4byte	.LASF26
+ 580 0186 01       		.byte	0x1
+ 581 0187 0301     		.2byte	0x103
+ 582 0189 9D000000 		.4byte	0x9d
+ 583 018d 00000000 		.4byte	.LLST0
+ 584 0191 00       		.byte	0
+ 585 0192 10       		.uleb128 0x10
+ 586 0193 7B000000 		.4byte	.LASF28
+ 587 0197 01       		.byte	0x1
+ 588 0198 1901     		.2byte	0x119
+ 589 019a 9D000000 		.4byte	0x9d
+ 590 019e 00000000 		.4byte	.LFB70
+ 591 01a2 0C000000 		.4byte	.LFE70-.LFB70
+ 592 01a6 01       		.uleb128 0x1
+ 593 01a7 9C       		.byte	0x9c
+ 594 01a8 BD010000 		.4byte	0x1bd
+ 595 01ac 11       		.uleb128 0x11
+ 596 01ad AB010000 		.4byte	.LASF26
+ 597 01b1 01       		.byte	0x1
+ 598 01b2 1B01     		.2byte	0x11b
+ 599 01b4 9D000000 		.4byte	0x9d
+ 600 01b8 21000000 		.4byte	.LLST1
+ 601 01bc 00       		.byte	0
+ 602 01bd 12       		.uleb128 0x12
+ 603 01be 55010000 		.4byte	.LASF30
+ 604 01c2 01       		.byte	0x1
+ 605 01c3 3401     		.2byte	0x134
+ 606 01c5 00000000 		.4byte	.LFB71
+ 607 01c9 0C000000 		.4byte	.LFE71-.LFB71
+ 608 01cd 01       		.uleb128 0x1
+ 609 01ce 9C       		.byte	0x9c
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 19
 
 
- 610 01c3 3401     		.2byte	0x134
- 611 01c5 00000000 		.4byte	.LFB71
- 612 01c9 0C000000 		.4byte	.LFE71-.LFB71
- 613 01cd 01       		.uleb128 0x1
- 614 01ce 9C       		.byte	0x9c
- 615 01cf 13       		.uleb128 0x13
- 616 01d0 60000000 		.4byte	.LASF42
- 617 01d4 01       		.byte	0x1
- 618 01d5 4901     		.2byte	0x149
- 619 01d7 9D000000 		.4byte	0x9d
- 620 01db 00000000 		.4byte	.LFB72
- 621 01df 18000000 		.4byte	.LFE72-.LFB72
- 622 01e3 01       		.uleb128 0x1
- 623 01e4 9C       		.byte	0x9c
- 624 01e5 12       		.uleb128 0x12
- 625 01e6 19000000 		.4byte	.LASF31
- 626 01ea 01       		.byte	0x1
- 627 01eb 5E01     		.2byte	0x15e
- 628 01ed 00000000 		.4byte	.LFB73
- 629 01f1 0C000000 		.4byte	.LFE73-.LFB73
- 630 01f5 01       		.uleb128 0x1
- 631 01f6 9C       		.byte	0x9c
- 632 01f7 0A       		.uleb128 0xa
- 633 01f8 4A000000 		.4byte	.LASF32
- 634 01fc 01       		.byte	0x1
- 635 01fd 3E       		.byte	0x3e
- 636 01fe 00000000 		.4byte	.LFB63
- 637 0202 1C000000 		.4byte	.LFE63-.LFB63
- 638 0206 01       		.uleb128 0x1
- 639 0207 9C       		.byte	0x9c
- 640 0208 49020000 		.4byte	0x249
- 641 020c 14       		.uleb128 0x14
- 642 020d 06000000 		.4byte	.LVL7
- 643 0211 E5010000 		.4byte	0x1e5
- 644 0215 15       		.uleb128 0x15
- 645 0216 0C000000 		.4byte	.LVL8
- 646 021a 0E010000 		.4byte	0x10e
- 647 021e 2C020000 		.4byte	0x22c
- 648 0222 16       		.uleb128 0x16
- 649 0223 01       		.uleb128 0x1
- 650 0224 50       		.byte	0x50
- 651 0225 05       		.uleb128 0x5
- 652 0226 03       		.byte	0x3
- 653 0227 00000000 		.4byte	isr_rbat_Interrupt
- 654 022b 00       		.byte	0
- 655 022c 15       		.uleb128 0x15
- 656 022d 12000000 		.4byte	.LVL9
- 657 0231 6B010000 		.4byte	0x16b
- 658 0235 3F020000 		.4byte	0x23f
- 659 0239 16       		.uleb128 0x16
- 660 023a 01       		.uleb128 0x1
- 661 023b 50       		.byte	0x50
- 662 023c 01       		.uleb128 0x1
- 663 023d 37       		.byte	0x37
- 664 023e 00       		.byte	0
- 665 023f 14       		.uleb128 0x14
- 666 0240 16000000 		.4byte	.LVL10
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 20
+ 610 01cf 13       		.uleb128 0x13
+ 611 01d0 60000000 		.4byte	.LASF42
+ 612 01d4 01       		.byte	0x1
+ 613 01d5 4901     		.2byte	0x149
+ 614 01d7 9D000000 		.4byte	0x9d
+ 615 01db 00000000 		.4byte	.LFB72
+ 616 01df 10000000 		.4byte	.LFE72-.LFB72
+ 617 01e3 01       		.uleb128 0x1
+ 618 01e4 9C       		.byte	0x9c
+ 619 01e5 12       		.uleb128 0x12
+ 620 01e6 19000000 		.4byte	.LASF31
+ 621 01ea 01       		.byte	0x1
+ 622 01eb 5E01     		.2byte	0x15e
+ 623 01ed 00000000 		.4byte	.LFB73
+ 624 01f1 0C000000 		.4byte	.LFE73-.LFB73
+ 625 01f5 01       		.uleb128 0x1
+ 626 01f6 9C       		.byte	0x9c
+ 627 01f7 0A       		.uleb128 0xa
+ 628 01f8 4A000000 		.4byte	.LASF32
+ 629 01fc 01       		.byte	0x1
+ 630 01fd 3E       		.byte	0x3e
+ 631 01fe 00000000 		.4byte	.LFB63
+ 632 0202 1C000000 		.4byte	.LFE63-.LFB63
+ 633 0206 01       		.uleb128 0x1
+ 634 0207 9C       		.byte	0x9c
+ 635 0208 49020000 		.4byte	0x249
+ 636 020c 14       		.uleb128 0x14
+ 637 020d 06000000 		.4byte	.LVL7
+ 638 0211 E5010000 		.4byte	0x1e5
+ 639 0215 15       		.uleb128 0x15
+ 640 0216 0C000000 		.4byte	.LVL8
+ 641 021a 0E010000 		.4byte	0x10e
+ 642 021e 2C020000 		.4byte	0x22c
+ 643 0222 16       		.uleb128 0x16
+ 644 0223 01       		.uleb128 0x1
+ 645 0224 50       		.byte	0x50
+ 646 0225 05       		.uleb128 0x5
+ 647 0226 03       		.byte	0x3
+ 648 0227 00000000 		.4byte	isr_rbat_Interrupt
+ 649 022b 00       		.byte	0
+ 650 022c 15       		.uleb128 0x15
+ 651 022d 12000000 		.4byte	.LVL9
+ 652 0231 6B010000 		.4byte	0x16b
+ 653 0235 3F020000 		.4byte	0x23f
+ 654 0239 16       		.uleb128 0x16
+ 655 023a 01       		.uleb128 0x1
+ 656 023b 50       		.byte	0x50
+ 657 023c 01       		.uleb128 0x1
+ 658 023d 37       		.byte	0x37
+ 659 023e 00       		.byte	0
+ 660 023f 14       		.uleb128 0x14
+ 661 0240 16000000 		.4byte	.LVL10
+ 662 0244 BD010000 		.4byte	0x1bd
+ 663 0248 00       		.byte	0
+ 664 0249 0A       		.uleb128 0xa
+ 665 024a AC020000 		.4byte	.LASF33
+ 666 024e 01       		.byte	0x1
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 20
 
 
- 667 0244 BD010000 		.4byte	0x1bd
- 668 0248 00       		.byte	0
- 669 0249 0A       		.uleb128 0xa
- 670 024a AC020000 		.4byte	.LASF33
- 671 024e 01       		.byte	0x1
- 672 024f 69       		.byte	0x69
- 673 0250 00000000 		.4byte	.LFB64
- 674 0254 1A000000 		.4byte	.LFE64-.LFB64
- 675 0258 01       		.uleb128 0x1
- 676 0259 9C       		.byte	0x9c
- 677 025a A7020000 		.4byte	0x2a7
- 678 025e 17       		.uleb128 0x17
- 679 025f 06020000 		.4byte	.LASF25
- 680 0263 01       		.byte	0x1
- 681 0264 69       		.byte	0x69
- 682 0265 F1000000 		.4byte	0xf1
- 683 0269 38000000 		.4byte	.LLST2
- 684 026d 14       		.uleb128 0x14
- 685 026e 08000000 		.4byte	.LVL12
- 686 0272 E5010000 		.4byte	0x1e5
- 687 0276 15       		.uleb128 0x15
- 688 0277 0E000000 		.4byte	.LVL13
- 689 027b 0E010000 		.4byte	0x10e
- 690 027f 8A020000 		.4byte	0x28a
- 691 0283 16       		.uleb128 0x16
- 692 0284 01       		.uleb128 0x1
- 693 0285 50       		.byte	0x50
- 694 0286 02       		.uleb128 0x2
- 695 0287 74       		.byte	0x74
- 696 0288 00       		.sleb128 0
- 697 0289 00       		.byte	0
- 698 028a 15       		.uleb128 0x15
- 699 028b 14000000 		.4byte	.LVL14
- 700 028f 6B010000 		.4byte	0x16b
- 701 0293 9D020000 		.4byte	0x29d
- 702 0297 16       		.uleb128 0x16
- 703 0298 01       		.uleb128 0x1
- 704 0299 50       		.byte	0x50
- 705 029a 01       		.uleb128 0x1
- 706 029b 37       		.byte	0x37
- 707 029c 00       		.byte	0
- 708 029d 14       		.uleb128 0x14
- 709 029e 18000000 		.4byte	.LVL15
- 710 02a2 BD010000 		.4byte	0x1bd
- 711 02a6 00       		.byte	0
- 712 02a7 0A       		.uleb128 0xa
- 713 02a8 43020000 		.4byte	.LASF34
- 714 02ac 01       		.byte	0x1
- 715 02ad 87       		.byte	0x87
- 716 02ae 00000000 		.4byte	.LFB65
- 717 02b2 14000000 		.4byte	.LFE65-.LFB65
- 718 02b6 01       		.uleb128 0x1
- 719 02b7 9C       		.byte	0x9c
- 720 02b8 CF020000 		.4byte	0x2cf
- 721 02bc 14       		.uleb128 0x14
- 722 02bd 06000000 		.4byte	.LVL16
- 723 02c1 E5010000 		.4byte	0x1e5
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 21
+ 667 024f 69       		.byte	0x69
+ 668 0250 00000000 		.4byte	.LFB64
+ 669 0254 1A000000 		.4byte	.LFE64-.LFB64
+ 670 0258 01       		.uleb128 0x1
+ 671 0259 9C       		.byte	0x9c
+ 672 025a A7020000 		.4byte	0x2a7
+ 673 025e 17       		.uleb128 0x17
+ 674 025f 06020000 		.4byte	.LASF25
+ 675 0263 01       		.byte	0x1
+ 676 0264 69       		.byte	0x69
+ 677 0265 F1000000 		.4byte	0xf1
+ 678 0269 38000000 		.4byte	.LLST2
+ 679 026d 14       		.uleb128 0x14
+ 680 026e 08000000 		.4byte	.LVL12
+ 681 0272 E5010000 		.4byte	0x1e5
+ 682 0276 15       		.uleb128 0x15
+ 683 0277 0E000000 		.4byte	.LVL13
+ 684 027b 0E010000 		.4byte	0x10e
+ 685 027f 8A020000 		.4byte	0x28a
+ 686 0283 16       		.uleb128 0x16
+ 687 0284 01       		.uleb128 0x1
+ 688 0285 50       		.byte	0x50
+ 689 0286 02       		.uleb128 0x2
+ 690 0287 74       		.byte	0x74
+ 691 0288 00       		.sleb128 0
+ 692 0289 00       		.byte	0
+ 693 028a 15       		.uleb128 0x15
+ 694 028b 14000000 		.4byte	.LVL14
+ 695 028f 6B010000 		.4byte	0x16b
+ 696 0293 9D020000 		.4byte	0x29d
+ 697 0297 16       		.uleb128 0x16
+ 698 0298 01       		.uleb128 0x1
+ 699 0299 50       		.byte	0x50
+ 700 029a 01       		.uleb128 0x1
+ 701 029b 37       		.byte	0x37
+ 702 029c 00       		.byte	0
+ 703 029d 14       		.uleb128 0x14
+ 704 029e 18000000 		.4byte	.LVL15
+ 705 02a2 BD010000 		.4byte	0x1bd
+ 706 02a6 00       		.byte	0
+ 707 02a7 0A       		.uleb128 0xa
+ 708 02a8 43020000 		.4byte	.LASF34
+ 709 02ac 01       		.byte	0x1
+ 710 02ad 87       		.byte	0x87
+ 711 02ae 00000000 		.4byte	.LFB65
+ 712 02b2 14000000 		.4byte	.LFE65-.LFB65
+ 713 02b6 01       		.uleb128 0x1
+ 714 02b7 9C       		.byte	0x9c
+ 715 02b8 CF020000 		.4byte	0x2cf
+ 716 02bc 14       		.uleb128 0x14
+ 717 02bd 06000000 		.4byte	.LVL16
+ 718 02c1 E5010000 		.4byte	0x1e5
+ 719 02c5 14       		.uleb128 0x14
+ 720 02c6 0C000000 		.4byte	.LVL17
+ 721 02ca 0E010000 		.4byte	0x10e
+ 722 02ce 00       		.byte	0
+ 723 02cf 12       		.uleb128 0x12
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 21
 
 
- 724 02c5 14       		.uleb128 0x14
- 725 02c6 0C000000 		.4byte	.LVL17
- 726 02ca 0E010000 		.4byte	0x10e
- 727 02ce 00       		.byte	0
- 728 02cf 12       		.uleb128 0x12
- 729 02d0 8C020000 		.4byte	.LASF35
- 730 02d4 01       		.byte	0x1
- 731 02d5 7901     		.2byte	0x179
- 732 02d7 00000000 		.4byte	.LFB74
- 733 02db 0C000000 		.4byte	.LFE74-.LFB74
- 734 02df 01       		.uleb128 0x1
- 735 02e0 9C       		.byte	0x9c
- 736 02e1 12       		.uleb128 0x12
- 737 02e2 2A000000 		.4byte	.LASF36
- 738 02e6 01       		.byte	0x1
- 739 02e7 9201     		.2byte	0x192
- 740 02e9 00000000 		.4byte	.LFB75
- 741 02ed 0C000000 		.4byte	.LFE75-.LFB75
- 742 02f1 01       		.uleb128 0x1
- 743 02f2 9C       		.byte	0x9c
- 744 02f3 18       		.uleb128 0x18
- 745 02f4 78010000 		.4byte	.LASF37
- 746 02f8 05       		.byte	0x5
- 747 02f9 1207     		.2byte	0x712
- 748 02fb FF020000 		.4byte	0x2ff
- 749 02ff 08       		.uleb128 0x8
- 750 0300 92000000 		.4byte	0x92
- 751 0304 19       		.uleb128 0x19
- 752 0305 72000000 		.4byte	.LASF38
- 753 0309 01       		.byte	0x1
- 754 030a 1F       		.byte	0x1f
- 755 030b A9000000 		.4byte	0xa9
- 756 030f 00       		.byte	0
- 757              		.section	.debug_abbrev,"",%progbits
- 758              	.Ldebug_abbrev0:
- 759 0000 01       		.uleb128 0x1
- 760 0001 11       		.uleb128 0x11
- 761 0002 01       		.byte	0x1
- 762 0003 25       		.uleb128 0x25
- 763 0004 0E       		.uleb128 0xe
- 764 0005 13       		.uleb128 0x13
- 765 0006 0B       		.uleb128 0xb
- 766 0007 03       		.uleb128 0x3
- 767 0008 0E       		.uleb128 0xe
- 768 0009 1B       		.uleb128 0x1b
- 769 000a 0E       		.uleb128 0xe
- 770 000b 55       		.uleb128 0x55
- 771 000c 17       		.uleb128 0x17
- 772 000d 11       		.uleb128 0x11
- 773 000e 01       		.uleb128 0x1
- 774 000f 10       		.uleb128 0x10
- 775 0010 17       		.uleb128 0x17
- 776 0011 00       		.byte	0
- 777 0012 00       		.byte	0
- 778 0013 02       		.uleb128 0x2
- 779 0014 24       		.uleb128 0x24
- 780 0015 00       		.byte	0
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 22
+ 724 02d0 8C020000 		.4byte	.LASF35
+ 725 02d4 01       		.byte	0x1
+ 726 02d5 7901     		.2byte	0x179
+ 727 02d7 00000000 		.4byte	.LFB74
+ 728 02db 0C000000 		.4byte	.LFE74-.LFB74
+ 729 02df 01       		.uleb128 0x1
+ 730 02e0 9C       		.byte	0x9c
+ 731 02e1 12       		.uleb128 0x12
+ 732 02e2 2A000000 		.4byte	.LASF36
+ 733 02e6 01       		.byte	0x1
+ 734 02e7 9201     		.2byte	0x192
+ 735 02e9 00000000 		.4byte	.LFB75
+ 736 02ed 0C000000 		.4byte	.LFE75-.LFB75
+ 737 02f1 01       		.uleb128 0x1
+ 738 02f2 9C       		.byte	0x9c
+ 739 02f3 18       		.uleb128 0x18
+ 740 02f4 78010000 		.4byte	.LASF37
+ 741 02f8 05       		.byte	0x5
+ 742 02f9 1207     		.2byte	0x712
+ 743 02fb FF020000 		.4byte	0x2ff
+ 744 02ff 08       		.uleb128 0x8
+ 745 0300 92000000 		.4byte	0x92
+ 746 0304 19       		.uleb128 0x19
+ 747 0305 72000000 		.4byte	.LASF38
+ 748 0309 01       		.byte	0x1
+ 749 030a 1F       		.byte	0x1f
+ 750 030b A9000000 		.4byte	0xa9
+ 751 030f 00       		.byte	0
+ 752              		.section	.debug_abbrev,"",%progbits
+ 753              	.Ldebug_abbrev0:
+ 754 0000 01       		.uleb128 0x1
+ 755 0001 11       		.uleb128 0x11
+ 756 0002 01       		.byte	0x1
+ 757 0003 25       		.uleb128 0x25
+ 758 0004 0E       		.uleb128 0xe
+ 759 0005 13       		.uleb128 0x13
+ 760 0006 0B       		.uleb128 0xb
+ 761 0007 03       		.uleb128 0x3
+ 762 0008 0E       		.uleb128 0xe
+ 763 0009 1B       		.uleb128 0x1b
+ 764 000a 0E       		.uleb128 0xe
+ 765 000b 55       		.uleb128 0x55
+ 766 000c 17       		.uleb128 0x17
+ 767 000d 11       		.uleb128 0x11
+ 768 000e 01       		.uleb128 0x1
+ 769 000f 10       		.uleb128 0x10
+ 770 0010 17       		.uleb128 0x17
+ 771 0011 00       		.byte	0
+ 772 0012 00       		.byte	0
+ 773 0013 02       		.uleb128 0x2
+ 774 0014 24       		.uleb128 0x24
+ 775 0015 00       		.byte	0
+ 776 0016 0B       		.uleb128 0xb
+ 777 0017 0B       		.uleb128 0xb
+ 778 0018 3E       		.uleb128 0x3e
+ 779 0019 0B       		.uleb128 0xb
+ 780 001a 03       		.uleb128 0x3
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 22
 
 
- 781 0016 0B       		.uleb128 0xb
- 782 0017 0B       		.uleb128 0xb
- 783 0018 3E       		.uleb128 0x3e
- 784 0019 0B       		.uleb128 0xb
- 785 001a 03       		.uleb128 0x3
- 786 001b 08       		.uleb128 0x8
- 787 001c 00       		.byte	0
- 788 001d 00       		.byte	0
- 789 001e 03       		.uleb128 0x3
- 790 001f 24       		.uleb128 0x24
- 791 0020 00       		.byte	0
- 792 0021 0B       		.uleb128 0xb
- 793 0022 0B       		.uleb128 0xb
- 794 0023 3E       		.uleb128 0x3e
- 795 0024 0B       		.uleb128 0xb
- 796 0025 03       		.uleb128 0x3
- 797 0026 0E       		.uleb128 0xe
- 798 0027 00       		.byte	0
- 799 0028 00       		.byte	0
- 800 0029 04       		.uleb128 0x4
- 801 002a 16       		.uleb128 0x16
- 802 002b 00       		.byte	0
- 803 002c 03       		.uleb128 0x3
- 804 002d 0E       		.uleb128 0xe
- 805 002e 3A       		.uleb128 0x3a
- 806 002f 0B       		.uleb128 0xb
- 807 0030 3B       		.uleb128 0x3b
- 808 0031 0B       		.uleb128 0xb
- 809 0032 49       		.uleb128 0x49
- 810 0033 13       		.uleb128 0x13
- 811 0034 00       		.byte	0
- 812 0035 00       		.byte	0
- 813 0036 05       		.uleb128 0x5
- 814 0037 0F       		.uleb128 0xf
- 815 0038 00       		.byte	0
- 816 0039 0B       		.uleb128 0xb
- 817 003a 0B       		.uleb128 0xb
- 818 003b 49       		.uleb128 0x49
- 819 003c 13       		.uleb128 0x13
- 820 003d 00       		.byte	0
- 821 003e 00       		.byte	0
- 822 003f 06       		.uleb128 0x6
- 823 0040 15       		.uleb128 0x15
- 824 0041 00       		.byte	0
- 825 0042 27       		.uleb128 0x27
- 826 0043 19       		.uleb128 0x19
- 827 0044 00       		.byte	0
- 828 0045 00       		.byte	0
- 829 0046 07       		.uleb128 0x7
- 830 0047 16       		.uleb128 0x16
- 831 0048 00       		.byte	0
- 832 0049 03       		.uleb128 0x3
- 833 004a 0E       		.uleb128 0xe
- 834 004b 3A       		.uleb128 0x3a
- 835 004c 0B       		.uleb128 0xb
- 836 004d 3B       		.uleb128 0x3b
- 837 004e 05       		.uleb128 0x5
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 23
+ 781 001b 08       		.uleb128 0x8
+ 782 001c 00       		.byte	0
+ 783 001d 00       		.byte	0
+ 784 001e 03       		.uleb128 0x3
+ 785 001f 24       		.uleb128 0x24
+ 786 0020 00       		.byte	0
+ 787 0021 0B       		.uleb128 0xb
+ 788 0022 0B       		.uleb128 0xb
+ 789 0023 3E       		.uleb128 0x3e
+ 790 0024 0B       		.uleb128 0xb
+ 791 0025 03       		.uleb128 0x3
+ 792 0026 0E       		.uleb128 0xe
+ 793 0027 00       		.byte	0
+ 794 0028 00       		.byte	0
+ 795 0029 04       		.uleb128 0x4
+ 796 002a 16       		.uleb128 0x16
+ 797 002b 00       		.byte	0
+ 798 002c 03       		.uleb128 0x3
+ 799 002d 0E       		.uleb128 0xe
+ 800 002e 3A       		.uleb128 0x3a
+ 801 002f 0B       		.uleb128 0xb
+ 802 0030 3B       		.uleb128 0x3b
+ 803 0031 0B       		.uleb128 0xb
+ 804 0032 49       		.uleb128 0x49
+ 805 0033 13       		.uleb128 0x13
+ 806 0034 00       		.byte	0
+ 807 0035 00       		.byte	0
+ 808 0036 05       		.uleb128 0x5
+ 809 0037 0F       		.uleb128 0xf
+ 810 0038 00       		.byte	0
+ 811 0039 0B       		.uleb128 0xb
+ 812 003a 0B       		.uleb128 0xb
+ 813 003b 49       		.uleb128 0x49
+ 814 003c 13       		.uleb128 0x13
+ 815 003d 00       		.byte	0
+ 816 003e 00       		.byte	0
+ 817 003f 06       		.uleb128 0x6
+ 818 0040 15       		.uleb128 0x15
+ 819 0041 00       		.byte	0
+ 820 0042 27       		.uleb128 0x27
+ 821 0043 19       		.uleb128 0x19
+ 822 0044 00       		.byte	0
+ 823 0045 00       		.byte	0
+ 824 0046 07       		.uleb128 0x7
+ 825 0047 16       		.uleb128 0x16
+ 826 0048 00       		.byte	0
+ 827 0049 03       		.uleb128 0x3
+ 828 004a 0E       		.uleb128 0xe
+ 829 004b 3A       		.uleb128 0x3a
+ 830 004c 0B       		.uleb128 0xb
+ 831 004d 3B       		.uleb128 0x3b
+ 832 004e 05       		.uleb128 0x5
+ 833 004f 49       		.uleb128 0x49
+ 834 0050 13       		.uleb128 0x13
+ 835 0051 00       		.byte	0
+ 836 0052 00       		.byte	0
+ 837 0053 08       		.uleb128 0x8
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 23
 
 
- 838 004f 49       		.uleb128 0x49
- 839 0050 13       		.uleb128 0x13
- 840 0051 00       		.byte	0
- 841 0052 00       		.byte	0
- 842 0053 08       		.uleb128 0x8
- 843 0054 35       		.uleb128 0x35
- 844 0055 00       		.byte	0
- 845 0056 49       		.uleb128 0x49
- 846 0057 13       		.uleb128 0x13
- 847 0058 00       		.byte	0
- 848 0059 00       		.byte	0
- 849 005a 09       		.uleb128 0x9
- 850 005b 2E       		.uleb128 0x2e
- 851 005c 00       		.byte	0
- 852 005d 3F       		.uleb128 0x3f
- 853 005e 19       		.uleb128 0x19
- 854 005f 03       		.uleb128 0x3
- 855 0060 0E       		.uleb128 0xe
- 856 0061 3A       		.uleb128 0x3a
- 857 0062 0B       		.uleb128 0xb
- 858 0063 3B       		.uleb128 0x3b
- 859 0064 0B       		.uleb128 0xb
- 860 0065 27       		.uleb128 0x27
- 861 0066 19       		.uleb128 0x19
- 862 0067 11       		.uleb128 0x11
- 863 0068 01       		.uleb128 0x1
- 864 0069 12       		.uleb128 0x12
- 865 006a 06       		.uleb128 0x6
- 866 006b 40       		.uleb128 0x40
- 867 006c 18       		.uleb128 0x18
- 868 006d 9742     		.uleb128 0x2117
- 869 006f 19       		.uleb128 0x19
- 870 0070 00       		.byte	0
- 871 0071 00       		.byte	0
- 872 0072 0A       		.uleb128 0xa
- 873 0073 2E       		.uleb128 0x2e
- 874 0074 01       		.byte	0x1
- 875 0075 3F       		.uleb128 0x3f
- 876 0076 19       		.uleb128 0x19
- 877 0077 03       		.uleb128 0x3
- 878 0078 0E       		.uleb128 0xe
- 879 0079 3A       		.uleb128 0x3a
- 880 007a 0B       		.uleb128 0xb
- 881 007b 3B       		.uleb128 0x3b
- 882 007c 0B       		.uleb128 0xb
- 883 007d 27       		.uleb128 0x27
- 884 007e 19       		.uleb128 0x19
- 885 007f 11       		.uleb128 0x11
- 886 0080 01       		.uleb128 0x1
- 887 0081 12       		.uleb128 0x12
- 888 0082 06       		.uleb128 0x6
- 889 0083 40       		.uleb128 0x40
- 890 0084 18       		.uleb128 0x18
- 891 0085 9742     		.uleb128 0x2117
- 892 0087 19       		.uleb128 0x19
- 893 0088 01       		.uleb128 0x1
- 894 0089 13       		.uleb128 0x13
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 24
+ 838 0054 35       		.uleb128 0x35
+ 839 0055 00       		.byte	0
+ 840 0056 49       		.uleb128 0x49
+ 841 0057 13       		.uleb128 0x13
+ 842 0058 00       		.byte	0
+ 843 0059 00       		.byte	0
+ 844 005a 09       		.uleb128 0x9
+ 845 005b 2E       		.uleb128 0x2e
+ 846 005c 00       		.byte	0
+ 847 005d 3F       		.uleb128 0x3f
+ 848 005e 19       		.uleb128 0x19
+ 849 005f 03       		.uleb128 0x3
+ 850 0060 0E       		.uleb128 0xe
+ 851 0061 3A       		.uleb128 0x3a
+ 852 0062 0B       		.uleb128 0xb
+ 853 0063 3B       		.uleb128 0x3b
+ 854 0064 0B       		.uleb128 0xb
+ 855 0065 27       		.uleb128 0x27
+ 856 0066 19       		.uleb128 0x19
+ 857 0067 11       		.uleb128 0x11
+ 858 0068 01       		.uleb128 0x1
+ 859 0069 12       		.uleb128 0x12
+ 860 006a 06       		.uleb128 0x6
+ 861 006b 40       		.uleb128 0x40
+ 862 006c 18       		.uleb128 0x18
+ 863 006d 9742     		.uleb128 0x2117
+ 864 006f 19       		.uleb128 0x19
+ 865 0070 00       		.byte	0
+ 866 0071 00       		.byte	0
+ 867 0072 0A       		.uleb128 0xa
+ 868 0073 2E       		.uleb128 0x2e
+ 869 0074 01       		.byte	0x1
+ 870 0075 3F       		.uleb128 0x3f
+ 871 0076 19       		.uleb128 0x19
+ 872 0077 03       		.uleb128 0x3
+ 873 0078 0E       		.uleb128 0xe
+ 874 0079 3A       		.uleb128 0x3a
+ 875 007a 0B       		.uleb128 0xb
+ 876 007b 3B       		.uleb128 0x3b
+ 877 007c 0B       		.uleb128 0xb
+ 878 007d 27       		.uleb128 0x27
+ 879 007e 19       		.uleb128 0x19
+ 880 007f 11       		.uleb128 0x11
+ 881 0080 01       		.uleb128 0x1
+ 882 0081 12       		.uleb128 0x12
+ 883 0082 06       		.uleb128 0x6
+ 884 0083 40       		.uleb128 0x40
+ 885 0084 18       		.uleb128 0x18
+ 886 0085 9742     		.uleb128 0x2117
+ 887 0087 19       		.uleb128 0x19
+ 888 0088 01       		.uleb128 0x1
+ 889 0089 13       		.uleb128 0x13
+ 890 008a 00       		.byte	0
+ 891 008b 00       		.byte	0
+ 892 008c 0B       		.uleb128 0xb
+ 893 008d 05       		.uleb128 0x5
+ 894 008e 00       		.byte	0
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 24
 
 
- 895 008a 00       		.byte	0
- 896 008b 00       		.byte	0
- 897 008c 0B       		.uleb128 0xb
- 898 008d 05       		.uleb128 0x5
- 899 008e 00       		.byte	0
- 900 008f 03       		.uleb128 0x3
- 901 0090 0E       		.uleb128 0xe
- 902 0091 3A       		.uleb128 0x3a
- 903 0092 0B       		.uleb128 0xb
- 904 0093 3B       		.uleb128 0x3b
- 905 0094 0B       		.uleb128 0xb
- 906 0095 49       		.uleb128 0x49
- 907 0096 13       		.uleb128 0x13
- 908 0097 02       		.uleb128 0x2
- 909 0098 18       		.uleb128 0x18
- 910 0099 00       		.byte	0
- 911 009a 00       		.byte	0
- 912 009b 0C       		.uleb128 0xc
- 913 009c 34       		.uleb128 0x34
- 914 009d 00       		.byte	0
- 915 009e 03       		.uleb128 0x3
- 916 009f 0E       		.uleb128 0xe
- 917 00a0 3A       		.uleb128 0x3a
- 918 00a1 0B       		.uleb128 0xb
- 919 00a2 3B       		.uleb128 0x3b
- 920 00a3 0B       		.uleb128 0xb
- 921 00a4 49       		.uleb128 0x49
- 922 00a5 13       		.uleb128 0x13
- 923 00a6 02       		.uleb128 0x2
- 924 00a7 18       		.uleb128 0x18
- 925 00a8 00       		.byte	0
- 926 00a9 00       		.byte	0
- 927 00aa 0D       		.uleb128 0xd
- 928 00ab 2E       		.uleb128 0x2e
- 929 00ac 01       		.byte	0x1
- 930 00ad 3F       		.uleb128 0x3f
- 931 00ae 19       		.uleb128 0x19
- 932 00af 03       		.uleb128 0x3
- 933 00b0 0E       		.uleb128 0xe
- 934 00b1 3A       		.uleb128 0x3a
- 935 00b2 0B       		.uleb128 0xb
- 936 00b3 3B       		.uleb128 0x3b
- 937 00b4 0B       		.uleb128 0xb
- 938 00b5 27       		.uleb128 0x27
- 939 00b6 19       		.uleb128 0x19
- 940 00b7 49       		.uleb128 0x49
- 941 00b8 13       		.uleb128 0x13
- 942 00b9 11       		.uleb128 0x11
- 943 00ba 01       		.uleb128 0x1
- 944 00bb 12       		.uleb128 0x12
- 945 00bc 06       		.uleb128 0x6
- 946 00bd 40       		.uleb128 0x40
- 947 00be 18       		.uleb128 0x18
- 948 00bf 9742     		.uleb128 0x2117
- 949 00c1 19       		.uleb128 0x19
- 950 00c2 01       		.uleb128 0x1
- 951 00c3 13       		.uleb128 0x13
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 25
+ 895 008f 03       		.uleb128 0x3
+ 896 0090 0E       		.uleb128 0xe
+ 897 0091 3A       		.uleb128 0x3a
+ 898 0092 0B       		.uleb128 0xb
+ 899 0093 3B       		.uleb128 0x3b
+ 900 0094 0B       		.uleb128 0xb
+ 901 0095 49       		.uleb128 0x49
+ 902 0096 13       		.uleb128 0x13
+ 903 0097 02       		.uleb128 0x2
+ 904 0098 18       		.uleb128 0x18
+ 905 0099 00       		.byte	0
+ 906 009a 00       		.byte	0
+ 907 009b 0C       		.uleb128 0xc
+ 908 009c 34       		.uleb128 0x34
+ 909 009d 00       		.byte	0
+ 910 009e 03       		.uleb128 0x3
+ 911 009f 0E       		.uleb128 0xe
+ 912 00a0 3A       		.uleb128 0x3a
+ 913 00a1 0B       		.uleb128 0xb
+ 914 00a2 3B       		.uleb128 0x3b
+ 915 00a3 0B       		.uleb128 0xb
+ 916 00a4 49       		.uleb128 0x49
+ 917 00a5 13       		.uleb128 0x13
+ 918 00a6 02       		.uleb128 0x2
+ 919 00a7 18       		.uleb128 0x18
+ 920 00a8 00       		.byte	0
+ 921 00a9 00       		.byte	0
+ 922 00aa 0D       		.uleb128 0xd
+ 923 00ab 2E       		.uleb128 0x2e
+ 924 00ac 01       		.byte	0x1
+ 925 00ad 3F       		.uleb128 0x3f
+ 926 00ae 19       		.uleb128 0x19
+ 927 00af 03       		.uleb128 0x3
+ 928 00b0 0E       		.uleb128 0xe
+ 929 00b1 3A       		.uleb128 0x3a
+ 930 00b2 0B       		.uleb128 0xb
+ 931 00b3 3B       		.uleb128 0x3b
+ 932 00b4 0B       		.uleb128 0xb
+ 933 00b5 27       		.uleb128 0x27
+ 934 00b6 19       		.uleb128 0x19
+ 935 00b7 49       		.uleb128 0x49
+ 936 00b8 13       		.uleb128 0x13
+ 937 00b9 11       		.uleb128 0x11
+ 938 00ba 01       		.uleb128 0x1
+ 939 00bb 12       		.uleb128 0x12
+ 940 00bc 06       		.uleb128 0x6
+ 941 00bd 40       		.uleb128 0x40
+ 942 00be 18       		.uleb128 0x18
+ 943 00bf 9742     		.uleb128 0x2117
+ 944 00c1 19       		.uleb128 0x19
+ 945 00c2 01       		.uleb128 0x1
+ 946 00c3 13       		.uleb128 0x13
+ 947 00c4 00       		.byte	0
+ 948 00c5 00       		.byte	0
+ 949 00c6 0E       		.uleb128 0xe
+ 950 00c7 2E       		.uleb128 0x2e
+ 951 00c8 01       		.byte	0x1
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 25
 
 
- 952 00c4 00       		.byte	0
- 953 00c5 00       		.byte	0
- 954 00c6 0E       		.uleb128 0xe
- 955 00c7 2E       		.uleb128 0x2e
- 956 00c8 01       		.byte	0x1
- 957 00c9 3F       		.uleb128 0x3f
- 958 00ca 19       		.uleb128 0x19
- 959 00cb 03       		.uleb128 0x3
- 960 00cc 0E       		.uleb128 0xe
- 961 00cd 3A       		.uleb128 0x3a
- 962 00ce 0B       		.uleb128 0xb
- 963 00cf 3B       		.uleb128 0x3b
- 964 00d0 05       		.uleb128 0x5
- 965 00d1 27       		.uleb128 0x27
- 966 00d2 19       		.uleb128 0x19
- 967 00d3 11       		.uleb128 0x11
- 968 00d4 01       		.uleb128 0x1
- 969 00d5 12       		.uleb128 0x12
- 970 00d6 06       		.uleb128 0x6
- 971 00d7 40       		.uleb128 0x40
- 972 00d8 18       		.uleb128 0x18
- 973 00d9 9742     		.uleb128 0x2117
- 974 00db 19       		.uleb128 0x19
- 975 00dc 01       		.uleb128 0x1
- 976 00dd 13       		.uleb128 0x13
- 977 00de 00       		.byte	0
- 978 00df 00       		.byte	0
- 979 00e0 0F       		.uleb128 0xf
- 980 00e1 05       		.uleb128 0x5
- 981 00e2 00       		.byte	0
- 982 00e3 03       		.uleb128 0x3
- 983 00e4 0E       		.uleb128 0xe
- 984 00e5 3A       		.uleb128 0x3a
- 985 00e6 0B       		.uleb128 0xb
- 986 00e7 3B       		.uleb128 0x3b
- 987 00e8 05       		.uleb128 0x5
- 988 00e9 49       		.uleb128 0x49
- 989 00ea 13       		.uleb128 0x13
- 990 00eb 02       		.uleb128 0x2
- 991 00ec 17       		.uleb128 0x17
- 992 00ed 00       		.byte	0
- 993 00ee 00       		.byte	0
- 994 00ef 10       		.uleb128 0x10
- 995 00f0 2E       		.uleb128 0x2e
- 996 00f1 01       		.byte	0x1
- 997 00f2 3F       		.uleb128 0x3f
- 998 00f3 19       		.uleb128 0x19
- 999 00f4 03       		.uleb128 0x3
- 1000 00f5 0E       		.uleb128 0xe
- 1001 00f6 3A       		.uleb128 0x3a
- 1002 00f7 0B       		.uleb128 0xb
- 1003 00f8 3B       		.uleb128 0x3b
- 1004 00f9 05       		.uleb128 0x5
- 1005 00fa 27       		.uleb128 0x27
- 1006 00fb 19       		.uleb128 0x19
- 1007 00fc 49       		.uleb128 0x49
- 1008 00fd 13       		.uleb128 0x13
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 26
+ 952 00c9 3F       		.uleb128 0x3f
+ 953 00ca 19       		.uleb128 0x19
+ 954 00cb 03       		.uleb128 0x3
+ 955 00cc 0E       		.uleb128 0xe
+ 956 00cd 3A       		.uleb128 0x3a
+ 957 00ce 0B       		.uleb128 0xb
+ 958 00cf 3B       		.uleb128 0x3b
+ 959 00d0 05       		.uleb128 0x5
+ 960 00d1 27       		.uleb128 0x27
+ 961 00d2 19       		.uleb128 0x19
+ 962 00d3 11       		.uleb128 0x11
+ 963 00d4 01       		.uleb128 0x1
+ 964 00d5 12       		.uleb128 0x12
+ 965 00d6 06       		.uleb128 0x6
+ 966 00d7 40       		.uleb128 0x40
+ 967 00d8 18       		.uleb128 0x18
+ 968 00d9 9742     		.uleb128 0x2117
+ 969 00db 19       		.uleb128 0x19
+ 970 00dc 01       		.uleb128 0x1
+ 971 00dd 13       		.uleb128 0x13
+ 972 00de 00       		.byte	0
+ 973 00df 00       		.byte	0
+ 974 00e0 0F       		.uleb128 0xf
+ 975 00e1 05       		.uleb128 0x5
+ 976 00e2 00       		.byte	0
+ 977 00e3 03       		.uleb128 0x3
+ 978 00e4 0E       		.uleb128 0xe
+ 979 00e5 3A       		.uleb128 0x3a
+ 980 00e6 0B       		.uleb128 0xb
+ 981 00e7 3B       		.uleb128 0x3b
+ 982 00e8 05       		.uleb128 0x5
+ 983 00e9 49       		.uleb128 0x49
+ 984 00ea 13       		.uleb128 0x13
+ 985 00eb 02       		.uleb128 0x2
+ 986 00ec 17       		.uleb128 0x17
+ 987 00ed 00       		.byte	0
+ 988 00ee 00       		.byte	0
+ 989 00ef 10       		.uleb128 0x10
+ 990 00f0 2E       		.uleb128 0x2e
+ 991 00f1 01       		.byte	0x1
+ 992 00f2 3F       		.uleb128 0x3f
+ 993 00f3 19       		.uleb128 0x19
+ 994 00f4 03       		.uleb128 0x3
+ 995 00f5 0E       		.uleb128 0xe
+ 996 00f6 3A       		.uleb128 0x3a
+ 997 00f7 0B       		.uleb128 0xb
+ 998 00f8 3B       		.uleb128 0x3b
+ 999 00f9 05       		.uleb128 0x5
+ 1000 00fa 27       		.uleb128 0x27
+ 1001 00fb 19       		.uleb128 0x19
+ 1002 00fc 49       		.uleb128 0x49
+ 1003 00fd 13       		.uleb128 0x13
+ 1004 00fe 11       		.uleb128 0x11
+ 1005 00ff 01       		.uleb128 0x1
+ 1006 0100 12       		.uleb128 0x12
+ 1007 0101 06       		.uleb128 0x6
+ 1008 0102 40       		.uleb128 0x40
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 26
 
 
- 1009 00fe 11       		.uleb128 0x11
- 1010 00ff 01       		.uleb128 0x1
- 1011 0100 12       		.uleb128 0x12
- 1012 0101 06       		.uleb128 0x6
- 1013 0102 40       		.uleb128 0x40
- 1014 0103 18       		.uleb128 0x18
- 1015 0104 9742     		.uleb128 0x2117
- 1016 0106 19       		.uleb128 0x19
- 1017 0107 01       		.uleb128 0x1
- 1018 0108 13       		.uleb128 0x13
- 1019 0109 00       		.byte	0
- 1020 010a 00       		.byte	0
- 1021 010b 11       		.uleb128 0x11
- 1022 010c 34       		.uleb128 0x34
- 1023 010d 00       		.byte	0
- 1024 010e 03       		.uleb128 0x3
- 1025 010f 0E       		.uleb128 0xe
- 1026 0110 3A       		.uleb128 0x3a
- 1027 0111 0B       		.uleb128 0xb
- 1028 0112 3B       		.uleb128 0x3b
- 1029 0113 05       		.uleb128 0x5
- 1030 0114 49       		.uleb128 0x49
- 1031 0115 13       		.uleb128 0x13
- 1032 0116 02       		.uleb128 0x2
- 1033 0117 17       		.uleb128 0x17
- 1034 0118 00       		.byte	0
- 1035 0119 00       		.byte	0
- 1036 011a 12       		.uleb128 0x12
- 1037 011b 2E       		.uleb128 0x2e
- 1038 011c 00       		.byte	0
- 1039 011d 3F       		.uleb128 0x3f
- 1040 011e 19       		.uleb128 0x19
- 1041 011f 03       		.uleb128 0x3
- 1042 0120 0E       		.uleb128 0xe
- 1043 0121 3A       		.uleb128 0x3a
- 1044 0122 0B       		.uleb128 0xb
- 1045 0123 3B       		.uleb128 0x3b
- 1046 0124 05       		.uleb128 0x5
- 1047 0125 27       		.uleb128 0x27
- 1048 0126 19       		.uleb128 0x19
- 1049 0127 11       		.uleb128 0x11
- 1050 0128 01       		.uleb128 0x1
- 1051 0129 12       		.uleb128 0x12
- 1052 012a 06       		.uleb128 0x6
- 1053 012b 40       		.uleb128 0x40
- 1054 012c 18       		.uleb128 0x18
- 1055 012d 9742     		.uleb128 0x2117
- 1056 012f 19       		.uleb128 0x19
- 1057 0130 00       		.byte	0
- 1058 0131 00       		.byte	0
- 1059 0132 13       		.uleb128 0x13
- 1060 0133 2E       		.uleb128 0x2e
- 1061 0134 00       		.byte	0
- 1062 0135 3F       		.uleb128 0x3f
- 1063 0136 19       		.uleb128 0x19
- 1064 0137 03       		.uleb128 0x3
- 1065 0138 0E       		.uleb128 0xe
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 27
+ 1009 0103 18       		.uleb128 0x18
+ 1010 0104 9742     		.uleb128 0x2117
+ 1011 0106 19       		.uleb128 0x19
+ 1012 0107 01       		.uleb128 0x1
+ 1013 0108 13       		.uleb128 0x13
+ 1014 0109 00       		.byte	0
+ 1015 010a 00       		.byte	0
+ 1016 010b 11       		.uleb128 0x11
+ 1017 010c 34       		.uleb128 0x34
+ 1018 010d 00       		.byte	0
+ 1019 010e 03       		.uleb128 0x3
+ 1020 010f 0E       		.uleb128 0xe
+ 1021 0110 3A       		.uleb128 0x3a
+ 1022 0111 0B       		.uleb128 0xb
+ 1023 0112 3B       		.uleb128 0x3b
+ 1024 0113 05       		.uleb128 0x5
+ 1025 0114 49       		.uleb128 0x49
+ 1026 0115 13       		.uleb128 0x13
+ 1027 0116 02       		.uleb128 0x2
+ 1028 0117 17       		.uleb128 0x17
+ 1029 0118 00       		.byte	0
+ 1030 0119 00       		.byte	0
+ 1031 011a 12       		.uleb128 0x12
+ 1032 011b 2E       		.uleb128 0x2e
+ 1033 011c 00       		.byte	0
+ 1034 011d 3F       		.uleb128 0x3f
+ 1035 011e 19       		.uleb128 0x19
+ 1036 011f 03       		.uleb128 0x3
+ 1037 0120 0E       		.uleb128 0xe
+ 1038 0121 3A       		.uleb128 0x3a
+ 1039 0122 0B       		.uleb128 0xb
+ 1040 0123 3B       		.uleb128 0x3b
+ 1041 0124 05       		.uleb128 0x5
+ 1042 0125 27       		.uleb128 0x27
+ 1043 0126 19       		.uleb128 0x19
+ 1044 0127 11       		.uleb128 0x11
+ 1045 0128 01       		.uleb128 0x1
+ 1046 0129 12       		.uleb128 0x12
+ 1047 012a 06       		.uleb128 0x6
+ 1048 012b 40       		.uleb128 0x40
+ 1049 012c 18       		.uleb128 0x18
+ 1050 012d 9742     		.uleb128 0x2117
+ 1051 012f 19       		.uleb128 0x19
+ 1052 0130 00       		.byte	0
+ 1053 0131 00       		.byte	0
+ 1054 0132 13       		.uleb128 0x13
+ 1055 0133 2E       		.uleb128 0x2e
+ 1056 0134 00       		.byte	0
+ 1057 0135 3F       		.uleb128 0x3f
+ 1058 0136 19       		.uleb128 0x19
+ 1059 0137 03       		.uleb128 0x3
+ 1060 0138 0E       		.uleb128 0xe
+ 1061 0139 3A       		.uleb128 0x3a
+ 1062 013a 0B       		.uleb128 0xb
+ 1063 013b 3B       		.uleb128 0x3b
+ 1064 013c 05       		.uleb128 0x5
+ 1065 013d 27       		.uleb128 0x27
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 27
 
 
- 1066 0139 3A       		.uleb128 0x3a
- 1067 013a 0B       		.uleb128 0xb
- 1068 013b 3B       		.uleb128 0x3b
- 1069 013c 05       		.uleb128 0x5
- 1070 013d 27       		.uleb128 0x27
- 1071 013e 19       		.uleb128 0x19
- 1072 013f 49       		.uleb128 0x49
- 1073 0140 13       		.uleb128 0x13
- 1074 0141 11       		.uleb128 0x11
- 1075 0142 01       		.uleb128 0x1
- 1076 0143 12       		.uleb128 0x12
- 1077 0144 06       		.uleb128 0x6
- 1078 0145 40       		.uleb128 0x40
- 1079 0146 18       		.uleb128 0x18
- 1080 0147 9742     		.uleb128 0x2117
- 1081 0149 19       		.uleb128 0x19
- 1082 014a 00       		.byte	0
- 1083 014b 00       		.byte	0
- 1084 014c 14       		.uleb128 0x14
- 1085 014d 898201   		.uleb128 0x4109
- 1086 0150 00       		.byte	0
- 1087 0151 11       		.uleb128 0x11
- 1088 0152 01       		.uleb128 0x1
- 1089 0153 31       		.uleb128 0x31
- 1090 0154 13       		.uleb128 0x13
- 1091 0155 00       		.byte	0
- 1092 0156 00       		.byte	0
- 1093 0157 15       		.uleb128 0x15
- 1094 0158 898201   		.uleb128 0x4109
- 1095 015b 01       		.byte	0x1
- 1096 015c 11       		.uleb128 0x11
- 1097 015d 01       		.uleb128 0x1
- 1098 015e 31       		.uleb128 0x31
- 1099 015f 13       		.uleb128 0x13
- 1100 0160 01       		.uleb128 0x1
- 1101 0161 13       		.uleb128 0x13
- 1102 0162 00       		.byte	0
- 1103 0163 00       		.byte	0
- 1104 0164 16       		.uleb128 0x16
- 1105 0165 8A8201   		.uleb128 0x410a
- 1106 0168 00       		.byte	0
- 1107 0169 02       		.uleb128 0x2
- 1108 016a 18       		.uleb128 0x18
- 1109 016b 9142     		.uleb128 0x2111
- 1110 016d 18       		.uleb128 0x18
- 1111 016e 00       		.byte	0
- 1112 016f 00       		.byte	0
- 1113 0170 17       		.uleb128 0x17
- 1114 0171 05       		.uleb128 0x5
- 1115 0172 00       		.byte	0
- 1116 0173 03       		.uleb128 0x3
- 1117 0174 0E       		.uleb128 0xe
- 1118 0175 3A       		.uleb128 0x3a
- 1119 0176 0B       		.uleb128 0xb
- 1120 0177 3B       		.uleb128 0x3b
- 1121 0178 0B       		.uleb128 0xb
- 1122 0179 49       		.uleb128 0x49
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 28
+ 1066 013e 19       		.uleb128 0x19
+ 1067 013f 49       		.uleb128 0x49
+ 1068 0140 13       		.uleb128 0x13
+ 1069 0141 11       		.uleb128 0x11
+ 1070 0142 01       		.uleb128 0x1
+ 1071 0143 12       		.uleb128 0x12
+ 1072 0144 06       		.uleb128 0x6
+ 1073 0145 40       		.uleb128 0x40
+ 1074 0146 18       		.uleb128 0x18
+ 1075 0147 9742     		.uleb128 0x2117
+ 1076 0149 19       		.uleb128 0x19
+ 1077 014a 00       		.byte	0
+ 1078 014b 00       		.byte	0
+ 1079 014c 14       		.uleb128 0x14
+ 1080 014d 898201   		.uleb128 0x4109
+ 1081 0150 00       		.byte	0
+ 1082 0151 11       		.uleb128 0x11
+ 1083 0152 01       		.uleb128 0x1
+ 1084 0153 31       		.uleb128 0x31
+ 1085 0154 13       		.uleb128 0x13
+ 1086 0155 00       		.byte	0
+ 1087 0156 00       		.byte	0
+ 1088 0157 15       		.uleb128 0x15
+ 1089 0158 898201   		.uleb128 0x4109
+ 1090 015b 01       		.byte	0x1
+ 1091 015c 11       		.uleb128 0x11
+ 1092 015d 01       		.uleb128 0x1
+ 1093 015e 31       		.uleb128 0x31
+ 1094 015f 13       		.uleb128 0x13
+ 1095 0160 01       		.uleb128 0x1
+ 1096 0161 13       		.uleb128 0x13
+ 1097 0162 00       		.byte	0
+ 1098 0163 00       		.byte	0
+ 1099 0164 16       		.uleb128 0x16
+ 1100 0165 8A8201   		.uleb128 0x410a
+ 1101 0168 00       		.byte	0
+ 1102 0169 02       		.uleb128 0x2
+ 1103 016a 18       		.uleb128 0x18
+ 1104 016b 9142     		.uleb128 0x2111
+ 1105 016d 18       		.uleb128 0x18
+ 1106 016e 00       		.byte	0
+ 1107 016f 00       		.byte	0
+ 1108 0170 17       		.uleb128 0x17
+ 1109 0171 05       		.uleb128 0x5
+ 1110 0172 00       		.byte	0
+ 1111 0173 03       		.uleb128 0x3
+ 1112 0174 0E       		.uleb128 0xe
+ 1113 0175 3A       		.uleb128 0x3a
+ 1114 0176 0B       		.uleb128 0xb
+ 1115 0177 3B       		.uleb128 0x3b
+ 1116 0178 0B       		.uleb128 0xb
+ 1117 0179 49       		.uleb128 0x49
+ 1118 017a 13       		.uleb128 0x13
+ 1119 017b 02       		.uleb128 0x2
+ 1120 017c 17       		.uleb128 0x17
+ 1121 017d 00       		.byte	0
+ 1122 017e 00       		.byte	0
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 28
 
 
- 1123 017a 13       		.uleb128 0x13
- 1124 017b 02       		.uleb128 0x2
- 1125 017c 17       		.uleb128 0x17
- 1126 017d 00       		.byte	0
- 1127 017e 00       		.byte	0
- 1128 017f 18       		.uleb128 0x18
- 1129 0180 34       		.uleb128 0x34
- 1130 0181 00       		.byte	0
- 1131 0182 03       		.uleb128 0x3
- 1132 0183 0E       		.uleb128 0xe
- 1133 0184 3A       		.uleb128 0x3a
- 1134 0185 0B       		.uleb128 0xb
- 1135 0186 3B       		.uleb128 0x3b
- 1136 0187 05       		.uleb128 0x5
- 1137 0188 49       		.uleb128 0x49
- 1138 0189 13       		.uleb128 0x13
- 1139 018a 3F       		.uleb128 0x3f
- 1140 018b 19       		.uleb128 0x19
- 1141 018c 3C       		.uleb128 0x3c
- 1142 018d 19       		.uleb128 0x19
- 1143 018e 00       		.byte	0
- 1144 018f 00       		.byte	0
- 1145 0190 19       		.uleb128 0x19
- 1146 0191 34       		.uleb128 0x34
- 1147 0192 00       		.byte	0
- 1148 0193 03       		.uleb128 0x3
- 1149 0194 0E       		.uleb128 0xe
- 1150 0195 3A       		.uleb128 0x3a
- 1151 0196 0B       		.uleb128 0xb
- 1152 0197 3B       		.uleb128 0x3b
- 1153 0198 0B       		.uleb128 0xb
- 1154 0199 49       		.uleb128 0x49
- 1155 019a 13       		.uleb128 0x13
- 1156 019b 3F       		.uleb128 0x3f
- 1157 019c 19       		.uleb128 0x19
- 1158 019d 3C       		.uleb128 0x3c
- 1159 019e 19       		.uleb128 0x19
- 1160 019f 00       		.byte	0
- 1161 01a0 00       		.byte	0
- 1162 01a1 00       		.byte	0
- 1163              		.section	.debug_loc,"",%progbits
- 1164              	.Ldebug_loc0:
- 1165              	.LLST0:
- 1166 0000 00000000 		.4byte	.LVL3
- 1167 0004 02000000 		.4byte	.LVL4
- 1168 0008 0100     		.2byte	0x1
- 1169 000a 50       		.byte	0x50
- 1170 000b 02000000 		.4byte	.LVL4
- 1171 000f 10000000 		.4byte	.LFE69
- 1172 0013 0400     		.2byte	0x4
- 1173 0015 F3       		.byte	0xf3
- 1174 0016 01       		.uleb128 0x1
- 1175 0017 50       		.byte	0x50
- 1176 0018 9F       		.byte	0x9f
- 1177 0019 00000000 		.4byte	0
- 1178 001d 00000000 		.4byte	0
- 1179              	.LLST1:
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 29
+ 1123 017f 18       		.uleb128 0x18
+ 1124 0180 34       		.uleb128 0x34
+ 1125 0181 00       		.byte	0
+ 1126 0182 03       		.uleb128 0x3
+ 1127 0183 0E       		.uleb128 0xe
+ 1128 0184 3A       		.uleb128 0x3a
+ 1129 0185 0B       		.uleb128 0xb
+ 1130 0186 3B       		.uleb128 0x3b
+ 1131 0187 05       		.uleb128 0x5
+ 1132 0188 49       		.uleb128 0x49
+ 1133 0189 13       		.uleb128 0x13
+ 1134 018a 3F       		.uleb128 0x3f
+ 1135 018b 19       		.uleb128 0x19
+ 1136 018c 3C       		.uleb128 0x3c
+ 1137 018d 19       		.uleb128 0x19
+ 1138 018e 00       		.byte	0
+ 1139 018f 00       		.byte	0
+ 1140 0190 19       		.uleb128 0x19
+ 1141 0191 34       		.uleb128 0x34
+ 1142 0192 00       		.byte	0
+ 1143 0193 03       		.uleb128 0x3
+ 1144 0194 0E       		.uleb128 0xe
+ 1145 0195 3A       		.uleb128 0x3a
+ 1146 0196 0B       		.uleb128 0xb
+ 1147 0197 3B       		.uleb128 0x3b
+ 1148 0198 0B       		.uleb128 0xb
+ 1149 0199 49       		.uleb128 0x49
+ 1150 019a 13       		.uleb128 0x13
+ 1151 019b 3F       		.uleb128 0x3f
+ 1152 019c 19       		.uleb128 0x19
+ 1153 019d 3C       		.uleb128 0x3c
+ 1154 019e 19       		.uleb128 0x19
+ 1155 019f 00       		.byte	0
+ 1156 01a0 00       		.byte	0
+ 1157 01a1 00       		.byte	0
+ 1158              		.section	.debug_loc,"",%progbits
+ 1159              	.Ldebug_loc0:
+ 1160              	.LLST0:
+ 1161 0000 00000000 		.4byte	.LVL3
+ 1162 0004 02000000 		.4byte	.LVL4
+ 1163 0008 0100     		.2byte	0x1
+ 1164 000a 50       		.byte	0x50
+ 1165 000b 02000000 		.4byte	.LVL4
+ 1166 000f 10000000 		.4byte	.LFE69
+ 1167 0013 0400     		.2byte	0x4
+ 1168 0015 F3       		.byte	0xf3
+ 1169 0016 01       		.uleb128 0x1
+ 1170 0017 50       		.byte	0x50
+ 1171 0018 9F       		.byte	0x9f
+ 1172 0019 00000000 		.4byte	0
+ 1173 001d 00000000 		.4byte	0
+ 1174              	.LLST1:
+ 1175 0021 04000000 		.4byte	.LVL5
+ 1176 0025 06000000 		.4byte	.LVL6
+ 1177 0029 0500     		.2byte	0x5
+ 1178 002b 70       		.byte	0x70
+ 1179 002c 00       		.sleb128 0
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 29
 
 
- 1180 0021 04000000 		.4byte	.LVL5
- 1181 0025 06000000 		.4byte	.LVL6
- 1182 0029 0500     		.2byte	0x5
- 1183 002b 70       		.byte	0x70
- 1184 002c 00       		.sleb128 0
- 1185 002d 35       		.byte	0x35
- 1186 002e 25       		.byte	0x25
- 1187 002f 9F       		.byte	0x9f
- 1188 0030 00000000 		.4byte	0
- 1189 0034 00000000 		.4byte	0
- 1190              	.LLST2:
- 1191 0038 00000000 		.4byte	.LVL11
- 1192 003c 07000000 		.4byte	.LVL12-1
- 1193 0040 0100     		.2byte	0x1
- 1194 0042 50       		.byte	0x50
- 1195 0043 07000000 		.4byte	.LVL12-1
- 1196 0047 1A000000 		.4byte	.LFE64
- 1197 004b 0100     		.2byte	0x1
- 1198 004d 54       		.byte	0x54
- 1199 004e 00000000 		.4byte	0
- 1200 0052 00000000 		.4byte	0
- 1201              		.section	.debug_aranges,"",%progbits
- 1202 0000 7C000000 		.4byte	0x7c
- 1203 0004 0200     		.2byte	0x2
- 1204 0006 00000000 		.4byte	.Ldebug_info0
- 1205 000a 04       		.byte	0x4
- 1206 000b 00       		.byte	0
- 1207 000c 0000     		.2byte	0
- 1208 000e 0000     		.2byte	0
- 1209 0010 00000000 		.4byte	.LFB66
- 1210 0014 10000000 		.4byte	.LFE66-.LFB66
- 1211 0018 00000000 		.4byte	.LFB67
- 1212 001c 0C000000 		.4byte	.LFE67-.LFB67
- 1213 0020 00000000 		.4byte	.LFB68
- 1214 0024 0C000000 		.4byte	.LFE68-.LFB68
- 1215 0028 00000000 		.4byte	.LFB69
- 1216 002c 10000000 		.4byte	.LFE69-.LFB69
- 1217 0030 00000000 		.4byte	.LFB70
- 1218 0034 0C000000 		.4byte	.LFE70-.LFB70
- 1219 0038 00000000 		.4byte	.LFB71
- 1220 003c 0C000000 		.4byte	.LFE71-.LFB71
- 1221 0040 00000000 		.4byte	.LFB72
- 1222 0044 18000000 		.4byte	.LFE72-.LFB72
- 1223 0048 00000000 		.4byte	.LFB73
- 1224 004c 0C000000 		.4byte	.LFE73-.LFB73
- 1225 0050 00000000 		.4byte	.LFB63
- 1226 0054 1C000000 		.4byte	.LFE63-.LFB63
- 1227 0058 00000000 		.4byte	.LFB64
- 1228 005c 1A000000 		.4byte	.LFE64-.LFB64
- 1229 0060 00000000 		.4byte	.LFB65
- 1230 0064 14000000 		.4byte	.LFE65-.LFB65
- 1231 0068 00000000 		.4byte	.LFB74
- 1232 006c 0C000000 		.4byte	.LFE74-.LFB74
- 1233 0070 00000000 		.4byte	.LFB75
- 1234 0074 0C000000 		.4byte	.LFE75-.LFB75
- 1235 0078 00000000 		.4byte	0
- 1236 007c 00000000 		.4byte	0
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 30
+ 1180 002d 35       		.byte	0x35
+ 1181 002e 25       		.byte	0x25
+ 1182 002f 9F       		.byte	0x9f
+ 1183 0030 00000000 		.4byte	0
+ 1184 0034 00000000 		.4byte	0
+ 1185              	.LLST2:
+ 1186 0038 00000000 		.4byte	.LVL11
+ 1187 003c 07000000 		.4byte	.LVL12-1
+ 1188 0040 0100     		.2byte	0x1
+ 1189 0042 50       		.byte	0x50
+ 1190 0043 07000000 		.4byte	.LVL12-1
+ 1191 0047 1A000000 		.4byte	.LFE64
+ 1192 004b 0100     		.2byte	0x1
+ 1193 004d 54       		.byte	0x54
+ 1194 004e 00000000 		.4byte	0
+ 1195 0052 00000000 		.4byte	0
+ 1196              		.section	.debug_aranges,"",%progbits
+ 1197 0000 7C000000 		.4byte	0x7c
+ 1198 0004 0200     		.2byte	0x2
+ 1199 0006 00000000 		.4byte	.Ldebug_info0
+ 1200 000a 04       		.byte	0x4
+ 1201 000b 00       		.byte	0
+ 1202 000c 0000     		.2byte	0
+ 1203 000e 0000     		.2byte	0
+ 1204 0010 00000000 		.4byte	.LFB66
+ 1205 0014 10000000 		.4byte	.LFE66-.LFB66
+ 1206 0018 00000000 		.4byte	.LFB67
+ 1207 001c 0C000000 		.4byte	.LFE67-.LFB67
+ 1208 0020 00000000 		.4byte	.LFB68
+ 1209 0024 0C000000 		.4byte	.LFE68-.LFB68
+ 1210 0028 00000000 		.4byte	.LFB69
+ 1211 002c 10000000 		.4byte	.LFE69-.LFB69
+ 1212 0030 00000000 		.4byte	.LFB70
+ 1213 0034 0C000000 		.4byte	.LFE70-.LFB70
+ 1214 0038 00000000 		.4byte	.LFB71
+ 1215 003c 0C000000 		.4byte	.LFE71-.LFB71
+ 1216 0040 00000000 		.4byte	.LFB72
+ 1217 0044 10000000 		.4byte	.LFE72-.LFB72
+ 1218 0048 00000000 		.4byte	.LFB73
+ 1219 004c 0C000000 		.4byte	.LFE73-.LFB73
+ 1220 0050 00000000 		.4byte	.LFB63
+ 1221 0054 1C000000 		.4byte	.LFE63-.LFB63
+ 1222 0058 00000000 		.4byte	.LFB64
+ 1223 005c 1A000000 		.4byte	.LFE64-.LFB64
+ 1224 0060 00000000 		.4byte	.LFB65
+ 1225 0064 14000000 		.4byte	.LFE65-.LFB65
+ 1226 0068 00000000 		.4byte	.LFB74
+ 1227 006c 0C000000 		.4byte	.LFE74-.LFB74
+ 1228 0070 00000000 		.4byte	.LFB75
+ 1229 0074 0C000000 		.4byte	.LFE75-.LFB75
+ 1230 0078 00000000 		.4byte	0
+ 1231 007c 00000000 		.4byte	0
+ 1232              		.section	.debug_ranges,"",%progbits
+ 1233              	.Ldebug_ranges0:
+ 1234 0000 00000000 		.4byte	.LFB66
+ 1235 0004 10000000 		.4byte	.LFE66
+ 1236 0008 00000000 		.4byte	.LFB67
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 30
 
 
- 1237              		.section	.debug_ranges,"",%progbits
- 1238              	.Ldebug_ranges0:
- 1239 0000 00000000 		.4byte	.LFB66
- 1240 0004 10000000 		.4byte	.LFE66
- 1241 0008 00000000 		.4byte	.LFB67
- 1242 000c 0C000000 		.4byte	.LFE67
- 1243 0010 00000000 		.4byte	.LFB68
- 1244 0014 0C000000 		.4byte	.LFE68
- 1245 0018 00000000 		.4byte	.LFB69
- 1246 001c 10000000 		.4byte	.LFE69
- 1247 0020 00000000 		.4byte	.LFB70
- 1248 0024 0C000000 		.4byte	.LFE70
- 1249 0028 00000000 		.4byte	.LFB71
- 1250 002c 0C000000 		.4byte	.LFE71
- 1251 0030 00000000 		.4byte	.LFB72
- 1252 0034 18000000 		.4byte	.LFE72
- 1253 0038 00000000 		.4byte	.LFB73
- 1254 003c 0C000000 		.4byte	.LFE73
- 1255 0040 00000000 		.4byte	.LFB63
- 1256 0044 1C000000 		.4byte	.LFE63
- 1257 0048 00000000 		.4byte	.LFB64
- 1258 004c 1A000000 		.4byte	.LFE64
- 1259 0050 00000000 		.4byte	.LFB65
- 1260 0054 14000000 		.4byte	.LFE65
- 1261 0058 00000000 		.4byte	.LFB74
- 1262 005c 0C000000 		.4byte	.LFE74
- 1263 0060 00000000 		.4byte	.LFB75
- 1264 0064 0C000000 		.4byte	.LFE75
- 1265 0068 00000000 		.4byte	0
- 1266 006c 00000000 		.4byte	0
- 1267              		.section	.debug_line,"",%progbits
- 1268              	.Ldebug_line0:
- 1269 0000 3D020000 		.section	.debug_str,"MS",%progbits,1
- 1269      02005001 
- 1269      00000201 
- 1269      FB0E0D00 
- 1269      01010101 
- 1270              	.LASF20:
- 1271 0000 72656733 		.ascii	"reg32\000"
- 1271      3200
- 1272              	.LASF23:
- 1273 0006 6973725F 		.ascii	"isr_rbat_SetVector\000"
- 1273      72626174 
- 1273      5F536574 
- 1273      56656374 
- 1273      6F7200
- 1274              	.LASF31:
- 1275 0019 6973725F 		.ascii	"isr_rbat_Disable\000"
- 1275      72626174 
- 1275      5F446973 
- 1275      61626C65 
- 1275      00
- 1276              	.LASF36:
- 1277 002a 6973725F 		.ascii	"isr_rbat_ClearPending\000"
- 1277      72626174 
- 1277      5F436C65 
- 1277      61725065 
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 31
+ 1237 000c 0C000000 		.4byte	.LFE67
+ 1238 0010 00000000 		.4byte	.LFB68
+ 1239 0014 0C000000 		.4byte	.LFE68
+ 1240 0018 00000000 		.4byte	.LFB69
+ 1241 001c 10000000 		.4byte	.LFE69
+ 1242 0020 00000000 		.4byte	.LFB70
+ 1243 0024 0C000000 		.4byte	.LFE70
+ 1244 0028 00000000 		.4byte	.LFB71
+ 1245 002c 0C000000 		.4byte	.LFE71
+ 1246 0030 00000000 		.4byte	.LFB72
+ 1247 0034 10000000 		.4byte	.LFE72
+ 1248 0038 00000000 		.4byte	.LFB73
+ 1249 003c 0C000000 		.4byte	.LFE73
+ 1250 0040 00000000 		.4byte	.LFB63
+ 1251 0044 1C000000 		.4byte	.LFE63
+ 1252 0048 00000000 		.4byte	.LFB64
+ 1253 004c 1A000000 		.4byte	.LFE64
+ 1254 0050 00000000 		.4byte	.LFB65
+ 1255 0054 14000000 		.4byte	.LFE65
+ 1256 0058 00000000 		.4byte	.LFB74
+ 1257 005c 0C000000 		.4byte	.LFE74
+ 1258 0060 00000000 		.4byte	.LFB75
+ 1259 0064 0C000000 		.4byte	.LFE75
+ 1260 0068 00000000 		.4byte	0
+ 1261 006c 00000000 		.4byte	0
+ 1262              		.section	.debug_line,"",%progbits
+ 1263              	.Ldebug_line0:
+ 1264 0000 3D020000 		.section	.debug_str,"MS",%progbits,1
+ 1264      02005001 
+ 1264      00000201 
+ 1264      FB0E0D00 
+ 1264      01010101 
+ 1265              	.LASF20:
+ 1266 0000 72656733 		.ascii	"reg32\000"
+ 1266      3200
+ 1267              	.LASF23:
+ 1268 0006 6973725F 		.ascii	"isr_rbat_SetVector\000"
+ 1268      72626174 
+ 1268      5F536574 
+ 1268      56656374 
+ 1268      6F7200
+ 1269              	.LASF31:
+ 1270 0019 6973725F 		.ascii	"isr_rbat_Disable\000"
+ 1270      72626174 
+ 1270      5F446973 
+ 1270      61626C65 
+ 1270      00
+ 1271              	.LASF36:
+ 1272 002a 6973725F 		.ascii	"isr_rbat_ClearPending\000"
+ 1272      72626174 
+ 1272      5F436C65 
+ 1272      61725065 
+ 1272      6E64696E 
+ 1273              	.LASF12:
+ 1274 0040 5F5F696E 		.ascii	"__int32_t\000"
+ 1274      7433325F 
+ 1274      7400
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 31
 
 
- 1277      6E64696E 
- 1278              	.LASF12:
- 1279 0040 5F5F696E 		.ascii	"__int32_t\000"
- 1279      7433325F 
- 1279      7400
- 1280              	.LASF32:
- 1281 004a 6973725F 		.ascii	"isr_rbat_Start\000"
- 1281      72626174 
- 1281      5F537461 
- 1281      727400
- 1282              	.LASF18:
- 1283 0059 646F7562 		.ascii	"double\000"
- 1283      6C6500
- 1284              	.LASF42:
- 1285 0060 6973725F 		.ascii	"isr_rbat_GetState\000"
- 1285      72626174 
- 1285      5F476574 
- 1285      53746174 
- 1285      6500
- 1286              	.LASF38:
- 1287 0072 62617472 		.ascii	"batrouge\000"
- 1287      6F756765 
- 1287      00
- 1288              	.LASF28:
- 1289 007b 6973725F 		.ascii	"isr_rbat_GetPriority\000"
- 1289      72626174 
- 1289      5F476574 
- 1289      5072696F 
- 1289      72697479 
- 1290              	.LASF17:
- 1291 0090 666C6F61 		.ascii	"float\000"
- 1291      7400
- 1292              	.LASF3:
- 1293 0096 7369676E 		.ascii	"signed char\000"
- 1293      65642063 
- 1293      68617200 
- 1294              	.LASF4:
- 1295 00a2 756E7369 		.ascii	"unsigned char\000"
- 1295      676E6564 
- 1295      20636861 
- 1295      7200
- 1296              	.LASF39:
- 1297 00b0 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1297      43313120 
- 1297      352E342E 
- 1297      31203230 
- 1297      31363036 
- 1298 00e3 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1298      20726576 
- 1298      6973696F 
- 1298      6E203233 
- 1298      37373135 
- 1299 0116 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1299      66756E63 
- 1299      74696F6E 
- 1299      2D736563 
- 1299      74696F6E 
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 32
+ 1275              	.LASF32:
+ 1276 004a 6973725F 		.ascii	"isr_rbat_Start\000"
+ 1276      72626174 
+ 1276      5F537461 
+ 1276      727400
+ 1277              	.LASF18:
+ 1278 0059 646F7562 		.ascii	"double\000"
+ 1278      6C6500
+ 1279              	.LASF42:
+ 1280 0060 6973725F 		.ascii	"isr_rbat_GetState\000"
+ 1280      72626174 
+ 1280      5F476574 
+ 1280      53746174 
+ 1280      6500
+ 1281              	.LASF38:
+ 1282 0072 62617472 		.ascii	"batrouge\000"
+ 1282      6F756765 
+ 1282      00
+ 1283              	.LASF28:
+ 1284 007b 6973725F 		.ascii	"isr_rbat_GetPriority\000"
+ 1284      72626174 
+ 1284      5F476574 
+ 1284      5072696F 
+ 1284      72697479 
+ 1285              	.LASF17:
+ 1286 0090 666C6F61 		.ascii	"float\000"
+ 1286      7400
+ 1287              	.LASF3:
+ 1288 0096 7369676E 		.ascii	"signed char\000"
+ 1288      65642063 
+ 1288      68617200 
+ 1289              	.LASF4:
+ 1290 00a2 756E7369 		.ascii	"unsigned char\000"
+ 1290      676E6564 
+ 1290      20636861 
+ 1290      7200
+ 1291              	.LASF39:
+ 1292 00b0 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1292      43313120 
+ 1292      352E342E 
+ 1292      31203230 
+ 1292      31363036 
+ 1293 00e3 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1293      20726576 
+ 1293      6973696F 
+ 1293      6E203233 
+ 1293      37373135 
+ 1294 0116 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1294      66756E63 
+ 1294      74696F6E 
+ 1294      2D736563 
+ 1294      74696F6E 
+ 1295              	.LASF19:
+ 1296 013e 72656738 		.ascii	"reg8\000"
+ 1296      00
+ 1297              	.LASF8:
+ 1298 0143 6C6F6E67 		.ascii	"long unsigned int\000"
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 32
 
 
- 1300              	.LASF19:
- 1301 013e 72656738 		.ascii	"reg8\000"
- 1301      00
- 1302              	.LASF8:
- 1303 0143 6C6F6E67 		.ascii	"long unsigned int\000"
- 1303      20756E73 
- 1303      69676E65 
- 1303      6420696E 
- 1303      7400
- 1304              	.LASF30:
- 1305 0155 6973725F 		.ascii	"isr_rbat_Enable\000"
- 1305      72626174 
- 1305      5F456E61 
- 1305      626C6500 
- 1306              	.LASF6:
- 1307 0165 73686F72 		.ascii	"short unsigned int\000"
- 1307      7420756E 
- 1307      7369676E 
- 1307      65642069 
- 1307      6E7400
- 1308              	.LASF37:
- 1309 0178 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1309      52784275 
- 1309      66666572 
- 1309      00
- 1310              	.LASF27:
- 1311 0185 6973725F 		.ascii	"isr_rbat_GetVector\000"
- 1311      72626174 
- 1311      5F476574 
- 1311      56656374 
- 1311      6F7200
- 1312              	.LASF29:
- 1313 0198 6973725F 		.ascii	"isr_rbat_Interrupt\000"
- 1313      72626174 
- 1313      5F496E74 
- 1313      65727275 
- 1313      707400
- 1314              	.LASF26:
- 1315 01ab 7072696F 		.ascii	"priority\000"
- 1315      72697479 
- 1315      00
- 1316              	.LASF15:
- 1317 01b4 75696E74 		.ascii	"uint16\000"
- 1317      313600
- 1318              	.LASF24:
- 1319 01bb 6973725F 		.ascii	"isr_rbat_SetPriority\000"
- 1319      72626174 
- 1319      5F536574 
- 1319      5072696F 
- 1319      72697479 
- 1320              	.LASF16:
- 1321 01d0 75696E74 		.ascii	"uint32\000"
- 1321      333200
- 1322              	.LASF40:
- 1323 01d7 47656E65 		.ascii	"Generated_Source\\PSoC5\\isr_rbat.c\000"
- 1323      72617465 
- 1323      645F536F 
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 33
+ 1298      20756E73 
+ 1298      69676E65 
+ 1298      6420696E 
+ 1298      7400
+ 1299              	.LASF30:
+ 1300 0155 6973725F 		.ascii	"isr_rbat_Enable\000"
+ 1300      72626174 
+ 1300      5F456E61 
+ 1300      626C6500 
+ 1301              	.LASF6:
+ 1302 0165 73686F72 		.ascii	"short unsigned int\000"
+ 1302      7420756E 
+ 1302      7369676E 
+ 1302      65642069 
+ 1302      6E7400
+ 1303              	.LASF37:
+ 1304 0178 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1304      52784275 
+ 1304      66666572 
+ 1304      00
+ 1305              	.LASF27:
+ 1306 0185 6973725F 		.ascii	"isr_rbat_GetVector\000"
+ 1306      72626174 
+ 1306      5F476574 
+ 1306      56656374 
+ 1306      6F7200
+ 1307              	.LASF29:
+ 1308 0198 6973725F 		.ascii	"isr_rbat_Interrupt\000"
+ 1308      72626174 
+ 1308      5F496E74 
+ 1308      65727275 
+ 1308      707400
+ 1309              	.LASF26:
+ 1310 01ab 7072696F 		.ascii	"priority\000"
+ 1310      72697479 
+ 1310      00
+ 1311              	.LASF15:
+ 1312 01b4 75696E74 		.ascii	"uint16\000"
+ 1312      313600
+ 1313              	.LASF24:
+ 1314 01bb 6973725F 		.ascii	"isr_rbat_SetPriority\000"
+ 1314      72626174 
+ 1314      5F536574 
+ 1314      5072696F 
+ 1314      72697479 
+ 1315              	.LASF16:
+ 1316 01d0 75696E74 		.ascii	"uint32\000"
+ 1316      333200
+ 1317              	.LASF40:
+ 1318 01d7 47656E65 		.ascii	"Generated_Source\\PSoC5\\isr_rbat.c\000"
+ 1318      72617465 
+ 1318      645F536F 
+ 1318      75726365 
+ 1318      5C50536F 
+ 1319              	.LASF0:
+ 1320 01f9 756E7369 		.ascii	"unsigned int\000"
+ 1320      676E6564 
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 33
 
 
- 1323      75726365 
- 1323      5C50536F 
- 1324              	.LASF0:
- 1325 01f9 756E7369 		.ascii	"unsigned int\000"
- 1325      676E6564 
- 1325      20696E74 
- 1325      00
- 1326              	.LASF25:
- 1327 0206 61646472 		.ascii	"address\000"
- 1327      65737300 
- 1328              	.LASF9:
- 1329 020e 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1329      206C6F6E 
- 1329      6720756E 
- 1329      7369676E 
- 1329      65642069 
- 1330              	.LASF21:
- 1331 0225 63796973 		.ascii	"cyisraddress\000"
- 1331      72616464 
- 1331      72657373 
- 1331      00
- 1332              	.LASF13:
- 1333 0232 696E7433 		.ascii	"int32_t\000"
- 1333      325F7400 
- 1334              	.LASF10:
- 1335 023a 73697A65 		.ascii	"sizetype\000"
- 1335      74797065 
- 1335      00
- 1336              	.LASF34:
- 1337 0243 6973725F 		.ascii	"isr_rbat_Stop\000"
- 1337      72626174 
- 1337      5F53746F 
- 1337      7000
- 1338              	.LASF1:
- 1339 0251 6C6F6E67 		.ascii	"long long int\000"
- 1339      206C6F6E 
- 1339      6720696E 
- 1339      7400
- 1340              	.LASF11:
- 1341 025f 63686172 		.ascii	"char\000"
- 1341      00
- 1342              	.LASF22:
- 1343 0264 72616D56 		.ascii	"ramVectorTable\000"
- 1343      6563746F 
- 1343      72546162 
- 1343      6C6500
- 1344              	.LASF5:
- 1345 0273 73686F72 		.ascii	"short int\000"
- 1345      7420696E 
- 1345      7400
- 1346              	.LASF14:
- 1347 027d 75696E74 		.ascii	"uint8\000"
- 1347      3800
- 1348              	.LASF7:
- 1349 0283 6C6F6E67 		.ascii	"long int\000"
- 1349      20696E74 
- 1349      00
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccVeZOPS.s 			page 34
+ 1320      20696E74 
+ 1320      00
+ 1321              	.LASF25:
+ 1322 0206 61646472 		.ascii	"address\000"
+ 1322      65737300 
+ 1323              	.LASF9:
+ 1324 020e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1324      206C6F6E 
+ 1324      6720756E 
+ 1324      7369676E 
+ 1324      65642069 
+ 1325              	.LASF21:
+ 1326 0225 63796973 		.ascii	"cyisraddress\000"
+ 1326      72616464 
+ 1326      72657373 
+ 1326      00
+ 1327              	.LASF13:
+ 1328 0232 696E7433 		.ascii	"int32_t\000"
+ 1328      325F7400 
+ 1329              	.LASF10:
+ 1330 023a 73697A65 		.ascii	"sizetype\000"
+ 1330      74797065 
+ 1330      00
+ 1331              	.LASF34:
+ 1332 0243 6973725F 		.ascii	"isr_rbat_Stop\000"
+ 1332      72626174 
+ 1332      5F53746F 
+ 1332      7000
+ 1333              	.LASF1:
+ 1334 0251 6C6F6E67 		.ascii	"long long int\000"
+ 1334      206C6F6E 
+ 1334      6720696E 
+ 1334      7400
+ 1335              	.LASF11:
+ 1336 025f 63686172 		.ascii	"char\000"
+ 1336      00
+ 1337              	.LASF22:
+ 1338 0264 72616D56 		.ascii	"ramVectorTable\000"
+ 1338      6563746F 
+ 1338      72546162 
+ 1338      6C6500
+ 1339              	.LASF5:
+ 1340 0273 73686F72 		.ascii	"short int\000"
+ 1340      7420696E 
+ 1340      7400
+ 1341              	.LASF14:
+ 1342 027d 75696E74 		.ascii	"uint8\000"
+ 1342      3800
+ 1343              	.LASF7:
+ 1344 0283 6C6F6E67 		.ascii	"long int\000"
+ 1344      20696E74 
+ 1344      00
+ 1345              	.LASF35:
+ 1346 028c 6973725F 		.ascii	"isr_rbat_SetPending\000"
+ 1346      72626174 
+ 1346      5F536574 
+ 1346      50656E64 
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccEH0Ric.s 			page 34
 
 
- 1350              	.LASF35:
- 1351 028c 6973725F 		.ascii	"isr_rbat_SetPending\000"
- 1351      72626174 
- 1351      5F536574 
- 1351      50656E64 
- 1351      696E6700 
- 1352              	.LASF2:
- 1353 02a0 6C6F6E67 		.ascii	"long double\000"
- 1353      20646F75 
- 1353      626C6500 
- 1354              	.LASF33:
- 1355 02ac 6973725F 		.ascii	"isr_rbat_StartEx\000"
- 1355      72626174 
- 1355      5F537461 
- 1355      72744578 
- 1355      00
- 1356              	.LASF41:
- 1357 02bd 433A5C55 		.ascii	"C:\\Users\\pcoud\\githup\\psoc\\ferme\\transmi_cart"
- 1357      73657273 
- 1357      5C70636F 
- 1357      75645C67 
- 1357      69746875 
- 1358 02ea 65732E63 		.ascii	"es.cydsn\000"
- 1358      7964736E 
- 1358      00
- 1359              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1346      696E6700 
+ 1347              	.LASF2:
+ 1348 02a0 6C6F6E67 		.ascii	"long double\000"
+ 1348      20646F75 
+ 1348      626C6500 
+ 1349              	.LASF33:
+ 1350 02ac 6973725F 		.ascii	"isr_rbat_StartEx\000"
+ 1350      72626174 
+ 1350      5F537461 
+ 1350      72744578 
+ 1350      00
+ 1351              	.LASF41:
+ 1352 02bd 433A5C55 		.ascii	"C:\\Users\\pcoud\\githup\\psoc\\ferme\\transmi_cart"
+ 1352      73657273 
+ 1352      5C70636F 
+ 1352      75645C67 
+ 1352      69746875 
+ 1353 02ea 65732E63 		.ascii	"es.cydsn\000"
+ 1353      7964736E 
+ 1353      00
+ 1354              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

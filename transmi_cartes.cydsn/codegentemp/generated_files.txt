@@ -18,11 +18,6 @@
   <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\cyfitteriar.inc" value="HEADER;;;;;" />
   <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
   <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
-  <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\Clock_2.c" value="SOURCE_C;CortexM3;;;;Clock_2" />
-  <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\Clock_2.h" value="HEADER;;;;;Clock_2" />
-  <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\PWM_LED.c" value="SOURCE_C;CortexM3;;;;PWM_LED" />
-  <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\PWM_LED.h" value="HEADER;;;;;PWM_LED" />
-  <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\PWM_LED_PM.c" value="SOURCE_C;CortexM3;;;;PWM_LED" />
   <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\UART_SIG.c" value="SOURCE_C;CortexM3;;;;UART_SIG" />
   <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\UART_SIG.h" value="HEADER;;;;;UART_SIG" />
   <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\UART_SIG_PM.c" value="SOURCE_C;CortexM3;;;;UART_SIG" />
@@ -54,8 +49,8 @@
   <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\Relais_aliases.h" value="HEADER;;;;;Relais" />
   <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\Relais.c" value="SOURCE_C;CortexM3;;;;Relais" />
   <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\Relais.h" value="HEADER;;;;;Relais" />
-  <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\isr_1.c" value="SOURCE_C;CortexM3;;;;isr_1" />
-  <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\isr_1.h" value="HEADER;;;;;isr_1" />
+  <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\isr_serial.c" value="SOURCE_C;CortexM3;;;;isr_serial" />
+  <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\isr_serial.h" value="HEADER;;;;;isr_serial" />
   <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\UART_SIG_IntClock.c" value="SOURCE_C;CortexM3;;;;UART_SIG_IntClock" />
   <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\UART_SIG_IntClock.h" value="HEADER;;;;;UART_SIG_IntClock" />
   <file name="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />

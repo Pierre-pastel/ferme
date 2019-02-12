@@ -1,5 +1,5 @@
 # transmi_cartes
-# 2019-01-31 18:47:36Z
+# 2019-02-07 14:11:22Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -19,4 +19,4 @@ set_io "VBAT1(0)" iocell 15 3
 set_io "VBAT2(0)" iocell 15 2
 set_io "VCHAR(0)" iocell 15 1
 set_io "VPAN(0)" iocell 15 0
-set_io "Relais(0)" iocell 2 1
+set_io "Relais(0)" iocell 15 5

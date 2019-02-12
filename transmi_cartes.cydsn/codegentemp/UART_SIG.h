@@ -31,7 +31,7 @@
 #define UART_SIG_RX_ENABLED                     (1u)
 #define UART_SIG_TX_ENABLED                     (1u)
 #define UART_SIG_HD_ENABLED                     (0u)
-#define UART_SIG_RX_INTERRUPT_ENABLED           (1u)
+#define UART_SIG_RX_INTERRUPT_ENABLED           (0u)
 #define UART_SIG_TX_INTERRUPT_ENABLED           (0u)
 #define UART_SIG_INTERNAL_CLOCK_USED            (1u)
 #define UART_SIG_RXHW_ADDRESS_ENABLED           (0u)
@@ -46,7 +46,7 @@
 #define UART_SIG_FLOW_CONTROL                   (0u)
 #define UART_SIG_CLK_FREQ                       (0u)
 #define UART_SIG_TX_BUFFER_SIZE                 (4u)
-#define UART_SIG_RX_BUFFER_SIZE                 (100u)
+#define UART_SIG_RX_BUFFER_SIZE                 (4u)
 
 /* Check to see if required defines such as CY_PSOC5LP are available */
 /* They are defined starting with cy_boot v3.0 */
