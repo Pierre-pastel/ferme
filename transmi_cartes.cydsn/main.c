@@ -100,7 +100,7 @@ void lecture_leds(){
 /********************************************END lecture LEDS********************************************/
 
 
-/********************************************START Envoi Sigfox********************************************/
+/********************************************START Initialisation Sigfox********************************************/
 void sigfox_init()
     {
      //initialisation du module sigfox
@@ -110,8 +110,23 @@ void sigfox_init()
     UART_SIG_PutString("ATQ0\r");
     CyDelay(1000);
     }
-
-
+/********************************************START Initialisation GSM********************************************/
+//Initialisation du GSM
+void gsm_init()
+    {
+    UART_GSM_Start();     
+    CyDelay(1000);
+    UART_GSM_ClearTxBuffer();                //Efface le buffer de Tx
+    UART_GSM_PutString("AT\n\r");
+    CyDelay(500);
+    //UART_GSM_PutString("AT+CSQ\r");        //Demande du niveau de réception
+    //CyDelay(500);
+    UART_GSM_PutString("AT+CMGF=1\n\r");       //Choix du mode texte
+    CyDelay(500);
+    UART_GSM_PutString("AT+CSMP=17,0,0\n\r");  //Paramètrage du mode texte
+    CyDelay(500);
+    UART_GSM_PutString("AT+CMGD=1,1\n\r");     //Efface les messages
+    }
 
 /********************************************START Envoi Sigfox********************************************/
 void sigfox_send()
@@ -164,6 +179,7 @@ int main(void)
 {
     CyGlobalIntEnable; 
     sigfox_init();
+    gsm_init();
     Relais_Write(0); 
     for(;;)
     {       
@@ -190,6 +206,11 @@ int main(void)
         CyDelay(660000); //Toutes les ?? minutes
     }
     else {  //Disjoncté
+        UART_GSM_ClearTxBuffer();           //Efface le buffer de Tx
+        UART_GSM_PutString("AT+CMGS=\"+33630702827\"\r\n");     //Sélection du destinataire
+        CyDelay(500);
+        UART_GSM_PutString("Regulateur disjonte !");
+        UART_GSM_PutChar(26);                         //Envoi du message par un Ctrl+z (0x1A en hexa )
         CyDelay(660000); //Toutes les 11 minutes
     };                        
     }

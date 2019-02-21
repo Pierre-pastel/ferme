@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\UART_GSM">
+<ExpandedNodeIds>
+<v>transmi_cartes-000</v>
+<v>transmi_cartes-000\transmi_cartes</v>
+<v>transmi_cartes-000\transmi_cartes\TopDesign</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\Pins</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\Analog</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\Clocks</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\Interrupts</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\DMA</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\System</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\Directives</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\Flash Security</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\EEPROM</v>
+<v>transmi_cartes-000\transmi_cartes\Header Files</v>
+<v>transmi_cartes-000\transmi_cartes\Header Files\cyapicallbacks.h</v>
+<v>transmi_cartes-000\transmi_cartes\Source Files</v>
+<v>transmi_cartes-000\transmi_cartes\Source Files\main.c</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\isr_serial</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\UART_GSM</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>transmi_cartes-000</v>
+<v>transmi_cartes-000\transmi_cartes</v>
+<v>transmi_cartes-000\transmi_cartes\TopDesign</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\Pins</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\Analog</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\Clocks</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\Interrupts</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\DMA</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\System</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\Directives</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\Flash Security</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.cydwr\EEPROM</v>
+<v>transmi_cartes-000\transmi_cartes\Header Files</v>
+<v>transmi_cartes-000\transmi_cartes\Header Files\cyapicallbacks.h</v>
+<v>transmi_cartes-000\transmi_cartes\Source Files</v>
+<v>transmi_cartes-000\transmi_cartes\Source Files\main.c</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\cy_boot</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\isr_rbat</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\isr_rch</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\isr_serial</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\isr_serial\isr_serial.c</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\isr_serial\isr_serial.h</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\isr_vbat</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\isr_vpan</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\niveau</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\Relais</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\UART_GSM</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\UART_GSM\UART_GSM.c</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\UART_GSM\UART_GSM.h</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\UART_GSM\UART_GSM_BOOT.c</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\UART_GSM\UART_GSM_INT.c</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\UART_GSM\UART_GSM_PM.c</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\UART_GSM_IntClock</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\UART_SIG</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\UART_SIG_IntClock</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\VBAT1</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\VBAT2</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\VCHAR</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\VPAN</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\cydevice.h</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>transmi_cartes-000\transmi_cartes\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>transmi_cartes-000</v>
+<v>transmi_cartes-000\transmi_cartes</v>
+<v>transmi_cartes-000\transmi_cartes\TopDesign</v>
+<v>transmi_cartes-000\transmi_cartes\TopDesign\TopDesign.cysch</v>
+<v>transmi_cartes-000\transmi_cartes\TopDesign\TopDesign.cysym</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>transmi_cartes-000</v>
+<v>transmi_cartes-000\transmi_cartes</v>
+<v>transmi_cartes-000\transmi_cartes\TopDesign</v>
+<v>transmi_cartes-000\transmi_cartes\TopDesign\TopDesign.cysch</v>
+<v>transmi_cartes-000\transmi_cartes\TopDesign\TopDesign.cysym</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>transmi_cartes-000</v>
+<v>transmi_cartes-000\transmi_cartes</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_rbat.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_rch.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_serial.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_vbat.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_vpan.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\niveau.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\Relais.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_GSM.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_GSM_BOOT.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_GSM_INT.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_GSM_IntClock.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_GSM_PM.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_SIG.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_SIG_BOOT.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_SIG_INT.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_SIG_IntClock.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_SIG_PM.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\VBAT1.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\VBAT2.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\VCHAR.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\VPAN.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\transmi_cartes.elf</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\transmi_cartes.hex</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\transmi_cartes.map</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.gpdsc</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.rpt</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>transmi_cartes-000</v>
+<v>transmi_cartes-000\transmi_cartes</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_rbat.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_rch.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_serial.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_vbat.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_vpan.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\niveau.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\Relais.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_GSM.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_GSM_BOOT.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_GSM_INT.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_GSM_IntClock.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_GSM_PM.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_SIG.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_SIG_BOOT.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_SIG_INT.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_SIG_IntClock.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_SIG_PM.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\VBAT1.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\VBAT2.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\VCHAR.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\Listing Files\VPAN.lst</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\transmi_cartes.elf</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\transmi_cartes.hex</v>
+<v>transmi_cartes-000\transmi_cartes\CortexM3\ARM_GCC_541\Debug\transmi_cartes.map</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.gpdsc</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes.rpt</v>
+<v>transmi_cartes-000\transmi_cartes\transmi_cartes_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>transmi_cartes-000</v>
+<v>transmi_cartes-000\transmi_cartes</v>
+<v>transmi_cartes-000\transmi_cartes\PSoC 5LP Architecture TRM</v>
+<v>transmi_cartes-000\transmi_cartes\CY8C58LP Family Datasheet</v>
+<v>transmi_cartes-000\transmi_cartes\System Reference Guides</v>
+<v>transmi_cartes-000\transmi_cartes\System Reference Guides\cy_boot_v5_60</v>
+<v>transmi_cartes-000\transmi_cartes\cy_isr_v1_70</v>
+<v>transmi_cartes-000\transmi_cartes\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>transmi_cartes-000\transmi_cartes\cy_pins_v2_20</v>
+<v>transmi_cartes-000\transmi_cartes\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>transmi_cartes-000\transmi_cartes\UART_v2_50</v>
+<v>transmi_cartes-000\transmi_cartes\UART_v2_50\UART_v2_50.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>transmi_cartes-000</v>
+<v>transmi_cartes-000\transmi_cartes</v>
+<v>transmi_cartes-000\transmi_cartes\PSoC 5LP Architecture TRM</v>
+<v>transmi_cartes-000\transmi_cartes\CY8C58LP Family Datasheet</v>
+<v>transmi_cartes-000\transmi_cartes\System Reference Guides</v>
+<v>transmi_cartes-000\transmi_cartes\System Reference Guides\cy_boot_v5_60</v>
+<v>transmi_cartes-000\transmi_cartes\cy_isr_v1_70</v>
+<v>transmi_cartes-000\transmi_cartes\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>transmi_cartes-000\transmi_cartes\cy_pins_v2_20</v>
+<v>transmi_cartes-000\transmi_cartes\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>transmi_cartes-000\transmi_cartes\UART_v2_50</v>
+<v>transmi_cartes-000\transmi_cartes\UART_v2_50\UART_v2_50.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\transmi_cartes.cydwr" />
+<name v=".\TopDesign\TopDesign.cysch" />
+<name v=".\main.c" />
+<name v=".\Generated_Source\PSoC5\isr_serial.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1225, 711" SelectedTabbedMdiWindow="743ca012-b4de-4cfe-accc-f65b91969f0c"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="bc5dfd20-fdfe-4b2b-9933-fb8fd98de9fa" /><DocumentWindow Key="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn\transmi_cartes.cydwr" Guid="ffe0207c-d6f3-4d92-ba62-9fd03cf930d4" /><DocumentWindow Key="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn\TopDesign\TopDesign.cysch" Guid="45c7719b-9fd5-485b-b668-08055f9c7240" /><DocumentWindow Key="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn\main.c" Guid="743ca012-b4de-4cfe-accc-f65b91969f0c" /><DocumentWindow Key="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn\Generated_Source\PSoC5\isr_serial.c" Guid="bf86cc94-5464-4a30-9d82-bf260d6755d8" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

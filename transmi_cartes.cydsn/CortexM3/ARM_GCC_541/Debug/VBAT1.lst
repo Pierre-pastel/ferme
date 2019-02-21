@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
   28:Generated_Source\PSoC5/VBAT1.c **** *
   29:Generated_Source\PSoC5/VBAT1.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/VBAT1.c **** *  and shifting the bits appropriately. 
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 2
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 2
 
 
   31:Generated_Source\PSoC5/VBAT1.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
   52              		.size	VBAT1_Write, .-VBAT1_Write
   53              		.section	.text.VBAT1_SetDriveMode,"ax",%progbits
   54              		.align	2
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 3
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 3
 
 
   55              		.global	VBAT1_SetDriveMode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
   77 0012 00BF     		.align	2
   78              	.L5:
   79 0014 7B500040 		.word	1073762427
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 4
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 4
 
 
   80              		.cfi_endproc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  110              		.align	2
  111              		.global	VBAT1_ReadDataReg
  112              		.thumb
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 5
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 5
 
 
  113              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  139              	.Ldebug_info0:
  140 0000 1B010000 		.4byte	0x11b
  141 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 6
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 6
 
 
  142 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -307,7 +307,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  145 000c 50000000 		.4byte	.LASF20
  146 0010 0C       		.byte	0xc
  147 0011 1D000000 		.4byte	.LASF21
- 148 0015 F5000000 		.4byte	.LASF22
+ 148 0015 63010000 		.4byte	.LASF22
  149 0019 00000000 		.4byte	.Ldebug_ranges0+0
  150 001d 00000000 		.4byte	0
  151 0021 00000000 		.4byte	.Ldebug_line0
@@ -326,7 +326,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  164 003a 02       		.uleb128 0x2
  165 003b 02       		.byte	0x2
  166 003c 07       		.byte	0x7
- 167 003d 2B010000 		.4byte	.LASF3
+ 167 003d F5000000 		.4byte	.LASF3
  168 0041 02       		.uleb128 0x2
  169 0042 04       		.byte	0x4
  170 0043 05       		.byte	0x5
@@ -342,7 +342,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  180 0056 02       		.uleb128 0x2
  181 0057 08       		.byte	0x8
  182 0058 07       		.byte	0x7
- 183 0059 70010000 		.4byte	.LASF7
+ 183 0059 4C010000 		.4byte	.LASF7
  184 005d 03       		.uleb128 0x3
  185 005e 04       		.byte	0x4
  186 005f 05       		.byte	0x5
@@ -350,7 +350,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  188 0064 02       		.uleb128 0x2
  189 0065 04       		.byte	0x4
  190 0066 07       		.byte	0x7
- 191 0067 63010000 		.4byte	.LASF8
+ 191 0067 3F010000 		.4byte	.LASF8
  192 006b 04       		.uleb128 0x4
  193 006c BB010000 		.4byte	.LASF12
  194 0070 02       		.byte	0x2
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  196 0073 2C000000 		.4byte	0x2c
  197 0077 02       		.uleb128 0x2
  198 0078 04       		.byte	0x4
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 7
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 7
 
 
  199 0079 04       		.byte	0x4
@@ -366,7 +366,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  201 007e 02       		.uleb128 0x2
  202 007f 08       		.byte	0x8
  203 0080 04       		.byte	0x4
- 204 0081 5C010000 		.4byte	.LASF10
+ 204 0081 38010000 		.4byte	.LASF10
  205 0085 02       		.uleb128 0x2
  206 0086 01       		.byte	0x1
  207 0087 08       		.byte	0x8
@@ -402,7 +402,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  237 00cd 53       		.byte	0x53
  238 00ce 00       		.byte	0
  239 00cf 06       		.uleb128 0x6
- 240 00d0 49010000 		.4byte	.LASF15
+ 240 00d0 25010000 		.4byte	.LASF15
  241 00d4 01       		.byte	0x1
  242 00d5 5A       		.byte	0x5a
  243 00d6 00000000 		.4byte	.LFB1
@@ -418,10 +418,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  253 00ef 21000000 		.4byte	.LLST1
  254 00f3 00       		.byte	0
  255 00f4 09       		.uleb128 0x9
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 8
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 8
 
 
- 256 00f5 3E010000 		.4byte	.LASF18
+ 256 00f5 08010000 		.4byte	.LASF18
  257 00f9 01       		.byte	0x1
  258 00fa 71       		.byte	0x71
  259 00fb 6B000000 		.4byte	0x6b
@@ -430,7 +430,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  262 0107 01       		.uleb128 0x1
  263 0108 9C       		.byte	0x9c
  264 0109 09       		.uleb128 0x9
- 265 010a 87010000 		.4byte	.LASF19
+ 265 010a 13010000 		.4byte	.LASF19
  266 010e 01       		.byte	0x1
  267 010f 8D       		.byte	0x8d
  268 0110 6B000000 		.4byte	0x6b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  310 0022 0B       		.uleb128 0xb
  311 0023 3E       		.uleb128 0x3e
  312 0024 0B       		.uleb128 0xb
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 9
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 9
 
 
  313 0025 03       		.uleb128 0x3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  367 005c 3A       		.uleb128 0x3a
  368 005d 0B       		.uleb128 0xb
  369 005e 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 10
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 10
 
 
  370 005f 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  424 000a 50       		.byte	0x50
  425 000b 0A000000 		.4byte	.LVL2
  426 000f 18000000 		.4byte	.LFE0
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 11
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 11
 
 
  427 0013 0400     		.2byte	0x4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  480      02004200 
  480      00000201 
  480      FB0E0D00 
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 12
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 12
 
 
  480      01010101 
@@ -712,54 +712,54 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  500      69676E65 
  500      6420696E 
  500      7400
- 501              	.LASF22:
- 502 00f5 433A5C55 		.ascii	"C:\\Users\\pcoud\\githup\\psoc\\ferme\\transmi_cart"
- 502      73657273 
- 502      5C70636F 
- 502      75645C67 
- 502      69746875 
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 13
+ 501              	.LASF3:
+ 502 00f5 73686F72 		.ascii	"short unsigned int\000"
+ 502      7420756E 
+ 502      7369676E 
+ 502      65642069 
+ 502      6E7400
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 13
 
 
- 503 0122 65732E63 		.ascii	"es.cydsn\000"
- 503      7964736E 
- 503      00
- 504              	.LASF3:
- 505 012b 73686F72 		.ascii	"short unsigned int\000"
- 505      7420756E 
- 505      7369676E 
- 505      65642069 
- 505      6E7400
- 506              	.LASF18:
- 507 013e 56424154 		.ascii	"VBAT1_Read\000"
- 507      315F5265 
- 507      616400
- 508              	.LASF15:
- 509 0149 56424154 		.ascii	"VBAT1_SetDriveMode\000"
- 509      315F5365 
- 509      74447269 
- 509      76654D6F 
- 509      646500
- 510              	.LASF10:
- 511 015c 646F7562 		.ascii	"double\000"
- 511      6C6500
- 512              	.LASF8:
- 513 0163 756E7369 		.ascii	"unsigned int\000"
- 513      676E6564 
- 513      20696E74 
- 513      00
- 514              	.LASF7:
- 515 0170 6C6F6E67 		.ascii	"long long unsigned int\000"
- 515      206C6F6E 
- 515      6720756E 
- 515      7369676E 
- 515      65642069 
- 516              	.LASF19:
- 517 0187 56424154 		.ascii	"VBAT1_ReadDataReg\000"
- 517      315F5265 
- 517      61644461 
- 517      74615265 
- 517      6700
+ 503              	.LASF18:
+ 504 0108 56424154 		.ascii	"VBAT1_Read\000"
+ 504      315F5265 
+ 504      616400
+ 505              	.LASF19:
+ 506 0113 56424154 		.ascii	"VBAT1_ReadDataReg\000"
+ 506      315F5265 
+ 506      61644461 
+ 506      74615265 
+ 506      6700
+ 507              	.LASF15:
+ 508 0125 56424154 		.ascii	"VBAT1_SetDriveMode\000"
+ 508      315F5365 
+ 508      74447269 
+ 508      76654D6F 
+ 508      646500
+ 509              	.LASF10:
+ 510 0138 646F7562 		.ascii	"double\000"
+ 510      6C6500
+ 511              	.LASF8:
+ 512 013f 756E7369 		.ascii	"unsigned int\000"
+ 512      676E6564 
+ 512      20696E74 
+ 512      00
+ 513              	.LASF7:
+ 514 014c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 514      206C6F6E 
+ 514      6720756E 
+ 514      7369676E 
+ 514      65642069 
+ 515              	.LASF22:
+ 516 0163 433A5C55 		.ascii	"C:\\Users\\pcoud\\github\\psoc\\ferme\\transmi_cart"
+ 516      73657273 
+ 516      5C70636F 
+ 516      75645C67 
+ 516      69746875 
+ 517 0190 65732E63 		.ascii	"es.cydsn\000"
+ 517      7964736E 
+ 517      00
  518              	.LASF17:
  519 0199 6D6F6465 		.ascii	"mode\000"
  519      00
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 1
  526              	.LASF12:
  527 01bb 75696E74 		.ascii	"uint8\000"
  527      3800
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccLavuro.s 			page 14
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccGtWfJN.s 			page 14
 
 
  528              	.LASF4:

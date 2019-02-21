@@ -166,9 +166,10 @@ CY_ISR(isr_serial_Interrupt)
     #ifdef isr_serial_INTERRUPT_INTERRUPT_CALLBACK
         isr_serial_Interrupt_InterruptCallback();
     #endif /* isr_serial_INTERRUPT_INTERRUPT_CALLBACK */ 
-    uint8 i;
+
     /*  Place your Interrupt code here. */
     /* `#START isr_serial_Interrupt` */
+    uint8 i;
     message[cptcar]=UART_SIG_GetChar() ;
     if (message[cptcar]==0xA) {
         if (phase==0) {for(i=0;i<=cptcar;i++){begin[i]=message[i];};}

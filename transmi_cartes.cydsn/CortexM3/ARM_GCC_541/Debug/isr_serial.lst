@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
   28:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************/
   29:Generated_Source\PSoC5/isr_serial.c **** /* `#START isr_serial_intc` */
   30:Generated_Source\PSoC5/isr_serial.c **** #include <project.h>
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 2
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 2
 
 
   31:Generated_Source\PSoC5/isr_serial.c **** extern uint8 cptcar; 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
   85:Generated_Source\PSoC5/isr_serial.c **** * Summary:
   86:Generated_Source\PSoC5/isr_serial.c **** *  Sets up the interrupt and enables it. This function disables the interrupt,
   87:Generated_Source\PSoC5/isr_serial.c **** *  sets the interrupt vector based on the address passed in, sets the priority 
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 3
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 3
 
 
   88:Generated_Source\PSoC5/isr_serial.c **** *  from the value in the Design Wide Resources Interrupt Editor, then enables 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  142:Generated_Source\PSoC5/isr_serial.c **** 
  143:Generated_Source\PSoC5/isr_serial.c ****     /* Set the ISR to point to the passive one. */
  144:Generated_Source\PSoC5/isr_serial.c ****     isr_serial_SetVector(&IntDefaultHandler);
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 4
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 4
 
 
  145:Generated_Source\PSoC5/isr_serial.c **** }
@@ -215,35 +215,36 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  166:Generated_Source\PSoC5/isr_serial.c ****     #ifdef isr_serial_INTERRUPT_INTERRUPT_CALLBACK
  167:Generated_Source\PSoC5/isr_serial.c ****         isr_serial_Interrupt_InterruptCallback();
  168:Generated_Source\PSoC5/isr_serial.c ****     #endif /* isr_serial_INTERRUPT_INTERRUPT_CALLBACK */ 
- 169:Generated_Source\PSoC5/isr_serial.c ****     uint8 i;
+ 169:Generated_Source\PSoC5/isr_serial.c **** 
  170:Generated_Source\PSoC5/isr_serial.c ****     /*  Place your Interrupt code here. */
  171:Generated_Source\PSoC5/isr_serial.c ****     /* `#START isr_serial_Interrupt` */
- 172:Generated_Source\PSoC5/isr_serial.c ****     message[cptcar]=UART_SIG_GetChar() ;
-  38              		.loc 1 172 0
+ 172:Generated_Source\PSoC5/isr_serial.c ****     uint8 i;
+ 173:Generated_Source\PSoC5/isr_serial.c ****     message[cptcar]=UART_SIG_GetChar() ;
+  38              		.loc 1 173 0
   39 0002 194C     		ldr	r4, .L12
   40 0004 2578     		ldrb	r5, [r4]	@ zero_extendqisi2
   41 0006 FFF7FEFF 		bl	UART_SIG_GetChar
   42              	.LVL0:
   43 000a 184B     		ldr	r3, .L12+4
   44 000c 5855     		strb	r0, [r3, r5]
- 173:Generated_Source\PSoC5/isr_serial.c ****     if (message[cptcar]==0xA) {
-  45              		.loc 1 173 0
+ 174:Generated_Source\PSoC5/isr_serial.c ****     if (message[cptcar]==0xA) {
+  45              		.loc 1 174 0
   46 000e 2278     		ldrb	r2, [r4]	@ zero_extendqisi2
   47 0010 9B5C     		ldrb	r3, [r3, r2]	@ zero_extendqisi2
   48 0012 0A2B     		cmp	r3, #10
   49 0014 22D1     		bne	.L2
- 174:Generated_Source\PSoC5/isr_serial.c ****         if (phase==0) {for(i=0;i<=cptcar;i++){begin[i]=message[i];};}
-  50              		.loc 1 174 0
+ 175:Generated_Source\PSoC5/isr_serial.c ****         if (phase==0) {for(i=0;i<=cptcar;i++){begin[i]=message[i];};}
+  50              		.loc 1 175 0
   51 0016 164B     		ldr	r3, .L12+8
   52 0018 1C78     		ldrb	r4, [r3]	@ zero_extendqisi2
   53 001a 3CB1     		cbz	r4, .L9
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 5
+
+
   54 001c 09E0     		b	.L4
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 5
-
-
   55              	.LVL1:
   56              	.L5:
-  57              		.loc 1 174 0 is_stmt 0 discriminator 4
+  57              		.loc 1 175 0 is_stmt 0 discriminator 4
   58 001e 1349     		ldr	r1, .L12+4
   59 0020 C85C     		ldrb	r0, [r1, r3]	@ zero_extendqisi2
   60 0022 1449     		ldr	r1, .L12+12
@@ -258,19 +259,19 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
   69 002c 0023     		movs	r3, #0
   70              	.L3:
   71              	.LVL5:
-  72              		.loc 1 174 0 discriminator 2
+  72              		.loc 1 175 0 discriminator 2
   73 002e 9342     		cmp	r3, r2
   74 0030 F5D9     		bls	.L5
   75              	.LVL6:
   76              	.L4:
- 175:Generated_Source\PSoC5/isr_serial.c ****         if (phase==1) {for(i=0;i<=cptcar;i++){resp[i]=message[i];};}
-  77              		.loc 1 175 0 is_stmt 1
+ 176:Generated_Source\PSoC5/isr_serial.c ****         if (phase==1) {for(i=0;i<=cptcar;i++){resp[i]=message[i];};}
+  77              		.loc 1 176 0 is_stmt 1
   78 0032 012C     		cmp	r4, #1
   79 0034 0AD1     		bne	.L7
   80 0036 06E0     		b	.L10
   81              	.LVL7:
   82              	.L8:
-  83              		.loc 1 175 0 is_stmt 0 discriminator 4
+  83              		.loc 1 176 0 is_stmt 0 discriminator 4
   84 0038 0C49     		ldr	r1, .L12+4
   85 003a C85C     		ldrb	r0, [r1, r3]	@ zero_extendqisi2
   86 003c 0E49     		ldr	r1, .L12+16
@@ -285,32 +286,32 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
   95 0046 0023     		movs	r3, #0
   96              	.L6:
   97              	.LVL11:
-  98              		.loc 1 175 0 discriminator 2
+  98              		.loc 1 176 0 discriminator 2
   99 0048 9342     		cmp	r3, r2
  100 004a F5D9     		bls	.L8
  101              	.LVL12:
  102              	.L7:
- 176:Generated_Source\PSoC5/isr_serial.c ****         cptcar=0;
- 103              		.loc 1 176 0 is_stmt 1
+ 177:Generated_Source\PSoC5/isr_serial.c ****         cptcar=0;
+ 103              		.loc 1 177 0 is_stmt 1
  104 004c 0022     		movs	r2, #0
  105 004e 064B     		ldr	r3, .L12
  106 0050 1A70     		strb	r2, [r3]
- 177:Generated_Source\PSoC5/isr_serial.c ****         phase++;
- 107              		.loc 1 177 0
+ 178:Generated_Source\PSoC5/isr_serial.c ****         phase++;
+ 107              		.loc 1 178 0
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 6
+
+
  108 0052 0134     		adds	r4, r4, #1
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 6
-
-
  109 0054 064B     		ldr	r3, .L12+8
  110 0056 1C70     		strb	r4, [r3]
- 178:Generated_Source\PSoC5/isr_serial.c ****         UART_SIG_ClearRxBuffer();    //Efface le buffer de Rx
- 111              		.loc 1 178 0
+ 179:Generated_Source\PSoC5/isr_serial.c ****         UART_SIG_ClearRxBuffer();    //Efface le buffer de Rx
+ 111              		.loc 1 179 0
  112 0058 FFF7FEFF 		bl	UART_SIG_ClearRxBuffer
  113              	.LVL13:
  114              	.L2:
- 179:Generated_Source\PSoC5/isr_serial.c ****         }
- 180:Generated_Source\PSoC5/isr_serial.c ****     cptcar++;
- 115              		.loc 1 180 0
+ 180:Generated_Source\PSoC5/isr_serial.c ****         }
+ 181:Generated_Source\PSoC5/isr_serial.c ****     cptcar++;
+ 115              		.loc 1 181 0
  116 005c 024A     		ldr	r2, .L12
  117 005e 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  118 0060 0133     		adds	r3, r3, #1
@@ -335,59 +336,59 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  137              		.type	isr_serial_SetVector, %function
  138              	isr_serial_SetVector:
  139              	.LFB67:
- 181:Generated_Source\PSoC5/isr_serial.c **** 
- 182:Generated_Source\PSoC5/isr_serial.c ****     /* `#END` */
- 183:Generated_Source\PSoC5/isr_serial.c **** }
- 184:Generated_Source\PSoC5/isr_serial.c **** 
+ 182:Generated_Source\PSoC5/isr_serial.c **** 
+ 183:Generated_Source\PSoC5/isr_serial.c ****     /* `#END` */
+ 184:Generated_Source\PSoC5/isr_serial.c **** }
  185:Generated_Source\PSoC5/isr_serial.c **** 
- 186:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
- 187:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_SetVector
- 188:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
- 189:Generated_Source\PSoC5/isr_serial.c **** *
- 190:Generated_Source\PSoC5/isr_serial.c **** * Summary:
- 191:Generated_Source\PSoC5/isr_serial.c **** *   Change the ISR vector for the Interrupt. Note calling isr_serial_Start
- 192:Generated_Source\PSoC5/isr_serial.c **** *   will override any effect this method would have had. To set the vector 
- 193:Generated_Source\PSoC5/isr_serial.c **** *   before the component has been started use isr_serial_StartEx instead.
- 194:Generated_Source\PSoC5/isr_serial.c **** * 
- 195:Generated_Source\PSoC5/isr_serial.c **** *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
- 196:Generated_Source\PSoC5/isr_serial.c **** *   used to provide consistent definition across compilers:
- 197:Generated_Source\PSoC5/isr_serial.c **** *
- 198:Generated_Source\PSoC5/isr_serial.c **** *   Function definition example:
- 199:Generated_Source\PSoC5/isr_serial.c **** *   CY_ISR(MyISR)
- 200:Generated_Source\PSoC5/isr_serial.c **** *   {
- 201:Generated_Source\PSoC5/isr_serial.c **** *   }
- 202:Generated_Source\PSoC5/isr_serial.c **** *
- 203:Generated_Source\PSoC5/isr_serial.c **** *   Function prototype example:
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 7
+ 186:Generated_Source\PSoC5/isr_serial.c **** 
+ 187:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
+ 188:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_SetVector
+ 189:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
+ 190:Generated_Source\PSoC5/isr_serial.c **** *
+ 191:Generated_Source\PSoC5/isr_serial.c **** * Summary:
+ 192:Generated_Source\PSoC5/isr_serial.c **** *   Change the ISR vector for the Interrupt. Note calling isr_serial_Start
+ 193:Generated_Source\PSoC5/isr_serial.c **** *   will override any effect this method would have had. To set the vector 
+ 194:Generated_Source\PSoC5/isr_serial.c **** *   before the component has been started use isr_serial_StartEx instead.
+ 195:Generated_Source\PSoC5/isr_serial.c **** * 
+ 196:Generated_Source\PSoC5/isr_serial.c **** *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
+ 197:Generated_Source\PSoC5/isr_serial.c **** *   used to provide consistent definition across compilers:
+ 198:Generated_Source\PSoC5/isr_serial.c **** *
+ 199:Generated_Source\PSoC5/isr_serial.c **** *   Function definition example:
+ 200:Generated_Source\PSoC5/isr_serial.c **** *   CY_ISR(MyISR)
+ 201:Generated_Source\PSoC5/isr_serial.c **** *   {
+ 202:Generated_Source\PSoC5/isr_serial.c **** *   }
+ 203:Generated_Source\PSoC5/isr_serial.c **** *
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 7
 
 
- 204:Generated_Source\PSoC5/isr_serial.c **** *     CY_ISR_PROTO(MyISR);
- 205:Generated_Source\PSoC5/isr_serial.c **** *
- 206:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
- 207:Generated_Source\PSoC5/isr_serial.c **** *   address: Address of the ISR to set in the interrupt vector table.
- 208:Generated_Source\PSoC5/isr_serial.c **** *
- 209:Generated_Source\PSoC5/isr_serial.c **** * Return:
- 210:Generated_Source\PSoC5/isr_serial.c **** *   None
- 211:Generated_Source\PSoC5/isr_serial.c **** *
- 212:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
- 213:Generated_Source\PSoC5/isr_serial.c **** void isr_serial_SetVector(cyisraddress address)
- 214:Generated_Source\PSoC5/isr_serial.c **** {
- 140              		.loc 1 214 0
+ 204:Generated_Source\PSoC5/isr_serial.c **** *   Function prototype example:
+ 205:Generated_Source\PSoC5/isr_serial.c **** *     CY_ISR_PROTO(MyISR);
+ 206:Generated_Source\PSoC5/isr_serial.c **** *
+ 207:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
+ 208:Generated_Source\PSoC5/isr_serial.c **** *   address: Address of the ISR to set in the interrupt vector table.
+ 209:Generated_Source\PSoC5/isr_serial.c **** *
+ 210:Generated_Source\PSoC5/isr_serial.c **** * Return:
+ 211:Generated_Source\PSoC5/isr_serial.c **** *   None
+ 212:Generated_Source\PSoC5/isr_serial.c **** *
+ 213:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
+ 214:Generated_Source\PSoC5/isr_serial.c **** void isr_serial_SetVector(cyisraddress address)
+ 215:Generated_Source\PSoC5/isr_serial.c **** {
+ 140              		.loc 1 215 0
  141              		.cfi_startproc
  142              		@ args = 0, pretend = 0, frame = 0
  143              		@ frame_needed = 0, uses_anonymous_args = 0
  144              		@ link register save eliminated.
  145              	.LVL14:
- 215:Generated_Source\PSoC5/isr_serial.c ****     cyisraddress * ramVectorTable;
- 216:Generated_Source\PSoC5/isr_serial.c **** 
- 217:Generated_Source\PSoC5/isr_serial.c ****     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
- 146              		.loc 1 217 0
+ 216:Generated_Source\PSoC5/isr_serial.c ****     cyisraddress * ramVectorTable;
+ 217:Generated_Source\PSoC5/isr_serial.c **** 
+ 218:Generated_Source\PSoC5/isr_serial.c ****     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
+ 146              		.loc 1 218 0
  147 0000 014B     		ldr	r3, .L15
  148 0002 1B68     		ldr	r3, [r3]
  149              	.LVL15:
- 218:Generated_Source\PSoC5/isr_serial.c **** 
- 219:Generated_Source\PSoC5/isr_serial.c ****     ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_serial__INTC_NUMBER] = address;
- 150              		.loc 1 219 0
+ 219:Generated_Source\PSoC5/isr_serial.c **** 
+ 220:Generated_Source\PSoC5/isr_serial.c ****     ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_serial__INTC_NUMBER] = address;
+ 150              		.loc 1 220 0
  151 0004 9864     		str	r0, [r3, #72]
  152 0006 7047     		bx	lr
  153              	.L16:
@@ -405,44 +406,44 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  165              		.type	isr_serial_GetVector, %function
  166              	isr_serial_GetVector:
  167              	.LFB68:
- 220:Generated_Source\PSoC5/isr_serial.c **** }
- 221:Generated_Source\PSoC5/isr_serial.c **** 
+ 221:Generated_Source\PSoC5/isr_serial.c **** }
  222:Generated_Source\PSoC5/isr_serial.c **** 
- 223:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
- 224:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_GetVector
- 225:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
- 226:Generated_Source\PSoC5/isr_serial.c **** *
- 227:Generated_Source\PSoC5/isr_serial.c **** * Summary:
- 228:Generated_Source\PSoC5/isr_serial.c **** *   Gets the "address" of the current ISR vector for the Interrupt.
- 229:Generated_Source\PSoC5/isr_serial.c **** *
- 230:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
- 231:Generated_Source\PSoC5/isr_serial.c **** *   None
- 232:Generated_Source\PSoC5/isr_serial.c **** *
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 8
+ 223:Generated_Source\PSoC5/isr_serial.c **** 
+ 224:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
+ 225:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_GetVector
+ 226:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
+ 227:Generated_Source\PSoC5/isr_serial.c **** *
+ 228:Generated_Source\PSoC5/isr_serial.c **** * Summary:
+ 229:Generated_Source\PSoC5/isr_serial.c **** *   Gets the "address" of the current ISR vector for the Interrupt.
+ 230:Generated_Source\PSoC5/isr_serial.c **** *
+ 231:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
+ 232:Generated_Source\PSoC5/isr_serial.c **** *   None
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 8
 
 
- 233:Generated_Source\PSoC5/isr_serial.c **** * Return:
- 234:Generated_Source\PSoC5/isr_serial.c **** *   Address of the ISR in the interrupt vector table.
- 235:Generated_Source\PSoC5/isr_serial.c **** *
- 236:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
- 237:Generated_Source\PSoC5/isr_serial.c **** cyisraddress isr_serial_GetVector(void)
- 238:Generated_Source\PSoC5/isr_serial.c **** {
- 168              		.loc 1 238 0
+ 233:Generated_Source\PSoC5/isr_serial.c **** *
+ 234:Generated_Source\PSoC5/isr_serial.c **** * Return:
+ 235:Generated_Source\PSoC5/isr_serial.c **** *   Address of the ISR in the interrupt vector table.
+ 236:Generated_Source\PSoC5/isr_serial.c **** *
+ 237:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
+ 238:Generated_Source\PSoC5/isr_serial.c **** cyisraddress isr_serial_GetVector(void)
+ 239:Generated_Source\PSoC5/isr_serial.c **** {
+ 168              		.loc 1 239 0
  169              		.cfi_startproc
  170              		@ args = 0, pretend = 0, frame = 0
  171              		@ frame_needed = 0, uses_anonymous_args = 0
  172              		@ link register save eliminated.
- 239:Generated_Source\PSoC5/isr_serial.c ****     cyisraddress * ramVectorTable;
- 240:Generated_Source\PSoC5/isr_serial.c **** 
- 241:Generated_Source\PSoC5/isr_serial.c ****     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
- 173              		.loc 1 241 0
+ 240:Generated_Source\PSoC5/isr_serial.c ****     cyisraddress * ramVectorTable;
+ 241:Generated_Source\PSoC5/isr_serial.c **** 
+ 242:Generated_Source\PSoC5/isr_serial.c ****     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
+ 173              		.loc 1 242 0
  174 0000 014B     		ldr	r3, .L18
  175 0002 1B68     		ldr	r3, [r3]
  176              	.LVL16:
- 242:Generated_Source\PSoC5/isr_serial.c **** 
- 243:Generated_Source\PSoC5/isr_serial.c ****     return ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_serial__INTC_NUMBER];
- 244:Generated_Source\PSoC5/isr_serial.c **** }
- 177              		.loc 1 244 0
+ 243:Generated_Source\PSoC5/isr_serial.c **** 
+ 244:Generated_Source\PSoC5/isr_serial.c ****     return ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_serial__INTC_NUMBER];
+ 245:Generated_Source\PSoC5/isr_serial.c **** }
+ 177              		.loc 1 245 0
  178 0004 986C     		ldr	r0, [r3, #72]
  179 0006 7047     		bx	lr
  180              	.L19:
@@ -460,45 +461,45 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  192              		.type	isr_serial_SetPriority, %function
  193              	isr_serial_SetPriority:
  194              	.LFB69:
- 245:Generated_Source\PSoC5/isr_serial.c **** 
  246:Generated_Source\PSoC5/isr_serial.c **** 
- 247:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
- 248:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_SetPriority
- 249:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
- 250:Generated_Source\PSoC5/isr_serial.c **** *
- 251:Generated_Source\PSoC5/isr_serial.c **** * Summary:
- 252:Generated_Source\PSoC5/isr_serial.c **** *   Sets the Priority of the Interrupt. 
- 253:Generated_Source\PSoC5/isr_serial.c **** *
- 254:Generated_Source\PSoC5/isr_serial.c **** *   Note calling isr_serial_Start or isr_serial_StartEx will 
- 255:Generated_Source\PSoC5/isr_serial.c **** *   override any effect this API would have had. This API should only be called
- 256:Generated_Source\PSoC5/isr_serial.c **** *   after isr_serial_Start or isr_serial_StartEx has been called. 
- 257:Generated_Source\PSoC5/isr_serial.c **** *   To set the initial priority for the component, use the Design-Wide Resources
- 258:Generated_Source\PSoC5/isr_serial.c **** *   Interrupt Editor.
- 259:Generated_Source\PSoC5/isr_serial.c **** *
- 260:Generated_Source\PSoC5/isr_serial.c **** *   Note This API has no effect on Non-maskable interrupt NMI).
- 261:Generated_Source\PSoC5/isr_serial.c **** *
- 262:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 9
+ 247:Generated_Source\PSoC5/isr_serial.c **** 
+ 248:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
+ 249:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_SetPriority
+ 250:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
+ 251:Generated_Source\PSoC5/isr_serial.c **** *
+ 252:Generated_Source\PSoC5/isr_serial.c **** * Summary:
+ 253:Generated_Source\PSoC5/isr_serial.c **** *   Sets the Priority of the Interrupt. 
+ 254:Generated_Source\PSoC5/isr_serial.c **** *
+ 255:Generated_Source\PSoC5/isr_serial.c **** *   Note calling isr_serial_Start or isr_serial_StartEx will 
+ 256:Generated_Source\PSoC5/isr_serial.c **** *   override any effect this API would have had. This API should only be called
+ 257:Generated_Source\PSoC5/isr_serial.c **** *   after isr_serial_Start or isr_serial_StartEx has been called. 
+ 258:Generated_Source\PSoC5/isr_serial.c **** *   To set the initial priority for the component, use the Design-Wide Resources
+ 259:Generated_Source\PSoC5/isr_serial.c **** *   Interrupt Editor.
+ 260:Generated_Source\PSoC5/isr_serial.c **** *
+ 261:Generated_Source\PSoC5/isr_serial.c **** *   Note This API has no effect on Non-maskable interrupt NMI).
+ 262:Generated_Source\PSoC5/isr_serial.c **** *
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 9
 
 
- 263:Generated_Source\PSoC5/isr_serial.c **** *   priority: Priority of the interrupt, 0 being the highest priority
- 264:Generated_Source\PSoC5/isr_serial.c **** *             PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
- 265:Generated_Source\PSoC5/isr_serial.c **** *             PSoC 4: Priority is from 0 to 3.
- 266:Generated_Source\PSoC5/isr_serial.c **** *
- 267:Generated_Source\PSoC5/isr_serial.c **** * Return:
- 268:Generated_Source\PSoC5/isr_serial.c **** *   None
- 269:Generated_Source\PSoC5/isr_serial.c **** *
- 270:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
- 271:Generated_Source\PSoC5/isr_serial.c **** void isr_serial_SetPriority(uint8 priority)
- 272:Generated_Source\PSoC5/isr_serial.c **** {
- 195              		.loc 1 272 0
+ 263:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
+ 264:Generated_Source\PSoC5/isr_serial.c **** *   priority: Priority of the interrupt, 0 being the highest priority
+ 265:Generated_Source\PSoC5/isr_serial.c **** *             PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
+ 266:Generated_Source\PSoC5/isr_serial.c **** *             PSoC 4: Priority is from 0 to 3.
+ 267:Generated_Source\PSoC5/isr_serial.c **** *
+ 268:Generated_Source\PSoC5/isr_serial.c **** * Return:
+ 269:Generated_Source\PSoC5/isr_serial.c **** *   None
+ 270:Generated_Source\PSoC5/isr_serial.c **** *
+ 271:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
+ 272:Generated_Source\PSoC5/isr_serial.c **** void isr_serial_SetPriority(uint8 priority)
+ 273:Generated_Source\PSoC5/isr_serial.c **** {
+ 195              		.loc 1 273 0
  196              		.cfi_startproc
  197              		@ args = 0, pretend = 0, frame = 0
  198              		@ frame_needed = 0, uses_anonymous_args = 0
  199              		@ link register save eliminated.
  200              	.LVL17:
- 273:Generated_Source\PSoC5/isr_serial.c ****     *isr_serial_INTC_PRIOR = priority << 5;
- 201              		.loc 1 273 0
+ 274:Generated_Source\PSoC5/isr_serial.c ****     *isr_serial_INTC_PRIOR = priority << 5;
+ 201              		.loc 1 274 0
  202 0000 4001     		lsls	r0, r0, #5
  203              	.LVL18:
  204 0002 C0B2     		uxtb	r0, r0
@@ -520,47 +521,47 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  220              		.type	isr_serial_GetPriority, %function
  221              	isr_serial_GetPriority:
  222              	.LFB70:
- 274:Generated_Source\PSoC5/isr_serial.c **** }
- 275:Generated_Source\PSoC5/isr_serial.c **** 
+ 275:Generated_Source\PSoC5/isr_serial.c **** }
  276:Generated_Source\PSoC5/isr_serial.c **** 
- 277:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
- 278:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_GetPriority
- 279:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
- 280:Generated_Source\PSoC5/isr_serial.c **** *
- 281:Generated_Source\PSoC5/isr_serial.c **** * Summary:
- 282:Generated_Source\PSoC5/isr_serial.c **** *   Gets the Priority of the Interrupt.
- 283:Generated_Source\PSoC5/isr_serial.c **** *
- 284:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
- 285:Generated_Source\PSoC5/isr_serial.c **** *   None
- 286:Generated_Source\PSoC5/isr_serial.c **** *
- 287:Generated_Source\PSoC5/isr_serial.c **** * Return:
- 288:Generated_Source\PSoC5/isr_serial.c **** *   Priority of the interrupt, 0 being the highest priority
- 289:Generated_Source\PSoC5/isr_serial.c **** *    PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
- 290:Generated_Source\PSoC5/isr_serial.c **** *    PSoC 4: Priority is from 0 to 3.
- 291:Generated_Source\PSoC5/isr_serial.c **** *
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 10
+ 277:Generated_Source\PSoC5/isr_serial.c **** 
+ 278:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
+ 279:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_GetPriority
+ 280:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
+ 281:Generated_Source\PSoC5/isr_serial.c **** *
+ 282:Generated_Source\PSoC5/isr_serial.c **** * Summary:
+ 283:Generated_Source\PSoC5/isr_serial.c **** *   Gets the Priority of the Interrupt.
+ 284:Generated_Source\PSoC5/isr_serial.c **** *
+ 285:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
+ 286:Generated_Source\PSoC5/isr_serial.c **** *   None
+ 287:Generated_Source\PSoC5/isr_serial.c **** *
+ 288:Generated_Source\PSoC5/isr_serial.c **** * Return:
+ 289:Generated_Source\PSoC5/isr_serial.c **** *   Priority of the interrupt, 0 being the highest priority
+ 290:Generated_Source\PSoC5/isr_serial.c **** *    PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
+ 291:Generated_Source\PSoC5/isr_serial.c **** *    PSoC 4: Priority is from 0 to 3.
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 10
 
 
- 292:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
- 293:Generated_Source\PSoC5/isr_serial.c **** uint8 isr_serial_GetPriority(void)
- 294:Generated_Source\PSoC5/isr_serial.c **** {
- 223              		.loc 1 294 0
+ 292:Generated_Source\PSoC5/isr_serial.c **** *
+ 293:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
+ 294:Generated_Source\PSoC5/isr_serial.c **** uint8 isr_serial_GetPriority(void)
+ 295:Generated_Source\PSoC5/isr_serial.c **** {
+ 223              		.loc 1 295 0
  224              		.cfi_startproc
  225              		@ args = 0, pretend = 0, frame = 0
  226              		@ frame_needed = 0, uses_anonymous_args = 0
  227              		@ link register save eliminated.
- 295:Generated_Source\PSoC5/isr_serial.c ****     uint8 priority;
- 296:Generated_Source\PSoC5/isr_serial.c **** 
+ 296:Generated_Source\PSoC5/isr_serial.c ****     uint8 priority;
  297:Generated_Source\PSoC5/isr_serial.c **** 
- 298:Generated_Source\PSoC5/isr_serial.c ****     priority = *isr_serial_INTC_PRIOR >> 5;
- 228              		.loc 1 298 0
+ 298:Generated_Source\PSoC5/isr_serial.c **** 
+ 299:Generated_Source\PSoC5/isr_serial.c ****     priority = *isr_serial_INTC_PRIOR >> 5;
+ 228              		.loc 1 299 0
  229 0000 014B     		ldr	r3, .L24
  230 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
  231              	.LVL19:
- 299:Generated_Source\PSoC5/isr_serial.c **** 
- 300:Generated_Source\PSoC5/isr_serial.c ****     return priority;
- 301:Generated_Source\PSoC5/isr_serial.c **** }
- 232              		.loc 1 301 0
+ 300:Generated_Source\PSoC5/isr_serial.c **** 
+ 301:Generated_Source\PSoC5/isr_serial.c ****     return priority;
+ 302:Generated_Source\PSoC5/isr_serial.c **** }
+ 232              		.loc 1 302 0
  233 0004 4009     		lsrs	r0, r0, #5
  234              	.LVL20:
  235 0006 7047     		bx	lr
@@ -579,37 +580,37 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  248              		.type	isr_serial_Enable, %function
  249              	isr_serial_Enable:
  250              	.LFB71:
- 302:Generated_Source\PSoC5/isr_serial.c **** 
  303:Generated_Source\PSoC5/isr_serial.c **** 
- 304:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
- 305:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_Enable
- 306:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
- 307:Generated_Source\PSoC5/isr_serial.c **** *
- 308:Generated_Source\PSoC5/isr_serial.c **** * Summary:
- 309:Generated_Source\PSoC5/isr_serial.c **** *   Enables the interrupt to the interrupt controller. Do not call this function
- 310:Generated_Source\PSoC5/isr_serial.c **** *   unless ISR_Start() has been called or the functionality of the ISR_Start() 
- 311:Generated_Source\PSoC5/isr_serial.c **** *   function, which sets the vector and the priority, has been called.
- 312:Generated_Source\PSoC5/isr_serial.c **** *
- 313:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
- 314:Generated_Source\PSoC5/isr_serial.c **** *   None
- 315:Generated_Source\PSoC5/isr_serial.c **** *
- 316:Generated_Source\PSoC5/isr_serial.c **** * Return:
- 317:Generated_Source\PSoC5/isr_serial.c **** *   None
- 318:Generated_Source\PSoC5/isr_serial.c **** *
- 319:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
- 320:Generated_Source\PSoC5/isr_serial.c **** void isr_serial_Enable(void)
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 11
+ 304:Generated_Source\PSoC5/isr_serial.c **** 
+ 305:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
+ 306:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_Enable
+ 307:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
+ 308:Generated_Source\PSoC5/isr_serial.c **** *
+ 309:Generated_Source\PSoC5/isr_serial.c **** * Summary:
+ 310:Generated_Source\PSoC5/isr_serial.c **** *   Enables the interrupt to the interrupt controller. Do not call this function
+ 311:Generated_Source\PSoC5/isr_serial.c **** *   unless ISR_Start() has been called or the functionality of the ISR_Start() 
+ 312:Generated_Source\PSoC5/isr_serial.c **** *   function, which sets the vector and the priority, has been called.
+ 313:Generated_Source\PSoC5/isr_serial.c **** *
+ 314:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
+ 315:Generated_Source\PSoC5/isr_serial.c **** *   None
+ 316:Generated_Source\PSoC5/isr_serial.c **** *
+ 317:Generated_Source\PSoC5/isr_serial.c **** * Return:
+ 318:Generated_Source\PSoC5/isr_serial.c **** *   None
+ 319:Generated_Source\PSoC5/isr_serial.c **** *
+ 320:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 11
 
 
- 321:Generated_Source\PSoC5/isr_serial.c **** {
- 251              		.loc 1 321 0
+ 321:Generated_Source\PSoC5/isr_serial.c **** void isr_serial_Enable(void)
+ 322:Generated_Source\PSoC5/isr_serial.c **** {
+ 251              		.loc 1 322 0
  252              		.cfi_startproc
  253              		@ args = 0, pretend = 0, frame = 0
  254              		@ frame_needed = 0, uses_anonymous_args = 0
  255              		@ link register save eliminated.
- 322:Generated_Source\PSoC5/isr_serial.c ****     /* Enable the general interrupt. */
- 323:Generated_Source\PSoC5/isr_serial.c ****     *isr_serial_INTC_SET_EN = isr_serial__INTC_MASK;
- 256              		.loc 1 323 0
+ 323:Generated_Source\PSoC5/isr_serial.c ****     /* Enable the general interrupt. */
+ 324:Generated_Source\PSoC5/isr_serial.c ****     *isr_serial_INTC_SET_EN = isr_serial__INTC_MASK;
+ 256              		.loc 1 324 0
  257 0000 0422     		movs	r2, #4
  258 0002 014B     		ldr	r3, .L27
  259 0004 1A60     		str	r2, [r3]
@@ -629,46 +630,46 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  273              		.type	isr_serial_GetState, %function
  274              	isr_serial_GetState:
  275              	.LFB72:
- 324:Generated_Source\PSoC5/isr_serial.c **** }
- 325:Generated_Source\PSoC5/isr_serial.c **** 
+ 325:Generated_Source\PSoC5/isr_serial.c **** }
  326:Generated_Source\PSoC5/isr_serial.c **** 
- 327:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
- 328:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_GetState
- 329:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
- 330:Generated_Source\PSoC5/isr_serial.c **** *
- 331:Generated_Source\PSoC5/isr_serial.c **** * Summary:
- 332:Generated_Source\PSoC5/isr_serial.c **** *   Gets the state (enabled, disabled) of the Interrupt.
- 333:Generated_Source\PSoC5/isr_serial.c **** *
- 334:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
- 335:Generated_Source\PSoC5/isr_serial.c **** *   None
- 336:Generated_Source\PSoC5/isr_serial.c **** *
- 337:Generated_Source\PSoC5/isr_serial.c **** * Return:
- 338:Generated_Source\PSoC5/isr_serial.c **** *   1 if enabled, 0 if disabled.
- 339:Generated_Source\PSoC5/isr_serial.c **** *
- 340:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
- 341:Generated_Source\PSoC5/isr_serial.c **** uint8 isr_serial_GetState(void)
- 342:Generated_Source\PSoC5/isr_serial.c **** {
- 276              		.loc 1 342 0
+ 327:Generated_Source\PSoC5/isr_serial.c **** 
+ 328:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
+ 329:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_GetState
+ 330:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
+ 331:Generated_Source\PSoC5/isr_serial.c **** *
+ 332:Generated_Source\PSoC5/isr_serial.c **** * Summary:
+ 333:Generated_Source\PSoC5/isr_serial.c **** *   Gets the state (enabled, disabled) of the Interrupt.
+ 334:Generated_Source\PSoC5/isr_serial.c **** *
+ 335:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
+ 336:Generated_Source\PSoC5/isr_serial.c **** *   None
+ 337:Generated_Source\PSoC5/isr_serial.c **** *
+ 338:Generated_Source\PSoC5/isr_serial.c **** * Return:
+ 339:Generated_Source\PSoC5/isr_serial.c **** *   1 if enabled, 0 if disabled.
+ 340:Generated_Source\PSoC5/isr_serial.c **** *
+ 341:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
+ 342:Generated_Source\PSoC5/isr_serial.c **** uint8 isr_serial_GetState(void)
+ 343:Generated_Source\PSoC5/isr_serial.c **** {
+ 276              		.loc 1 343 0
  277              		.cfi_startproc
  278              		@ args = 0, pretend = 0, frame = 0
  279              		@ frame_needed = 0, uses_anonymous_args = 0
  280              		@ link register save eliminated.
- 343:Generated_Source\PSoC5/isr_serial.c ****     /* Get the state of the general interrupt. */
- 344:Generated_Source\PSoC5/isr_serial.c ****     return ((*isr_serial_INTC_SET_EN & (uint32)isr_serial__INTC_MASK) != 0u) ? 1u:0u;
- 281              		.loc 1 344 0
+ 344:Generated_Source\PSoC5/isr_serial.c ****     /* Get the state of the general interrupt. */
+ 345:Generated_Source\PSoC5/isr_serial.c ****     return ((*isr_serial_INTC_SET_EN & (uint32)isr_serial__INTC_MASK) != 0u) ? 1u:0u;
+ 281              		.loc 1 345 0
  282 0000 044B     		ldr	r3, .L32
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 12
+
+
  283 0002 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 12
-
-
  284 0004 13F0040F 		tst	r3, #4
  285 0008 01D0     		beq	.L31
  286 000a 0120     		movs	r0, #1
  287 000c 7047     		bx	lr
  288              	.L31:
  289 000e 0020     		movs	r0, #0
- 345:Generated_Source\PSoC5/isr_serial.c **** }
- 290              		.loc 1 345 0
+ 346:Generated_Source\PSoC5/isr_serial.c **** }
+ 290              		.loc 1 346 0
  291 0010 7047     		bx	lr
  292              	.L33:
  293 0012 00BF     		.align	2
@@ -685,42 +686,42 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  304              		.type	isr_serial_Disable, %function
  305              	isr_serial_Disable:
  306              	.LFB73:
- 346:Generated_Source\PSoC5/isr_serial.c **** 
  347:Generated_Source\PSoC5/isr_serial.c **** 
- 348:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
- 349:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_Disable
- 350:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
- 351:Generated_Source\PSoC5/isr_serial.c **** *
- 352:Generated_Source\PSoC5/isr_serial.c **** * Summary:
- 353:Generated_Source\PSoC5/isr_serial.c **** *   Disables the Interrupt in the interrupt controller.
- 354:Generated_Source\PSoC5/isr_serial.c **** *
- 355:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
- 356:Generated_Source\PSoC5/isr_serial.c **** *   None
- 357:Generated_Source\PSoC5/isr_serial.c **** *
- 358:Generated_Source\PSoC5/isr_serial.c **** * Return:
- 359:Generated_Source\PSoC5/isr_serial.c **** *   None
- 360:Generated_Source\PSoC5/isr_serial.c **** *
- 361:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
- 362:Generated_Source\PSoC5/isr_serial.c **** void isr_serial_Disable(void)
- 363:Generated_Source\PSoC5/isr_serial.c **** {
- 307              		.loc 1 363 0
+ 348:Generated_Source\PSoC5/isr_serial.c **** 
+ 349:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
+ 350:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_Disable
+ 351:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
+ 352:Generated_Source\PSoC5/isr_serial.c **** *
+ 353:Generated_Source\PSoC5/isr_serial.c **** * Summary:
+ 354:Generated_Source\PSoC5/isr_serial.c **** *   Disables the Interrupt in the interrupt controller.
+ 355:Generated_Source\PSoC5/isr_serial.c **** *
+ 356:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
+ 357:Generated_Source\PSoC5/isr_serial.c **** *   None
+ 358:Generated_Source\PSoC5/isr_serial.c **** *
+ 359:Generated_Source\PSoC5/isr_serial.c **** * Return:
+ 360:Generated_Source\PSoC5/isr_serial.c **** *   None
+ 361:Generated_Source\PSoC5/isr_serial.c **** *
+ 362:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
+ 363:Generated_Source\PSoC5/isr_serial.c **** void isr_serial_Disable(void)
+ 364:Generated_Source\PSoC5/isr_serial.c **** {
+ 307              		.loc 1 364 0
  308              		.cfi_startproc
  309              		@ args = 0, pretend = 0, frame = 0
  310              		@ frame_needed = 0, uses_anonymous_args = 0
  311              		@ link register save eliminated.
- 364:Generated_Source\PSoC5/isr_serial.c ****     /* Disable the general interrupt. */
- 365:Generated_Source\PSoC5/isr_serial.c ****     *isr_serial_INTC_CLR_EN = isr_serial__INTC_MASK;
- 312              		.loc 1 365 0
+ 365:Generated_Source\PSoC5/isr_serial.c ****     /* Disable the general interrupt. */
+ 366:Generated_Source\PSoC5/isr_serial.c ****     *isr_serial_INTC_CLR_EN = isr_serial__INTC_MASK;
+ 312              		.loc 1 366 0
  313 0000 0422     		movs	r2, #4
  314 0002 014B     		ldr	r3, .L35
  315 0004 1A60     		str	r2, [r3]
  316 0006 7047     		bx	lr
  317              	.L36:
  318              		.align	2
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 13
+
+
  319              	.L35:
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 13
-
-
  320 0008 80E100E0 		.word	-536813184
  321              		.cfi_endproc
  322              	.LFE73:
@@ -777,10 +778,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  368              	isr_serial_StartEx:
  369              	.LFB64:
  109:Generated_Source\PSoC5/isr_serial.c ****     /* For all we know the interrupt is active. */
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 14
+
+
  370              		.loc 1 109 0
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 14
-
-
  371              		.cfi_startproc
  372              		@ args = 0, pretend = 0, frame = 0
  373              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -837,10 +838,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  417              		.loc 1 144 0
  418 0006 0248     		ldr	r0, .L45
  419 0008 FFF7FEFF 		bl	isr_serial_SetVector
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 15
+
+
  420              	.LVL31:
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 15
-
-
  421 000c 08BD     		pop	{r3, pc}
  422              	.L46:
  423 000e 00BF     		.align	2
@@ -857,38 +858,38 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  434              		.type	isr_serial_SetPending, %function
  435              	isr_serial_SetPending:
  436              	.LFB74:
- 366:Generated_Source\PSoC5/isr_serial.c **** }
- 367:Generated_Source\PSoC5/isr_serial.c **** 
+ 367:Generated_Source\PSoC5/isr_serial.c **** }
  368:Generated_Source\PSoC5/isr_serial.c **** 
- 369:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
- 370:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_SetPending
- 371:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
- 372:Generated_Source\PSoC5/isr_serial.c **** *
- 373:Generated_Source\PSoC5/isr_serial.c **** * Summary:
- 374:Generated_Source\PSoC5/isr_serial.c **** *   Causes the Interrupt to enter the pending state, a software method of
- 375:Generated_Source\PSoC5/isr_serial.c **** *   generating the interrupt.
- 376:Generated_Source\PSoC5/isr_serial.c **** *
- 377:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
- 378:Generated_Source\PSoC5/isr_serial.c **** *   None
- 379:Generated_Source\PSoC5/isr_serial.c **** *
- 380:Generated_Source\PSoC5/isr_serial.c **** * Return:
- 381:Generated_Source\PSoC5/isr_serial.c **** *   None
- 382:Generated_Source\PSoC5/isr_serial.c **** *
- 383:Generated_Source\PSoC5/isr_serial.c **** * Side Effects:
- 384:Generated_Source\PSoC5/isr_serial.c **** *   If interrupts are enabled and the interrupt is set up properly, the ISR is
- 385:Generated_Source\PSoC5/isr_serial.c **** *   entered (depending on the priority of this interrupt and other pending 
- 386:Generated_Source\PSoC5/isr_serial.c **** *   interrupts).
- 387:Generated_Source\PSoC5/isr_serial.c **** *
- 388:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
- 389:Generated_Source\PSoC5/isr_serial.c **** void isr_serial_SetPending(void)
- 390:Generated_Source\PSoC5/isr_serial.c **** {
- 437              		.loc 1 390 0
+ 369:Generated_Source\PSoC5/isr_serial.c **** 
+ 370:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
+ 371:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_SetPending
+ 372:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
+ 373:Generated_Source\PSoC5/isr_serial.c **** *
+ 374:Generated_Source\PSoC5/isr_serial.c **** * Summary:
+ 375:Generated_Source\PSoC5/isr_serial.c **** *   Causes the Interrupt to enter the pending state, a software method of
+ 376:Generated_Source\PSoC5/isr_serial.c **** *   generating the interrupt.
+ 377:Generated_Source\PSoC5/isr_serial.c **** *
+ 378:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
+ 379:Generated_Source\PSoC5/isr_serial.c **** *   None
+ 380:Generated_Source\PSoC5/isr_serial.c **** *
+ 381:Generated_Source\PSoC5/isr_serial.c **** * Return:
+ 382:Generated_Source\PSoC5/isr_serial.c **** *   None
+ 383:Generated_Source\PSoC5/isr_serial.c **** *
+ 384:Generated_Source\PSoC5/isr_serial.c **** * Side Effects:
+ 385:Generated_Source\PSoC5/isr_serial.c **** *   If interrupts are enabled and the interrupt is set up properly, the ISR is
+ 386:Generated_Source\PSoC5/isr_serial.c **** *   entered (depending on the priority of this interrupt and other pending 
+ 387:Generated_Source\PSoC5/isr_serial.c **** *   interrupts).
+ 388:Generated_Source\PSoC5/isr_serial.c **** *
+ 389:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
+ 390:Generated_Source\PSoC5/isr_serial.c **** void isr_serial_SetPending(void)
+ 391:Generated_Source\PSoC5/isr_serial.c **** {
+ 437              		.loc 1 391 0
  438              		.cfi_startproc
  439              		@ args = 0, pretend = 0, frame = 0
  440              		@ frame_needed = 0, uses_anonymous_args = 0
  441              		@ link register save eliminated.
- 391:Generated_Source\PSoC5/isr_serial.c ****     *isr_serial_INTC_SET_PD = isr_serial__INTC_MASK;
- 442              		.loc 1 391 0
+ 392:Generated_Source\PSoC5/isr_serial.c ****     *isr_serial_INTC_SET_PD = isr_serial__INTC_MASK;
+ 442              		.loc 1 392 0
  443 0000 0422     		movs	r2, #4
  444 0002 014B     		ldr	r3, .L48
  445 0004 1A60     		str	r2, [r3]
@@ -897,10 +898,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  448              		.align	2
  449              	.L48:
  450 0008 00E200E0 		.word	-536813056
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 16
+
+
  451              		.cfi_endproc
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 16
-
-
  452              	.LFE74:
  453              		.size	isr_serial_SetPending, .-isr_serial_SetPending
  454              		.section	.text.isr_serial_ClearPending,"ax",%progbits
@@ -911,37 +912,37 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  459              		.type	isr_serial_ClearPending, %function
  460              	isr_serial_ClearPending:
  461              	.LFB75:
- 392:Generated_Source\PSoC5/isr_serial.c **** }
- 393:Generated_Source\PSoC5/isr_serial.c **** 
+ 393:Generated_Source\PSoC5/isr_serial.c **** }
  394:Generated_Source\PSoC5/isr_serial.c **** 
- 395:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
- 396:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_ClearPending
- 397:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
- 398:Generated_Source\PSoC5/isr_serial.c **** *
- 399:Generated_Source\PSoC5/isr_serial.c **** * Summary:
- 400:Generated_Source\PSoC5/isr_serial.c **** *   Clears a pending interrupt in the interrupt controller.
- 401:Generated_Source\PSoC5/isr_serial.c **** *
- 402:Generated_Source\PSoC5/isr_serial.c **** *   Note Some interrupt sources are clear-on-read and require the block 
- 403:Generated_Source\PSoC5/isr_serial.c **** *   interrupt/status register to be read/cleared with the appropriate block API 
- 404:Generated_Source\PSoC5/isr_serial.c **** *   (GPIO, UART, and so on). Otherwise the ISR will continue to remain in 
- 405:Generated_Source\PSoC5/isr_serial.c **** *   pending state even though the interrupt itself is cleared using this API.
- 406:Generated_Source\PSoC5/isr_serial.c **** *
- 407:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
- 408:Generated_Source\PSoC5/isr_serial.c **** *   None
- 409:Generated_Source\PSoC5/isr_serial.c **** *
- 410:Generated_Source\PSoC5/isr_serial.c **** * Return:
- 411:Generated_Source\PSoC5/isr_serial.c **** *   None
- 412:Generated_Source\PSoC5/isr_serial.c **** *
- 413:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
- 414:Generated_Source\PSoC5/isr_serial.c **** void isr_serial_ClearPending(void)
- 415:Generated_Source\PSoC5/isr_serial.c **** {
- 462              		.loc 1 415 0
+ 395:Generated_Source\PSoC5/isr_serial.c **** 
+ 396:Generated_Source\PSoC5/isr_serial.c **** /*******************************************************************************
+ 397:Generated_Source\PSoC5/isr_serial.c **** * Function Name: isr_serial_ClearPending
+ 398:Generated_Source\PSoC5/isr_serial.c **** ********************************************************************************
+ 399:Generated_Source\PSoC5/isr_serial.c **** *
+ 400:Generated_Source\PSoC5/isr_serial.c **** * Summary:
+ 401:Generated_Source\PSoC5/isr_serial.c **** *   Clears a pending interrupt in the interrupt controller.
+ 402:Generated_Source\PSoC5/isr_serial.c **** *
+ 403:Generated_Source\PSoC5/isr_serial.c **** *   Note Some interrupt sources are clear-on-read and require the block 
+ 404:Generated_Source\PSoC5/isr_serial.c **** *   interrupt/status register to be read/cleared with the appropriate block API 
+ 405:Generated_Source\PSoC5/isr_serial.c **** *   (GPIO, UART, and so on). Otherwise the ISR will continue to remain in 
+ 406:Generated_Source\PSoC5/isr_serial.c **** *   pending state even though the interrupt itself is cleared using this API.
+ 407:Generated_Source\PSoC5/isr_serial.c **** *
+ 408:Generated_Source\PSoC5/isr_serial.c **** * Parameters:
+ 409:Generated_Source\PSoC5/isr_serial.c **** *   None
+ 410:Generated_Source\PSoC5/isr_serial.c **** *
+ 411:Generated_Source\PSoC5/isr_serial.c **** * Return:
+ 412:Generated_Source\PSoC5/isr_serial.c **** *   None
+ 413:Generated_Source\PSoC5/isr_serial.c **** *
+ 414:Generated_Source\PSoC5/isr_serial.c **** *******************************************************************************/
+ 415:Generated_Source\PSoC5/isr_serial.c **** void isr_serial_ClearPending(void)
+ 416:Generated_Source\PSoC5/isr_serial.c **** {
+ 462              		.loc 1 416 0
  463              		.cfi_startproc
  464              		@ args = 0, pretend = 0, frame = 0
  465              		@ frame_needed = 0, uses_anonymous_args = 0
  466              		@ link register save eliminated.
- 416:Generated_Source\PSoC5/isr_serial.c ****     *isr_serial_INTC_CLR_PD = isr_serial__INTC_MASK;
- 467              		.loc 1 416 0
+ 417:Generated_Source\PSoC5/isr_serial.c ****     *isr_serial_INTC_CLR_PD = isr_serial__INTC_MASK;
+ 467              		.loc 1 417 0
  468 0000 0422     		movs	r2, #4
  469 0002 014B     		ldr	r3, .L51
  470 0004 1A60     		str	r2, [r3]
@@ -957,10 +958,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  480              	.Letext0:
  481              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
  482              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 17
+
+
  483              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 17
-
-
  484              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
  485              		.file 6 "Generated_Source\\PSoC5/UART_SIG.h"
  486              		.section	.debug_info,"",%progbits
@@ -973,7 +974,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  493 000c D9000000 		.4byte	.LASF44
  494 0010 0C       		.byte	0xc
  495 0011 1C000000 		.4byte	.LASF45
- 496 0015 7E010000 		.4byte	.LASF46
+ 496 0015 05020000 		.4byte	.LASF46
  497 0019 00000000 		.4byte	.Ldebug_ranges0+0
  498 001d 00000000 		.4byte	0
  499 0021 00000000 		.4byte	.Ldebug_line0
@@ -984,7 +985,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  504 002c 03       		.uleb128 0x3
  505 002d 04       		.byte	0x4
  506 002e 07       		.byte	0x7
- 507 002f 0F020000 		.4byte	.LASF0
+ 507 002f D9010000 		.4byte	.LASF0
  508 0033 03       		.uleb128 0x3
  509 0034 08       		.byte	0x8
  510 0035 05       		.byte	0x5
@@ -1017,10 +1018,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  537 0068 03       		.uleb128 0x3
  538 0069 04       		.byte	0x4
  539 006a 05       		.byte	0x5
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 18
+
+
  540 006b 02030000 		.4byte	.LASF7
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 18
-
-
  541 006f 03       		.uleb128 0x3
  542 0070 04       		.byte	0x4
  543 0071 07       		.byte	0x7
@@ -1028,7 +1029,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  545 0076 03       		.uleb128 0x3
  546 0077 08       		.byte	0x8
  547 0078 07       		.byte	0x7
- 548 0079 24020000 		.4byte	.LASF9
+ 548 0079 EE010000 		.4byte	.LASF9
  549 007d 03       		.uleb128 0x3
  550 007e 04       		.byte	0x4
  551 007f 07       		.byte	0x7
@@ -1052,7 +1053,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  569 00a3 9201     		.2byte	0x192
  570 00a5 48000000 		.4byte	0x48
  571 00a9 07       		.uleb128 0x7
- 572 00aa 03020000 		.4byte	.LASF15
+ 572 00aa CD010000 		.4byte	.LASF15
  573 00ae 04       		.byte	0x4
  574 00af 9401     		.2byte	0x194
  575 00b1 6F000000 		.4byte	0x6f
@@ -1063,7 +1064,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  580 00bc 03       		.uleb128 0x3
  581 00bd 08       		.byte	0x8
  582 00be 04       		.byte	0x4
- 583 00bf DE010000 		.4byte	.LASF17
+ 583 00bf A8010000 		.4byte	.LASF17
  584 00c3 07       		.uleb128 0x7
  585 00c4 67010000 		.4byte	.LASF18
  586 00c8 04       		.byte	0x4
@@ -1077,10 +1078,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  594 00da 3E02     		.2byte	0x23e
  595 00dc E0000000 		.4byte	0xe0
  596 00e0 08       		.uleb128 0x8
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 19
+
+
  597 00e1 A9000000 		.4byte	0xa9
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 19
-
-
  598 00e5 07       		.uleb128 0x7
  599 00e6 3B020000 		.4byte	.LASF20
  600 00ea 04       		.byte	0x4
@@ -1098,7 +1099,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  612 0106 0A       		.uleb128 0xa
  613 0107 6900     		.ascii	"i\000"
  614 0109 01       		.byte	0x1
- 615 010a A9       		.byte	0xa9
+ 615 010a AC       		.byte	0xac
  616 010b 9D000000 		.4byte	0x9d
  617 010f 00000000 		.4byte	.LLST0
  618 0113 0B       		.uleb128 0xb
@@ -1109,25 +1110,25 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  623 0121 7E030000 		.4byte	0x37e
  624 0125 00       		.byte	0
  625 0126 09       		.uleb128 0x9
- 626 0127 E5010000 		.4byte	.LASF22
+ 626 0127 AF010000 		.4byte	.LASF22
  627 012b 01       		.byte	0x1
- 628 012c D5       		.byte	0xd5
+ 628 012c D6       		.byte	0xd6
  629 012d 00000000 		.4byte	.LFB67
  630 0131 0C000000 		.4byte	.LFE67-.LFB67
  631 0135 01       		.uleb128 0x1
  632 0136 9C       		.byte	0x9c
  633 0137 56010000 		.4byte	0x156
  634 013b 0C       		.uleb128 0xc
- 635 013c 1C020000 		.4byte	.LASF25
+ 635 013c E6010000 		.4byte	.LASF25
  636 0140 01       		.byte	0x1
- 637 0141 D5       		.byte	0xd5
+ 637 0141 D6       		.byte	0xd6
  638 0142 E5000000 		.4byte	0xe5
  639 0146 01       		.uleb128 0x1
  640 0147 50       		.byte	0x50
  641 0148 0D       		.uleb128 0xd
  642 0149 9B020000 		.4byte	.LASF23
  643 014d 01       		.byte	0x1
- 644 014e D7       		.byte	0xd7
+ 644 014e D8       		.byte	0xd8
  645 014f 56010000 		.4byte	0x156
  646 0153 01       		.uleb128 0x1
  647 0154 53       		.byte	0x53
@@ -1137,11 +1138,11 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  651 0158 E5000000 		.4byte	0xe5
  652 015c 0E       		.uleb128 0xe
  653 015d D8020000 		.4byte	.LASF27
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 20
+
+
  654 0161 01       		.byte	0x1
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 20
-
-
- 655 0162 ED       		.byte	0xed
+ 655 0162 EE       		.byte	0xee
  656 0163 E5000000 		.4byte	0xe5
  657 0167 00000000 		.4byte	.LFB68
  658 016b 0C000000 		.4byte	.LFE68-.LFB68
@@ -1151,7 +1152,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  662 0175 0D       		.uleb128 0xd
  663 0176 9B020000 		.4byte	.LASF23
  664 017a 01       		.byte	0x1
- 665 017b EF       		.byte	0xef
+ 665 017b F0       		.byte	0xf0
  666 017c 56010000 		.4byte	0x156
  667 0180 01       		.uleb128 0x1
  668 0181 53       		.byte	0x53
@@ -1159,23 +1160,23 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  670 0183 0F       		.uleb128 0xf
  671 0184 46000000 		.4byte	.LASF24
  672 0188 01       		.byte	0x1
- 673 0189 0F01     		.2byte	0x10f
+ 673 0189 1001     		.2byte	0x110
  674 018b 00000000 		.4byte	.LFB69
  675 018f 10000000 		.4byte	.LFE69-.LFB69
  676 0193 01       		.uleb128 0x1
  677 0194 9C       		.byte	0x9c
  678 0195 AA010000 		.4byte	0x1aa
  679 0199 10       		.uleb128 0x10
- 680 019a FA010000 		.4byte	.LASF26
+ 680 019a C4010000 		.4byte	.LASF26
  681 019e 01       		.byte	0x1
- 682 019f 0F01     		.2byte	0x10f
+ 682 019f 1001     		.2byte	0x110
  683 01a1 9D000000 		.4byte	0x9d
  684 01a5 4A000000 		.4byte	.LLST1
  685 01a9 00       		.byte	0
  686 01aa 11       		.uleb128 0x11
  687 01ab AA020000 		.4byte	.LASF28
  688 01af 01       		.byte	0x1
- 689 01b0 2501     		.2byte	0x125
+ 689 01b0 2601     		.2byte	0x126
  690 01b2 9D000000 		.4byte	0x9d
  691 01b6 00000000 		.4byte	.LFB70
  692 01ba 0C000000 		.4byte	.LFE70-.LFB70
@@ -1183,27 +1184,27 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  694 01bf 9C       		.byte	0x9c
  695 01c0 D5010000 		.4byte	0x1d5
  696 01c4 12       		.uleb128 0x12
- 697 01c5 FA010000 		.4byte	.LASF26
+ 697 01c5 C4010000 		.4byte	.LASF26
  698 01c9 01       		.byte	0x1
- 699 01ca 2701     		.2byte	0x127
+ 699 01ca 2801     		.2byte	0x128
  700 01cc 9D000000 		.4byte	0x9d
  701 01d0 6B000000 		.4byte	.LLST2
  702 01d4 00       		.byte	0
  703 01d5 13       		.uleb128 0x13
  704 01d6 84020000 		.4byte	.LASF29
  705 01da 01       		.byte	0x1
- 706 01db 4001     		.2byte	0x140
+ 706 01db 4101     		.2byte	0x141
  707 01dd 00000000 		.4byte	.LFB71
  708 01e1 0C000000 		.4byte	.LFE71-.LFB71
  709 01e5 01       		.uleb128 0x1
  710 01e6 9C       		.byte	0x9c
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 21
+
+
  711 01e7 14       		.uleb128 0x14
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 21
-
-
  712 01e8 08000000 		.4byte	.LASF47
  713 01ec 01       		.byte	0x1
- 714 01ed 5501     		.2byte	0x155
+ 714 01ed 5601     		.2byte	0x156
  715 01ef 9D000000 		.4byte	0x9d
  716 01f3 00000000 		.4byte	.LFB72
  717 01f7 18000000 		.4byte	.LFE72-.LFB72
@@ -1212,7 +1213,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  720 01fd 13       		.uleb128 0x13
  721 01fe 23030000 		.4byte	.LASF30
  722 0202 01       		.byte	0x1
- 723 0203 6A01     		.2byte	0x16a
+ 723 0203 6B01     		.2byte	0x16b
  724 0205 00000000 		.4byte	.LFB73
  725 0209 0C000000 		.4byte	.LFE73-.LFB73
  726 020d 01       		.uleb128 0x1
@@ -1257,17 +1258,17 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  765 0261 09       		.uleb128 0x9
  766 0262 48020000 		.4byte	.LASF32
  767 0266 01       		.byte	0x1
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 22
+
+
  768 0267 6C       		.byte	0x6c
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 22
-
-
  769 0268 00000000 		.4byte	.LFB64
  770 026c 1A000000 		.4byte	.LFE64-.LFB64
  771 0270 01       		.uleb128 0x1
  772 0271 9C       		.byte	0x9c
  773 0272 BF020000 		.4byte	0x2bf
  774 0276 17       		.uleb128 0x17
- 775 0277 1C020000 		.4byte	.LASF25
+ 775 0277 E6010000 		.4byte	.LASF25
  776 027b 01       		.byte	0x1
  777 027c 6C       		.byte	0x6c
  778 027d E5000000 		.4byte	0xe5
@@ -1317,12 +1318,12 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  822 02e2 26010000 		.4byte	0x126
  823 02e6 00       		.byte	0
  824 02e7 13       		.uleb128 0x13
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 23
+
+
  825 02e8 5D000000 		.4byte	.LASF34
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 23
-
-
  826 02ec 01       		.byte	0x1
- 827 02ed 8501     		.2byte	0x185
+ 827 02ed 8601     		.2byte	0x186
  828 02ef 00000000 		.4byte	.LFB74
  829 02f3 0C000000 		.4byte	.LFE74-.LFB74
  830 02f7 01       		.uleb128 0x1
@@ -1330,13 +1331,13 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  832 02f9 13       		.uleb128 0x13
  833 02fa 6C020000 		.4byte	.LASF35
  834 02fe 01       		.byte	0x1
- 835 02ff 9E01     		.2byte	0x19e
+ 835 02ff 9F01     		.2byte	0x19f
  836 0301 00000000 		.4byte	.LFB75
  837 0305 0C000000 		.4byte	.LFE75-.LFB75
  838 0309 01       		.uleb128 0x1
  839 030a 9C       		.byte	0x9c
  840 030b 18       		.uleb128 0x18
- 841 030c D1010000 		.4byte	.LASF36
+ 841 030c 9B010000 		.4byte	.LASF36
  842 0310 05       		.byte	0x5
  843 0311 1207     		.2byte	0x712
  844 0313 17030000 		.4byte	0x317
@@ -1348,7 +1349,7 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  850 0322 1F       		.byte	0x1f
  851 0323 9D000000 		.4byte	0x9d
  852 0327 19       		.uleb128 0x19
- 853 0328 CB010000 		.4byte	.LASF38
+ 853 0328 95010000 		.4byte	.LASF38
  854 032c 01       		.byte	0x1
  855 032d 20       		.byte	0x20
  856 032e 9D000000 		.4byte	0x9d
@@ -1377,10 +1378,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  879 0363 22       		.byte	0x22
  880 0364 4D030000 		.4byte	0x34d
  881 0368 19       		.uleb128 0x19
- 882 0369 0A020000 		.4byte	.LASF41
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 24
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 24
 
 
+ 882 0369 D4010000 		.4byte	.LASF41
  883 036d 01       		.byte	0x1
  884 036e 22       		.byte	0x22
  885 036f 32030000 		.4byte	0x332
@@ -1390,8 +1391,8 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  889 037c 06       		.byte	0x6
  890 037d 71       		.byte	0x71
  891 037e 1C       		.uleb128 0x1c
- 892 037f B4010000 		.4byte	.LASF43
- 893 0383 B4010000 		.4byte	.LASF43
+ 892 037f 7E010000 		.4byte	.LASF43
+ 893 0383 7E010000 		.4byte	.LASF43
  894 0387 06       		.byte	0x6
  895 0388 75       		.byte	0x75
  896 0389 00       		.byte	0
@@ -1437,10 +1438,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  936 0025 03       		.uleb128 0x3
  937 0026 0E       		.uleb128 0xe
  938 0027 00       		.byte	0
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 25
+
+
  939 0028 00       		.byte	0
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 25
-
-
  940 0029 04       		.uleb128 0x4
  941 002a 16       		.uleb128 0x16
  942 002b 00       		.byte	0
@@ -1497,10 +1498,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  993 005e 19       		.uleb128 0x19
  994 005f 03       		.uleb128 0x3
  995 0060 0E       		.uleb128 0xe
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 26
+
+
  996 0061 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 26
-
-
  997 0062 0B       		.uleb128 0xb
  998 0063 3B       		.uleb128 0x3b
  999 0064 0B       		.uleb128 0xb
@@ -1557,10 +1558,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  1050 009a 18       		.uleb128 0x18
  1051 009b 00       		.byte	0
  1052 009c 00       		.byte	0
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 27
+
+
  1053 009d 0D       		.uleb128 0xd
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 27
-
-
  1054 009e 34       		.uleb128 0x34
  1055 009f 00       		.byte	0
  1056 00a0 03       		.uleb128 0x3
@@ -1617,10 +1618,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  1107 00d4 19       		.uleb128 0x19
  1108 00d5 11       		.uleb128 0x11
  1109 00d6 01       		.uleb128 0x1
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 28
+
+
  1110 00d7 12       		.uleb128 0x12
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 28
-
-
  1111 00d8 06       		.uleb128 0x6
  1112 00d9 40       		.uleb128 0x40
  1113 00da 18       		.uleb128 0x18
@@ -1677,10 +1678,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  1164 010f 00       		.byte	0
  1165 0110 03       		.uleb128 0x3
  1166 0111 0E       		.uleb128 0xe
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 29
+
+
  1167 0112 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 29
-
-
  1168 0113 0B       		.uleb128 0xb
  1169 0114 3B       		.uleb128 0x3b
  1170 0115 05       		.uleb128 0x5
@@ -1737,10 +1738,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  1221 0149 9742     		.uleb128 0x2117
  1222 014b 19       		.uleb128 0x19
  1223 014c 00       		.byte	0
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 30
+
+
  1224 014d 00       		.byte	0
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 30
-
-
  1225 014e 15       		.uleb128 0x15
  1226 014f 898201   		.uleb128 0x4109
  1227 0152 01       		.byte	0x1
@@ -1797,10 +1798,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  1278 0188 34       		.uleb128 0x34
  1279 0189 00       		.byte	0
  1280 018a 03       		.uleb128 0x3
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 31
+
+
  1281 018b 0E       		.uleb128 0xe
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 31
-
-
  1282 018c 3A       		.uleb128 0x3a
  1283 018d 0B       		.uleb128 0xb
  1284 018e 3B       		.uleb128 0x3b
@@ -1857,10 +1858,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  1335 0008 0100     		.2byte	0x1
  1336 000a 53       		.byte	0x53
  1337 000b 2A000000 		.4byte	.LVL3
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 32
+
+
  1338 000f 2C000000 		.4byte	.LVL4
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 32
-
-
  1339 0013 0100     		.2byte	0x1
  1340 0015 53       		.byte	0x53
  1341 0016 2E000000 		.4byte	.LVL5
@@ -1917,10 +1918,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  1392 0097 54       		.byte	0x54
  1393 0098 00000000 		.4byte	0
  1394 009c 00000000 		.4byte	0
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 33
+
+
  1395              		.section	.debug_aranges,"",%progbits
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 33
-
-
  1396 0000 7C000000 		.4byte	0x7c
  1397 0004 0200     		.2byte	0x2
  1398 0006 00000000 		.4byte	.Ldebug_info0
@@ -1977,10 +1978,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  1449 0040 00000000 		.4byte	.LFB63
  1450 0044 1C000000 		.4byte	.LFE63
  1451 0048 00000000 		.4byte	.LFB64
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 34
+
+
  1452 004c 1A000000 		.4byte	.LFE64
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 34
-
-
  1453 0050 00000000 		.4byte	.LFB65
  1454 0054 14000000 		.4byte	.LFE65
  1455 0058 00000000 		.4byte	.LFB74
@@ -2037,10 +2038,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  1479      73657269 
  1479      616C5F53 
  1479      746F7000 
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 35
+
+
  1480              	.LASF12:
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 35
-
-
  1481 0094 5F5F696E 		.ascii	"__int32_t\000"
  1481      7433325F 
  1481      7400
@@ -2091,65 +2092,65 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  1499      69676E65 
  1499      6420696E 
  1499      7400
- 1500              	.LASF46:
- 1501 017e 433A5C55 		.ascii	"C:\\Users\\pcoud\\githup\\psoc\\ferme\\transmi_cart"
- 1501      73657273 
- 1501      5C70636F 
- 1501      75645C67 
- 1501      69746875 
- 1502 01ab 65732E63 		.ascii	"es.cydsn\000"
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 36
+ 1500              	.LASF43:
+ 1501 017e 55415254 		.ascii	"UART_SIG_ClearRxBuffer\000"
+ 1501      5F534947 
+ 1501      5F436C65 
+ 1501      61725278 
+ 1501      42756666 
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 36
 
 
- 1502      7964736E 
- 1502      00
- 1503              	.LASF43:
- 1504 01b4 55415254 		.ascii	"UART_SIG_ClearRxBuffer\000"
- 1504      5F534947 
- 1504      5F436C65 
- 1504      61725278 
- 1504      42756666 
- 1505              	.LASF38:
- 1506 01cb 70686173 		.ascii	"phase\000"
- 1506      6500
- 1507              	.LASF36:
- 1508 01d1 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1508      52784275 
- 1508      66666572 
- 1508      00
- 1509              	.LASF17:
- 1510 01de 646F7562 		.ascii	"double\000"
- 1510      6C6500
- 1511              	.LASF22:
- 1512 01e5 6973725F 		.ascii	"isr_serial_SetVector\000"
- 1512      73657269 
- 1512      616C5F53 
- 1512      65745665 
- 1512      63746F72 
- 1513              	.LASF26:
- 1514 01fa 7072696F 		.ascii	"priority\000"
- 1514      72697479 
- 1514      00
- 1515              	.LASF15:
- 1516 0203 75696E74 		.ascii	"uint32\000"
- 1516      333200
- 1517              	.LASF41:
- 1518 020a 72657370 		.ascii	"resp\000"
- 1518      00
- 1519              	.LASF0:
- 1520 020f 756E7369 		.ascii	"unsigned int\000"
- 1520      676E6564 
- 1520      20696E74 
- 1520      00
- 1521              	.LASF25:
- 1522 021c 61646472 		.ascii	"address\000"
- 1522      65737300 
- 1523              	.LASF9:
- 1524 0224 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1524      206C6F6E 
- 1524      6720756E 
- 1524      7369676E 
- 1524      65642069 
+ 1502              	.LASF38:
+ 1503 0195 70686173 		.ascii	"phase\000"
+ 1503      6500
+ 1504              	.LASF36:
+ 1505 019b 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1505      52784275 
+ 1505      66666572 
+ 1505      00
+ 1506              	.LASF17:
+ 1507 01a8 646F7562 		.ascii	"double\000"
+ 1507      6C6500
+ 1508              	.LASF22:
+ 1509 01af 6973725F 		.ascii	"isr_serial_SetVector\000"
+ 1509      73657269 
+ 1509      616C5F53 
+ 1509      65745665 
+ 1509      63746F72 
+ 1510              	.LASF26:
+ 1511 01c4 7072696F 		.ascii	"priority\000"
+ 1511      72697479 
+ 1511      00
+ 1512              	.LASF15:
+ 1513 01cd 75696E74 		.ascii	"uint32\000"
+ 1513      333200
+ 1514              	.LASF41:
+ 1515 01d4 72657370 		.ascii	"resp\000"
+ 1515      00
+ 1516              	.LASF0:
+ 1517 01d9 756E7369 		.ascii	"unsigned int\000"
+ 1517      676E6564 
+ 1517      20696E74 
+ 1517      00
+ 1518              	.LASF25:
+ 1519 01e6 61646472 		.ascii	"address\000"
+ 1519      65737300 
+ 1520              	.LASF9:
+ 1521 01ee 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1521      206C6F6E 
+ 1521      6720756E 
+ 1521      7369676E 
+ 1521      65642069 
+ 1522              	.LASF46:
+ 1523 0205 433A5C55 		.ascii	"C:\\Users\\pcoud\\github\\psoc\\ferme\\transmi_cart"
+ 1523      73657273 
+ 1523      5C70636F 
+ 1523      75645C67 
+ 1523      69746875 
+ 1524 0232 65732E63 		.ascii	"es.cydsn\000"
+ 1524      7964736E 
+ 1524      00
  1525              	.LASF20:
  1526 023b 63796973 		.ascii	"cyisraddress\000"
  1526      72616464 
@@ -2157,10 +2158,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  1526      00
  1527              	.LASF32:
  1528 0248 6973725F 		.ascii	"isr_serial_StartEx\000"
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 37
+
+
  1528      73657269 
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 37
-
-
  1528      616C5F53 
  1528      74617274 
  1528      457800
@@ -2217,10 +2218,10 @@ ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 1
  1552 02ed 6973725F 		.ascii	"isr_serial_Interrupt\000"
  1552      73657269 
  1552      616C5F49 
+ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccW2G5Ui.s 			page 38
+
+
  1552      6E746572 
-ARM GAS  C:\Users\pcoud\AppData\Local\Temp\ccicyh9D.s 			page 38
-
-
  1552      72757074 
  1553              	.LASF7:
  1554 0302 6C6F6E67 		.ascii	"long int\000"

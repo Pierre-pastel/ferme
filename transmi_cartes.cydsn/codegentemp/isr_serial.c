@@ -28,9 +28,10 @@
 ********************************************************************************/
 /* `#START isr_serial_intc` */
 #include <project.h>
-extern char message[15];
 extern uint8 cptcar; 
 extern uint8 phase;
+extern char message[35];
+extern char begin[15],resp[35];
 /* `#END` */
 
 #ifndef CYINT_IRQ_BASE
@@ -168,27 +169,16 @@ CY_ISR(isr_serial_Interrupt)
 
     /*  Place your Interrupt code here. */
     /* `#START isr_serial_Interrupt` */
+    uint8 i;
     message[cptcar]=UART_SIG_GetChar() ;
-    if (message[cptcar]==0xD) {
+    if (message[cptcar]==0xA) {
+        if (phase==0) {for(i=0;i<=cptcar;i++){begin[i]=message[i];};}
+        if (phase==1) {for(i=0;i<=cptcar;i++){resp[i]=message[i];};}
         cptcar=0;
+        phase++;
+        UART_SIG_ClearRxBuffer();    //Efface le buffer de Rx
         }
-    if ((phase==0)&&(message[cptcar]==0xD)) {
-        phase=1;
-        }
-    if ((phase==1)&&(message[cptcar]==0xD)) {
-        phase=2;
-        }
-    if ((phase==2)&&(cptcar>3)&&(message[5]=='1')) {//Lecture A modifier
-        Relais_Write(1);         //Commande BP regulateur
-        CyDelay(2000);
-        Relais_Write(0);
-        phase=3;        
-        }
-   if ((phase==2)&&(cptcar>3)&&(message[4]!='1')) {//Lecture A modifier
-        phase=3;  
-        }
-
-     cptcar++;
+    cptcar++;
 
     /* `#END` */
 }

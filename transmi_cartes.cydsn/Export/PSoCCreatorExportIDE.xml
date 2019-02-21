@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="transmi_cartes" Path="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn" Version="5.60" Type="Normal">
+  <Project Name="transmi_cartes" Path="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn" Version="5.60" Type="Normal">
     <CMSIS_SVD_File>transmi_cartes.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -34,14 +34,14 @@
       <LinkerFile Toolchain="ARM IAR Generic">.\Generated_Source\PSoC5\Cm3Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="STRICT" Path="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn">
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\Generated_Source\PSoC5">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn\Generated_Source\PSoC5">
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn">
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cymetadata.c</File>
@@ -89,6 +89,11 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.scat</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_GSM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_GSM.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_GSM_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_GSM_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_GSM_BOOT.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_SIG.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_SIG.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_SIG_PM.c</File>
@@ -106,6 +111,8 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VPAN_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VPAN.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VPAN.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_GSM_IntClock.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_GSM_IntClock.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_SIG_IntClock.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_SIG_IntClock.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_vbat.c</File>
@@ -126,50 +133,50 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_serial.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\Export\ARM_GCC_Generic">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn\Export\ARM_GCC_Generic">
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn">
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Export\ARM_GCC_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\Export\ARM_MDK_Generic">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn\Export\ARM_MDK_Generic">
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn">
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Export\ARM_MDK_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn\Export\ARM_IAR_Generic">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn\Export\ARM_IAR_Generic">
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn">
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Export\ARM_IAR_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn" />
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn" />
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn" />
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_952">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn" />
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn" />
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn" />
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0p">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn" />
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn" />
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM4">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn" />
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM7">
-        <Files Root="C:\Users\pcoud\githup\psoc\ferme\transmi_cartes.cydsn" />
+        <Files Root="C:\Users\pcoud\github\psoc\ferme\transmi_cartes.cydsn" />
       </Folder>
     </Folders>
   </Project>
