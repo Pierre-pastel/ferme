@@ -180,25 +180,23 @@ int main(void)
     CyGlobalIntEnable; 
     sigfox_init();
     gsm_init();
+    //Initialisation pour éviter déclenchement disjoncteur
     Relais_Write(0); 
+    resp[4]='0';
+    resp[5]='0';
     for(;;)
     {       
     lecture_reserv();
     lecture_leds();
     sigfox_send();
     
-    //Traitement message reçu
-    /*UART_SIG_PutString("OK1\r");
-    for(j=0;j<=10;j++)  UART_SIG_PutChar(begin[j]);
-    UART_SIG_PutChar('\r');
-    for(j=0;j<=35;j++) UART_SIG_PutChar(resp[j]);
-    UART_SIG_PutChar('\r');
-    UART_SIG_PutString("OK2\r");*/
-    
+    //Vérification ré - enclenchement a effectuer ?
     if ((resp[4]=='1')||(resp[5]=='1')) {
         Relais_Write(1);   //Disjoncteur à enclencher
         CyDelay(1000);
         Relais_Write(0);
+        resp[4]='0';
+        resp[5]='0';
         }
     
     //Tempo entre 2 transmissions
